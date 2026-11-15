@@ -238,3 +238,14 @@ Times in this section are read from the system clock (UTC) when the entry is wri
   - **Target 1:** HALLMARK_HYPOXIA. I know from its title that Gao et al. report hypoxia at 5,000 L. Whether oxygen biology also separates a flask from a benchtop bioreactor is a different question; a hit would be suggestive only, and a miss says nothing about Gao et al.
   - **Target 2:** whatever the dataset's own publication concluded. I have not read it. The Hallmark ranking is committed first, then the abstract is fetched and compared.
   - The scale-risk box stays "requires partner data" whatever this shows.
+
+### 2026-11-15 10:22 UTC — P5 RESULT (frozen in commit `0785634` before the dataset's publication was looked up)
+- **Hypoxia:** HALLMARK_HYPOXIA ranks **17 of 50** in the bioreactor-vs-flask contrast (Δ = +0.14, p = 0.012 against random gene sets). It is not near the top. Sixteen of 50 sets pass p < 0.05, so passing means little here.
+- **What does lead:** proliferation programmes are higher in the bioreactor (E2F targets, MYC targets, G2M checkpoint, DNA repair) together with the unfolded protein response; protein secretion is lower.
+- **Target 2:** I could not find a publication for this deposit, and its GEO summary names no pathway. The one checkable statement in it — large differences over time, much smaller ones between systems — holds: sampling day explains a median 24.6% of expression variance, culture system 2.1%.
+- **Reading:** no support here for hypoxia as the main difference between a shake flask and a benchtop bioreactor, which is not what Gao et al. claimed anyway (they compared 5,000 L with small scale). The scale-risk box stays "requires partner data".
+- **Lead not followed for lack of time:** Alsayyari et al. 2018 (*Biotechnol Bioeng*), transcriptomes of a 10 L process and its ambr 15 scale-down. That is a true scale contrast and may be on GEO.
+
+### 2026-11-15 10:22 UTC — P6: glycans, stopped inside the timebox
+- **Searched:** GEO (Chinese hamster series mentioning glycan, glycosylation or glycoform: 3 hits, none with glycan profiles) and Europe PMC (open-access CHO papers with glycan profiles and omics on the same clones: glycoengineering panels and vaccine glycoprofiling, no clone-level omics-plus-glycan matrix).
+- **Decision:** the glycan head is marked "requires partner data". The FUT8 and B4GALT1 knockout literature gives mechanism, not a prediction set. One mechanistic note from P2: deleting FUT8 in iCHO1766 removes the model's capacity to make its (core-fucosylated) IgG, which is the model encoding known biology, not a prediction.

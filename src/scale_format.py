@@ -68,11 +68,19 @@ def main(n_null=1000):
     out = out.sort_values("abs", ascending=False).drop(columns="abs").reset_index(drop=True)
     out.insert(0, "rank", np.arange(1, len(out) + 1))
     out.round(4).to_csv(RESULTS / "scale_format_pathways.csv", index=False)
+    # share of expression variance explained by sampling day and by culture system (median over probesets)
+    Xr = expr.T.to_numpy(dtype=float)
+    tot = ((Xr - Xr.mean(axis=0)) ** 2).sum(axis=0)
+    ss_day = sum((day == k).sum() * (Xr[day == k].mean(axis=0) - Xr.mean(axis=0)) ** 2 for k in np.unique(day))
+    ss_sys = sum((system == k).sum() * (Xr[system == k].mean(axis=0) - Xr.mean(axis=0)) ** 2 for k in np.unique(system))
+    ok = tot > 1e-8
+    var_day, var_sys = float(np.median(ss_day[ok] / tot[ok])), float(np.median(ss_sys[ok] / tot[ok]))
     hyp = out[out.pathway == "HALLMARK_HYPOXIA"].iloc[0]
     info = {"dataset": "GSE104787", "n_arrays": int(len(meta)), "n_flask_cultures": 3, "n_bioreactor_cultures": 3,
             "genes": int(len(g)), "hallmark_sets_ranked": int(len(out)), "hypoxia_rank": int(hyp["rank"]),
             "hypoxia_delta": float(hyp.delta), "hypoxia_p_vs_random_sets": float(hyp.p_vs_random_sets),
-            "n_sets_p_lt_0.05": int((out.p_vs_random_sets < 0.05).sum()), "top5": out.pathway.head(5).tolist()}
+            "n_sets_p_lt_0.05": int((out.p_vs_random_sets < 0.05).sum()), "top5": out.pathway.head(5).tolist(),
+            "median_variance_share_day": round(var_day, 3), "median_variance_share_system": round(var_sys, 3)}
     base = dict(phase="P5", box="Scale risk", evidence_type="blinded recovery (culture format, not scale)",
                 modality="transcriptomics (GSE104787, Affymetrix CHO Gene array)", endpoint="bioreactor vs shake flask contrast",
                 holdout_scheme="not applicable: descriptive contrast, no model fitted; 6 culture units", encoder="MSigDB Hallmark",
@@ -81,6 +89,9 @@ def main(n_null=1000):
     info["metric_rows"] = [
         {**base, "metric": f"rank of HALLMARK_HYPOXIA among {len(out)} Hallmark sets (by |delta|)", "value": int(hyp["rank"]),
          "p_value": float(hyp.p_vs_random_sets), "note": f"pre-registered target from Gao et al. 2016; delta = {hyp.delta:+.3f} (positive = higher in bioreactor)"}]
+    info["metric_rows"].append({**base, "encoder": "none (probeset level)", "model": "variance decomposition",
+                                "metric": "median share of expression variance explained by culture system", "value": round(var_sys, 3),
+                                "note": f"sampling day explains {var_day:.3f}; the deposit's summary reports large differences over time and much smaller ones between systems"})
     (RESULTS / "scale_format.json").write_text(json.dumps(info, indent=2))
     print(json.dumps({k: v for k, v in info.items() if k != "metric_rows"}, indent=1))
     print(out[["rank", "pathway", "n_genes", "delta", "p_vs_random_sets"]].head(15).to_string(index=False))
