@@ -4,7 +4,7 @@ Predicts cell-specific productivity (Qp) of CHO production cultures from 2011-er
 expression, with leakage-safe cross-validation, and compares against the published baseline
 (Clarke et al. 2011, J Biotechnol 151:159).
 
-**Read `REPORT.md` first.** It holds the results, the claims ledger and the list of things
+**Read `SUMMARY.md` for the one-page results, then `REPORT.md`.** It holds the results, the claims ledger and the list of things
 this work does not show. `DECISIONS.md` logs every choice made along the way.
 
 ## Reproduce everything
