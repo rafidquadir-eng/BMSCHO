@@ -131,7 +131,7 @@ def fig5():
     ax.set_xlim(0.25, 0.75)
     ax.invert_yaxis()
     ax.grid(axis="y", visible=False)
-    ax.set_xlabel("AUC for validated targets\n(grey: 95% range of random gene sets)")
+    ax.set_xlabel("AUC for validated targets\n(grey: 95% range, random sets)")
     ax.set_title("Recovery vs chance", fontsize=17)
     cov = e["route_a_coverage"]
     fig.suptitle(f"Knockout recovery is at chance: {k['hits_in_top_k']} of {k['n_positives']} testable validated targets in the top 100 "
@@ -150,7 +150,7 @@ def fig5():
 def fig6():
     m = pd.read_csv(R / "metrics_endpoints.csv")
     eps = ["Viability", "Growth rate", "Viable cell density", "q-lactate", "q-ammonium"]
-    fig, axes = plt.subplots(1, 2, figsize=(18, 8.4), gridspec_kw={"width_ratios": [1.15, 1]})
+    fig, axes = plt.subplots(1, 2, figsize=(18, 9.6), gridspec_kw={"width_ratios": [1.15, 1]})
     ax = axes[0]
     rows = [("Qp (phase 1)", _m1("full_classification", "all_labeled_terciles", "leave_one_experiment_out", "raw", "logit", "auc"),
              _m1("leakage", "all_labeled_terciles", "leave_one_expression_cluster_out", "raw", "logit", "auc"), 19, 9)]
@@ -159,13 +159,23 @@ def fig6():
         b = _ep(ep, "leave_one_expression_cluster_out", "raw", "logit", "auc")
         rows.append((ep, a[:3], b[:3], a[4], b[4]))
     y = np.arange(len(rows))
+    temp = {}
+    has_temp = ((m.encoder == "temperature only") & (m.model == "logit")).any()
+    if has_temp:
+        for ep in eps:
+            temp[ep] = _ep(ep, "leave_one_experiment_out", "temperature only", "logit", "auc")[:3]
     for i, (lab, a, b, na, nb) in enumerate(rows):
-        for (v, lo, hi), off, col, mk in [(a, -0.17, BLUE, "o"), (b, 0.17, ORANGE, "s")]:
+        marks = [(a, -0.24, BLUE, "o"), (b, 0.0, ORANGE, "s")]
+        if lab in temp:
+            marks.append((temp[lab], 0.24, NEUTRAL, "D"))
+        for (v, lo, hi), off, col, mk in marks:
             ax.plot([lo, hi], [i + off, i + off], color=col, lw=3, zorder=2)
-            ax.scatter([v], [i + off], s=150, color=col, marker=mk, edgecolor=SURFACE, linewidth=1.5, zorder=3)
-            ax.text(1.035, i + off, f"{v:.2f} ({lo:.2f}–{hi:.2f})", va="center", fontsize=13.5, color=INK)
+            ax.scatter([v], [i + off], s=130, color=col, marker=mk, edgecolor=SURFACE, linewidth=1.5, zorder=3)
+            ax.text(1.035, i + off, f"{v:.2f} ({lo:.2f}–{hi:.2f})", va="center", fontsize=12.5, color=INK)
     ax.scatter([], [], s=150, color=BLUE, marker="o", label="Whole experiments held out")
     ax.scatter([], [], s=150, color=ORANGE, marker="s", label="Families of related experiments held out")
+    if has_temp:
+        ax.scatter([], [], s=130, color=NEUTRAL, marker="D", label="Culture temperature alone, experiments held out")
     ax.axvline(0.5, color=INK2, ls="--", lw=1.5)
     ax.text(0.5, -0.72, "chance", ha="center", fontsize=13, color=INK2)
     ax.set_yticks(y)
@@ -177,7 +187,7 @@ def fig6():
     ax.grid(axis="y", visible=False)
     ax.set_xlabel("AUC, top vs bottom tercile (95% bootstrap CI)")
     ax.set_title("High vs low, from expression", fontsize=17)
-    ax.legend(loc="lower left", fontsize=13, bbox_to_anchor=(0.0, -0.33), ncol=1)
+    ax.legend(loc="upper left", fontsize=13, bbox_to_anchor=(0.0, -0.16), ncol=1)
 
     ax = axes[1]
     rows2 = []
@@ -203,13 +213,15 @@ def fig6():
     ax.set_ylim(-0.9, len(rows2) - 0.4)
     ax.invert_yaxis()
     ax.grid(axis="y", visible=False)
-    ax.set_xlabel("Cross-validated R², whole experiments held out\n(values below −1 are drawn at −1)")
+    ax.set_xlabel("Cross-validated R², whole experiments held out")
     ax.set_title("Regression skill vs the temperature shift", fontsize=17)
-    ax.legend(loc="lower left", fontsize=13, bbox_to_anchor=(0.0, -0.33))
+    ax.legend(loc="upper left", fontsize=13, bbox_to_anchor=(0.0, -0.16))
     v = _ep("Viability", "leave_one_experiment_out", "raw", "logit", "auc")
-    fig.suptitle(f"Other endpoints from expression alone (modality: transcriptomics): viability AUC {v[0]:.2f} "
-                 f"({v[1]:.2f}–{v[2]:.2f}), experiments held out", x=0.012, ha="left", fontweight="bold")
-    fig.tight_layout(rect=(0, 0.02, 1, 0.94))
+    vr = _ep("Viability", "leave_one_experiment_out", "raw", "pls", "r2_cv")
+    fig.suptitle(f"Other endpoints from expression (transcriptomics only): viability high vs low AUC {v[0]:.2f} "
+                 f"({v[1]:.2f}–{v[2]:.2f}),\nbut no regression skill (R² {vr[0]:.2f}); lactate and growth mostly track the temperature shift",
+                 x=0.012, ha="left", fontweight="bold", fontsize=19)
+    fig.tight_layout(rect=(0, 0.0, 1, 0.9))
     fig.savefig(F / "fig6_endpoints.png", dpi=200)
     plt.close(fig)
 
