@@ -52,7 +52,7 @@ def _preds(p, key):
 def fig_roc(m, p):
     from sklearn.metrics import roc_curve
 
-    fig, ax = plt.subplots(figsize=(10.5, 8.2))
+    fig, ax = plt.subplots(figsize=(14.5, 8.2))
     series = [
         ("full_classification", "culture_grouped_5fold", "Held-out cultures", BLUE, "-"),
         ("full_classification", "leave_one_experiment_out", "Held-out experiments", ORANGE, "-"),
@@ -64,7 +64,7 @@ def fig_roc(m, p):
         a, lo, hi = _metric(m, analysis, "all_labeled_terciles", cv, "raw", "logit", "auc")
         ax.plot(fpr, tpr, color=color, lw=3, ls=ls, label=f"{label}\nAUC {a:.2f}  (95% CI {lo:.2f}–{hi:.2f})")
     ax.plot([0, 1], [0, 1], color=NEUTRAL, lw=1.5, ls="--")
-    ax.text(0.30, 0.245, "chance", color=INK2, rotation=45, fontsize=14, rotation_mode="anchor")
+    ax.text(0.66, 0.60, "chance", color=INK2, rotation=45, fontsize=15, rotation_mode="anchor")
     ax.set_xlabel("False positive rate")
     ax.set_ylabel("True positive rate")
     ax.set_xlim(-0.01, 1.01)
@@ -72,10 +72,9 @@ def fig_roc(m, p):
     ax.set_aspect("equal")
     n = len(_preds(p, "full_classification|all_labeled_terciles|culture_grouped_5fold|raw|logit"))
     ax.set_title("High vs low Qp from expression:\nAUC falls as the held-out unit gets stricter")
-    leg = ax.legend(loc="lower right", title=f"Top vs bottom Qp tercile, n = {n} arrays", title_fontsize=14,
-                    labelspacing=0.9, handlelength=1.6, frameon=True, framealpha=1.0, facecolor=SURFACE,
-                    edgecolor=GRID, borderpad=0.8)
-    leg.get_frame().set_linewidth(1.0)
+    leg = ax.legend(loc="center left", bbox_to_anchor=(1.03, 0.5), title=f"Top vs bottom Qp tercile\nn = {n} arrays",
+                    title_fontsize=15, labelspacing=1.3, handlelength=1.6, fontsize=16)
+    leg._legend_box.align = "left"
     fig.tight_layout()
     fig.savefig(FIGURES / "fig1_roc.png", dpi=200)
     plt.close(fig)
@@ -148,8 +147,8 @@ def fig_leakage(m, p):
         ax.errorbar(x, pts, yerr=err, fmt="none", ecolor=INK, elinewidth=2, capsize=6, capthick=2, zorder=3)
         for xi, v in zip(x, vals):
             # value inside the bar, clear of the CI whisker and the reference line
-            ax.text(xi - 0.17, v[0] * 0.5, fmt.format(v[0]), ha="center", va="center", fontsize=19,
-                    fontweight="bold", color=SURFACE)
+            ax.text(xi, 0.7 if metric == "rmse" else 0.05, fmt.format(v[0]), ha="center", va="bottom",
+                    fontsize=21, fontweight="bold", color=SURFACE)
         ax.set_xticks(x)
         ax.set_xticklabels([s[2] for s in schemes])
         ax.set_title(title, fontsize=18)
