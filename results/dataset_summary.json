@@ -1,0 +1,89 @@
+{
+  "arrays": 295,
+  "probesets": 3592,
+  "arrays_with_qp_as_deposited": 169,
+  "arrays_with_qp_after_qc": 167,
+  "qc_excluded_idx": [
+    248,
+    251
+  ],
+  "expression_clusters_labeled": 9,
+  "expression_cluster_members": {
+    "L01": [
+      "E03",
+      "E04",
+      "E25",
+      "E34",
+      "E35",
+      "E36"
+    ],
+    "L03": [
+      "E30"
+    ],
+    "L06": [
+      "E06"
+    ],
+    "L07": [
+      "E37",
+      "E39"
+    ],
+    "L08": [
+      "E23",
+      "E31"
+    ],
+    "L09": [
+      "E33"
+    ],
+    "L10": [
+      "E09",
+      "E10"
+    ],
+    "L12": [
+      "E27",
+      "E32"
+    ],
+    "L14": [
+      "E12",
+      "E21"
+    ]
+  },
+  "derived_cultures_total": 122,
+  "cultures_stated_by_geo": 121,
+  "derived_cultures_unambiguous": 92,
+  "derived_cultures_in_ambiguous_blocks": 30,
+  "arrays_in_ambiguous_blocks": 79,
+  "labeled_arrays_in_ambiguous_blocks": 8,
+  "derived_experiments_total": 38,
+  "labeled_cultures": 62,
+  "labeled_experiments": 19,
+  "qp_mean": 17.25,
+  "qp_sd": 13.88,
+  "qp_min": 0.0,
+  "qp_max": 55.39,
+  "qp_variance_between_experiments_fraction": 0.792,
+  "matched_arrays": 75,
+  "matched_cultures": 38,
+  "matched_experiments": 12,
+  "matched_qp_sd": 11.81,
+  "probesets_with_symbol": 2045,
+  "symbol_mapping_coverage": 0.569,
+  "unique_symbols": 1707,
+  "hallmark_genes_total": 4384,
+  "hallmark_genes_on_array": 653,
+  "hallmark_gene_match_rate": 0.149,
+  "array_symbols_in_hallmark_rate": 0.383,
+  "hallmark_sets_used_min10_genes": 44,
+  "hallmark_sets_dropped": [
+    "HALLMARK_ANGIOGENESIS",
+    "HALLMARK_APICAL_SURFACE",
+    "HALLMARK_HEDGEHOG_SIGNALING",
+    "HALLMARK_INTERFERON_ALPHA_RESPONSE",
+    "HALLMARK_NOTCH_SIGNALING",
+    "HALLMARK_WNT_BETA_CATENIN_SIGNALING"
+  ],
+  "feature_counts": {
+    "raw": 1000,
+    "pathway": 44,
+    "coexpr": 40
+  }
+}
