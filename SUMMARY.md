@@ -51,3 +51,14 @@ The run takes about 25 to 45 minutes on 4 CPU cores. A clean clone reproduced ev
 - **Not tested:** multi-omic fusion, latent dynamics or scale-up prediction. The data to test them are not in this dataset.
 - **No prediction for a new cell line.** Strict splits give an error of about 11 pg/cell/day and intervals that reach chance.
 - **No improvement on the 2011 published model.**
+
+## Phase 2 (branch `poc/multimodal`)
+
+Full detail in `REPORT_V2.md`; the one-slide view is `figures/fig0_architecture_status.png`.
+
+- **Every metric is single-modality.** No public sample has more than one modality with an outcome, so nothing is a fused prediction.
+- **Viability:** high vs low AUC 0.84 (0.70–0.94) from expression with whole experiments held out; no regression skill (R² 0.09).
+- **BMS metabolomics (Yao et al. 2021):** no per-clone data are public, so cross-library prediction was not run. On the published correlations, the pre-registered ranking recovers the TCA cycle (rank 6 of 53) but not alanine/aspartate/glutamate metabolism (rank 15); joint p = 0.06.
+- **Knockout ranking:** recovery of literature-validated targets is at chance (AUC 0.50; 2 of 14 testable targets in the top 100).
+- **Transcript–protein alignment:** genes agree weakly (ρ = 0.18); the pre-registered pathway-level test is null (ρ = 0.16, p = 0.13).
+- **Requires partner data:** latent dynamics, glycans, scale risk, and any fused multi-omic prediction.

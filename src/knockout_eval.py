@@ -177,7 +177,7 @@ def main():
     gt.to_csv(RESULTS / "knockout_ground_truth.csv", index=False)
     A = pd.read_csv(RESULTS / "knockout_ranking.csv")
     B = pd.read_csv(RESULTS / "knockout_fba.csv", dtype={"gene_id": str})
-    B["symbol"] = B["symbol"].astype(str).str.upper()
+    B["symbol"] = B["symbol"].fillna("").astype(str).str.upper()
     ko_pos = set(gt[(gt["class"] == "KO/KD") & gt.raised_titer_or_qp].gene)
     ko_neg = set(gt[(gt["class"] == "KO/KD") & ~gt.raised_titer_or_qp].gene)
     ko_single = set(gt[(gt["class"] == "KO/KD") & gt.raised_titer_or_qp & gt.single_target_evidence].gene)

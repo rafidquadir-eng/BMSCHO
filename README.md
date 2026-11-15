@@ -7,7 +7,21 @@ expression, with leakage-safe cross-validation, and compares against the publish
 **Read `SUMMARY.md` for the one-page results, then `REPORT.md`.** It holds the results, the claims ledger and the list of things
 this work does not show. `DECISIONS.md` logs every choice made along the way.
 
-## Reproduce everything
+## Phase 2: multi-modal extension and blinded recovery tests
+
+Branch `poc/multimodal` adds metabolomics (summary statistics from Yao et al. 2021), proteomics
+(PRIDE PXD053511), the iCHO1766 genome-scale model, four more endpoints on GSE30321 and three
+pre-registered blinded recovery tests. Start with `figures/fig0_architecture_status.png` and
+`REPORT_V2.md`.
+
+```bash
+pip install -r requirements.txt && python cho_poc.py --download && python src/run_v2.py
+```
+
+About 30 minutes on 4 CPU cores. Phase-2 outputs: `results/metrics_v2.csv`,
+`results/knockout_ranking.csv`, `figures/fig0_architecture_status.png`, `fig4`–`fig7`.
+
+## Reproduce everything (phase 1)
 
 ```bash
 pip install -r requirements.txt && python cho_poc.py --all

@@ -142,7 +142,9 @@ with experiments held out. The leak found in phase 1 is larger for these endpoin
 - **Growth rate and q-lactate** are predicted well, but temperature alone gets most of the way
   (R² 0.62 and 0.61). Expression adds a little for growth rate and nothing for q-lactate.
 - **Viable cell density** behaves like viability: some high-vs-low separation, no regression skill.
-- The pathway encoder is at or below raw genes on every endpoint (`results/metrics_endpoints.csv`).
+- For high-vs-low AUC the pathway encoder is at or below raw genes on every endpoint (for example
+  viability 0.79 vs 0.84). For regression the two are within each other's intervals
+  (`results/metrics_endpoints.csv`).
 
 ## P4. Cross-modality alignment on a pathway basis (`figures/fig7_modality_alignment.png`)
 

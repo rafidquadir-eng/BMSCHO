@@ -295,43 +295,67 @@
     "share_tolerated_ko_positives": 0.9411764705882353,
     "share_tolerated_all_model_genes": 0.9280860702151755,
     "calls": {
-      "BCKDHA": {
-        "growth_ratio": 1.0,
-        "igg_capacity_ratio": 1.0,
-        "tolerated": true,
-        "tradeoff_score": 0.0
-      },
-      "LDHA": {
-        "growth_ratio": 1.0,
-        "igg_capacity_ratio": 1.0,
-        "tolerated": true,
-        "tradeoff_score": 0.0
-      },
-      "DNMT1": {
-        "growth_ratio": 1.0,
-        "igg_capacity_ratio": 1.0,
-        "tolerated": true,
-        "tradeoff_score": 0.0
-      },
-      "BCKDHB": {
-        "growth_ratio": 1.0,
-        "igg_capacity_ratio": 1.0,
-        "tolerated": true,
-        "tradeoff_score": 0.0
-      },
       "FUT8": {
         "growth_ratio": 1.0,
         "igg_capacity_ratio": 0.0,
         "tolerated": false,
         "tradeoff_score": 0.0
       },
-      "DNMT3A": {
+      "BCKDHA": {
         "growth_ratio": 1.0,
         "igg_capacity_ratio": 1.0,
         "tolerated": true,
         "tradeoff_score": -0.0
       },
-      "PKM": {
+      "DHFR": {
+        "growth_ratio": 1.0,
+        "igg_capacity_ratio": 1.0,
+        "tolerated": true,
+        "tradeoff_score": -0.0
+      },
+      "LDHA": {
+        "growth_ratio": 1.0,
+        "igg_capacity_ratio": 1.0,
+        "tolerated": true,
+        "tradeoff_score": -0.0
+      },
+      "NEU1": {
+        "growth_ratio": 1.0,
+        "igg_capacity_ratio": 1.0,
+        "tolerated": true,
+        "tradeoff_score": -0.0
+      },
+      "PNP": {
+        "growth_ratio": 1.0,
+        "igg_capacity_ratio": 1.0,
+        "tolerated": true,
+        "tradeoff_score": -0.0
+      },
+      "XYLT2": {
+        "growth_ratio": 1.0,
+        "igg_capacity_ratio": 1.0,
+        "tolerated": true,
+        "tradeoff_score": -0.0
+      },
+      "DNMT1": {
+        "growth_ratio": 1.0,
+        "igg_capacity_ratio": 1.0,
+        "tolerated": true,
+        "tradeoff_score": -0.0
+      },
+      "NDUFA13": {
+        "growth_ratio": 1.0,
+        "igg_capacity_ratio": 1.0,
+        "tolerated": true,
+        "tradeoff_score": -0.0
+      },
+      "GLUL": {
+        "growth_ratio": 1.0,
+        "igg_capacity_ratio": 1.0,
+        "tolerated": true,
+        "tradeoff_score": -0.0
+      },
+      "NEU2": {
         "growth_ratio": 1.0,
         "igg_capacity_ratio": 1.0,
         "tolerated": true,
@@ -349,31 +373,13 @@
         "tolerated": true,
         "tradeoff_score": -0.0
       },
-      "GLUL": {
-        "growth_ratio": 1.0,
-        "igg_capacity_ratio": 1.0,
-        "tolerated": true,
-        "tradeoff_score": -0.0
-      },
-      "DHFR": {
-        "growth_ratio": 1.0,
-        "igg_capacity_ratio": 1.0,
-        "tolerated": true,
-        "tradeoff_score": -0.0
-      },
       "SETDB1": {
         "growth_ratio": 1.0,
         "igg_capacity_ratio": 1.0,
         "tolerated": true,
         "tradeoff_score": -0.0
       },
-      "XYLT2": {
-        "growth_ratio": 1.0,
-        "igg_capacity_ratio": 1.0,
-        "tolerated": true,
-        "tradeoff_score": -0.0
-      },
-      "NEU1": {
+      "PKM": {
         "growth_ratio": 1.0,
         "igg_capacity_ratio": 1.0,
         "tolerated": true,
@@ -385,19 +391,13 @@
         "tolerated": true,
         "tradeoff_score": -0.0
       },
-      "NDUFA13": {
+      "DNMT3A": {
         "growth_ratio": 1.0,
         "igg_capacity_ratio": 1.0,
         "tolerated": true,
         "tradeoff_score": -0.0
       },
-      "PNP": {
-        "growth_ratio": 1.0,
-        "igg_capacity_ratio": 1.0,
-        "tolerated": true,
-        "tradeoff_score": -0.0
-      },
-      "NEU2": {
+      "BCKDHB": {
         "growth_ratio": 1.0,
         "igg_capacity_ratio": 1.0,
         "tolerated": true,
@@ -430,57 +430,47 @@
     ],
     "auc_growth_ratio_low_predicts_incompatible": 0.5,
     "calls": {
-      "FUCA1": {
-        "growth_ratio": 1.0,
-        "tolerated": true,
-        "reported": "not individually reported"
-      },
       "LDHA": {
         "growth_ratio": 1.0,
         "tolerated": true,
         "reported": "reverted to wild type (selective disadvantage)"
-      },
-      "ACLY": {
-        "growth_ratio": 1.0,
-        "tolerated": true,
-        "reported": "not individually reported"
-      },
-      "PGK1": {
-        "growth_ratio": 1.0,
-        "tolerated": true,
-        "reported": "reverted to wild type (selective disadvantage)"
-      },
-      "GAPDH": {
-        "growth_ratio": 1.0,
-        "tolerated": true,
-        "reported": "pool failed to recover"
-      },
-      "FASN": {
-        "growth_ratio": 1.0,
-        "tolerated": true,
-        "reported": "not individually reported"
-      },
-      "CTSA": {
-        "growth_ratio": 1.0,
-        "tolerated": true,
-        "reported": "not individually reported"
-      },
-      "TKT": {
-        "growth_ratio": 1.0,
-        "tolerated": true,
-        "reported": "not individually reported"
-      },
-      "PKM": {
-        "growth_ratio": 1.0,
-        "tolerated": true,
-        "reported": "not individually reported"
       },
       "LPL": {
         "growth_ratio": 1.0,
         "tolerated": true,
         "reported": "not individually reported"
       },
+      "FASN": {
+        "growth_ratio": 1.0,
+        "tolerated": true,
+        "reported": "not individually reported"
+      },
+      "GAPDH": {
+        "growth_ratio": 1.0,
+        "tolerated": true,
+        "reported": "pool failed to recover"
+      },
       "AKR1B1": {
+        "growth_ratio": 1.0,
+        "tolerated": true,
+        "reported": "not individually reported"
+      },
+      "FUCA1": {
+        "growth_ratio": 1.0,
+        "tolerated": true,
+        "reported": "not individually reported"
+      },
+      "ACLY": {
+        "growth_ratio": 1.0,
+        "tolerated": true,
+        "reported": "not individually reported"
+      },
+      "PLOD1": {
+        "growth_ratio": 1.0,
+        "tolerated": true,
+        "reported": "not individually reported"
+      },
+      "ENO3": {
         "growth_ratio": 1.0,
         "tolerated": true,
         "reported": "not individually reported"
@@ -490,12 +480,22 @@
         "tolerated": true,
         "reported": "pool failed to recover"
       },
-      "ENO3": {
+      "TKT": {
         "growth_ratio": 1.0,
         "tolerated": true,
         "reported": "not individually reported"
       },
-      "PLOD1": {
+      "PGK1": {
+        "growth_ratio": 1.0,
+        "tolerated": true,
+        "reported": "reverted to wild type (selective disadvantage)"
+      },
+      "PKM": {
+        "growth_ratio": 1.0,
+        "tolerated": true,
+        "reported": "not individually reported"
+      },
+      "CTSA": {
         "growth_ratio": 1.0,
         "tolerated": true,
         "reported": "not individually reported"

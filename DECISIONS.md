@@ -249,3 +249,32 @@ Times in this section are read from the system clock (UTC) when the entry is wri
 ### 2026-11-15 10:22 UTC — P6: glycans, stopped inside the timebox
 - **Searched:** GEO (Chinese hamster series mentioning glycan, glycosylation or glycoform: 3 hits, none with glycan profiles) and Europe PMC (open-access CHO papers with glycan profiles and omics on the same clones: glycoengineering panels and vaccine glycoprofiling, no clone-level omics-plus-glycan matrix).
 - **Decision:** the glycan head is marked "requires partner data". The FUT8 and B4GALT1 knockout literature gives mechanism, not a prediction set. One mechanistic note from P2: deleting FUT8 in iCHO1766 removes the model's capacity to make its (core-fucosylated) IgG, which is the model encoding known biology, not a prediction.
+
+### 2026-11-15 16:50 UTC — P3 RESULT: other endpoints (transcriptomics, GSE30321)
+- **Viability:** high vs low AUC 0.84 (0.70–0.94) with experiments held out, 0.77 (0.60–0.90) with families held out. Regression has no skill: R² 0.09 (−0.84–0.26). Temperature alone: R² 0.01.
+- **Growth rate:** AUC 0.98, R² 0.76 (0.68–0.83). Temperature alone already gives R² 0.62.
+- **Viable cell density:** AUC 0.82 (0.68–0.96), R² 0.08. Temperature alone 0.17.
+- **q-lactate:** AUC 0.97, R² 0.62. Temperature alone 0.61. Expression adds nothing measurable.
+- **q-ammonium:** AUC 0.93, R² 0.42. Temperature alone 0.35.
+- **Leak size:** culture-grouped R² for viability is 0.77 and for density 0.77, against 0.09 and 0.08 with experiments held out. The culture-level split overstates these endpoints even more than it did Qp.
+- **Decision:** the viability box is marked positive on the strength of the high-vs-low AUC only, and the box says in the same breath that regression has no skill.
+- **Added after seeing the regression table:** a temperature-only reference for the AUCs as well, since "temperature alone explains the R²" raised the same question for the classification numbers. It is a reference row, not a model choice.
+
+### 2026-11-15 16:50 UTC — fig0 design choices
+- **Three statuses, not two.** "Tested: positive evidence", "tested: weak or null", "requires partner data". A two-state figure (metric vs grey) would have forced null results into the same colour as successes.
+- **A box is green only if** its headline metric has an interval that excludes chance under experiment-level holdout. That gives two green boxes plus the transcriptomics input that feeds them.
+- **Status is carried by a text tag and the border style** as well as colour, so it survives a greyscale print.
+- **Every number on the figure is read from a results file** by `src/figures_v2.py`.
+- **Dark background** to match the deck the diagram came from; phase-1 figures stay light.
+- **"iMEMORY initialisation: not tested"** is written into the culture-state box. The brief's diagram names it; nothing public lets me test it.
+
+### 2026-11-15 16:50 UTC — Reproducibility of the frozen P2 files
+- Re-running `src/knockout.py freeze` and `src/knockout_eval.py` from the committed scripts reproduces the frozen ranking file exactly (all 1,707 rows), the FBA ratios with zero numeric difference, and an identical evaluation JSON.
+- One fix made along the way: the gene-symbol fill-in for model genes named only by a LOC identifier had been applied by hand before the freeze; it now lives in `src/knockout.py`. Symbols are identifiers, not scores, and the regenerated table matches the frozen one on every symbol.
+
+### 2026-11-15 16:50 UTC — What was cut or not attempted
+- Cross-library prediction on the Yao data (no per-clone data).
+- The hamster proteome atlas and Metabolomics Workbench study ST001177 (no shared contrast / no time).
+- The Alsayyari et al. 2018 scale-down transcriptomes (a real scale contrast; found late).
+- Any attempt to improve the knockout or alignment results after seeing them.
+- iCHO1766 as a predictive encoder: only 18 subsystems reach five genes on this array.

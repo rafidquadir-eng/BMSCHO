@@ -102,7 +102,7 @@ def fba_deletions(processes=2):
         p = line.split("\t")
         if ";" in p[-1]:
             ks[p[0].replace("cge:", "")] = p[-1].split(";")[0].split(",")[0].strip().upper()
-    is_loc = sym.isna() | sym.astype(str).str.startswith("LOC")
+    is_loc = sym.isna() | (sym.astype(str).str.strip() == "") | sym.astype(str).str.startswith("LOC")
     out["symbol"] = [ks.get(g, s) if loc and ks.get(g) else s for g, s, loc in zip(out.gene_id, sym, is_loc)]
     out["n_reactions"] = out.gene_id.map(nrx)
     out["subsystems"] = out.gene_id.map(subs)
