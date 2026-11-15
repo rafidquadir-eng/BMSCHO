@@ -85,10 +85,10 @@ leakage,all_labeled,leave_one_expression_cluster_out,raw,1000,pls,r2_cv,0.6015,0
 leakage,all_labeled,leave_one_expression_cluster_out,raw,1000,pls,spearman,0.7228,0.4828,0.8226,167,62,19,experiment,
 leakage,all_labeled,leave_one_expression_cluster_out,raw,1000,pls,rmse_null,16.339,12.354,19.9588,167,62,19,experiment,
 leakage,all_labeled_terciles,leave_one_expression_cluster_out,raw,1000,logit,auc,0.7095,0.4411,0.8876,112,53,18,experiment,
-leakage_repeated_partitions,all_labeled,array_kfold_LEAKY,raw,1000,pls,rmse_mean_of_10_partitions,5.739,5.1743,6.232,167,62,19,none,"ci_lo/ci_hi are the min/max over 10 partitions, not a confidence interval"
-leakage_repeated_partitions,all_labeled_terciles,array_kfold_LEAKY,raw,1000,logit,auc_mean_of_10_partitions,0.9815,0.9713,0.9904,112,53,18,none,"ci_lo/ci_hi are the min/max over 10 partitions, not a confidence interval"
-leakage_repeated_partitions,all_labeled,culture_grouped_5fold,raw,1000,pls,rmse_mean_of_10_partitions,6.0341,5.3264,6.8651,167,62,19,none,"ci_lo/ci_hi are the min/max over 10 partitions, not a confidence interval"
-leakage_repeated_partitions,all_labeled_terciles,culture_grouped_5fold,raw,1000,logit,auc_mean_of_10_partitions,0.9802,0.9649,0.9927,112,53,18,none,"ci_lo/ci_hi are the min/max over 10 partitions, not a confidence interval"
+leakage_repeated_partitions,all_labeled,array_kfold_LEAKY,raw,1000,pls,rmse,5.739,4.7807,6.6639,167,62,19,culture,mean of 10 random partitions; range across partitions 5.174 to 6.232
+leakage_repeated_partitions,all_labeled_terciles,array_kfold_LEAKY,raw,1000,logit,auc,0.9815,0.9552,0.9973,112,53,18,culture,mean of 10 random partitions; range across partitions 0.971 to 0.990
+leakage_repeated_partitions,all_labeled,culture_grouped_5fold,raw,1000,pls,rmse,6.0341,4.9533,7.0774,167,62,19,culture,mean of 10 random partitions; range across partitions 5.326 to 6.865
+leakage_repeated_partitions,all_labeled_terciles,culture_grouped_5fold,raw,1000,logit,auc,0.9802,0.9534,0.9972,112,53,18,culture,mean of 10 random partitions; range across partitions 0.965 to 0.993
 matched_secondary,matched_stationary_tempshift,culture_grouped_5fold,raw,1000,enet,rmse,6.8377,5.4133,8.216,75,38,12,culture,
 matched_secondary,matched_stationary_tempshift,culture_grouped_5fold,raw,1000,enet,r2_cv,0.6767,0.4553,0.8023,75,38,12,culture,
 matched_secondary,matched_stationary_tempshift,culture_grouped_5fold,raw,1000,enet,spearman,0.7893,0.6061,0.9008,75,38,12,culture,

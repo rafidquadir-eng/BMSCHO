@@ -80,3 +80,31 @@ Running log of every autonomous choice. Times are UTC. Newest entries at the bot
 - **Hyperparameters:** chosen by a 3-fold inner CV inside each training fold, grouped by the same unit as the outer split. Feature selection, scaling and encoder fitting are pipeline steps refit in every fold.
 - **Encoders:** raw = 1,000 highest-variance probesets (variance computed in the training fold); pathway = 44 Hallmark scores (mean of z-scored member probesets, z-scoring fitted in the training fold); coexpr = 40 within-fold coexpression modules.
 - **Primary model, named in advance:** PLS on the raw encoder for regression (mirrors the published method), logistic regression on the raw encoder for classification. The figures show these, whichever model scores best.
+
+### 2026-11-15 02:40 — The published baseline is not beaten; reported as is
+- **Found:** On the matched subset, culture-grouped nested-CV PLS gives RMSE 6.6 pg/cell/day, above the published 4.44. Held-out-experiment RMSE is 11.1.
+- **Decision:** Report it plainly. No search over models, feature counts or subset definitions to get under 4.44. PLS on the raw encoder was named as the head-to-head model before the run; elastic net on the same subset is listed as a secondary row only.
+- **Reasoning:** Any number reached by trying variants until one wins is not a head-to-head. The published figure also comes from a protocol I cannot reproduce exactly (different sample list, jackknife gene selection, cross-model validation whose handling of replicate cultures the abstract does not state).
+
+### 2026-11-15 02:45 — Adversarial checks added to the main run
+- **Process-covariate baseline:** Qp predicted from temperature, growth rate, cell density and viability alone (fixed small GBM, no expression). Answers "does the array add anything over the batch record?". Titre is excluded because Qp is computed from it.
+- **Random-gene-set null for the Δ decode:** each pathway's |Δ| is compared with 1,000 random probe sets of the same size. Cell-line identity makes arbitrary gene sets differ between high- and low-Qp arrays, so a bootstrap interval that excludes zero is weak evidence on its own.
+- **Within-experiment Δ:** the decode repeated after removing each experiment's mean from both the pathway scores and Qp, so it cannot be driven by which cell line an array comes from.
+- **Repeated partitions for the leakage figure:** the array-level and culture-level bars are means over 10 random partitions, with a cluster bootstrap over cultures. A single partition moved RMSE by about ±0.7, which is larger than the array-vs-culture difference.
+
+### 2026-11-15 03:00 — Leakage figure shows four split units
+- **Decision:** `fig2_leakage.png` compares arrays, cultures, experiments and families of related experiments, not just grouped vs ungrouped.
+- **Reasoning:** On these data, grouping by culture barely changes the estimate, because the leak runs through sister flasks of the same experiment. A two-bar figure would have shown "no leakage", which is the wrong lesson. The real step is at the experiment level.
+
+### 2026-11-15 03:10 — §6 adapted to the labeled sample that exists
+- **Found:** Only 62 labeled cultures exist, so train sizes of 20–100 cultures are not possible.
+- **Decision:** Hold out 15 cultures; train on 10/20/30/40/47 cultures; 5 seeds. A second panel holds out 5 whole experiments and trains on 10/20/30/40 cultures. Everything on CPU.
+- **In-fold corpus:** every array not belonging to a held-out group, labeled or not, labels never used. Asserted in code.
+- **Stretch (pooling other public CHO data) skipped:** of the related accessions in the brief, only GSE37251 is CHO expression (30 arrays, a different array design, GPL15441). GSE296860, GSE179451 and E-MTAB-8060 are unrelated organisms or studies. Thirty arrays on another platform would add 10% to the corpus and a platform batch effect; not worth the harmonisation work.
+
+### 2026-11-15 04:55 — Pretraining protocol revised once, after seeing the first run
+- **First protocol (v1):** encoder with no normalisation on `z`, fine-tuned with weight decay 1e-4 and no dropout. Result: pretraining made test RMSE worse at every training size (for example 17.9 vs 12.4 at 10 cultures), and the transductive arm was worse than predicting the training mean. Files kept in `results/superseded/`.
+- **Diagnosis (training-set quantities only):** both networks reach zero training error within about 40 epochs, and the pretrained encoder emits activations about 40 times larger than a fresh one (SD 4.4 vs 0.11). v1 was measuring an unstable fine-tune, not the quality of the representation.
+- **Revision (v2), applied identically to every arm:** LayerNorm on `z`; input dropout 0.2 and weight decay 1e-2 during supervised training; one extra arm that freezes the in-fold encoder and fits ridge regression on `z` (a linear probe).
+- **Commitment made before v2 results exist:** v2 is final. Whatever it shows is what gets reported, and v1 is disclosed next to it. No third protocol.
+- **Risk I am accepting:** changing a protocol after seeing test results is a forking path. Disclosing both runs is the mitigation.

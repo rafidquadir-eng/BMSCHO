@@ -65,6 +65,7 @@ def _torch():
     import torch
 
     torch.set_num_threads(4)
+    torch.set_flush_denormal(True)  # weight decay drives values into denormals, which are ~100x slower on CPU
     return torch
 
 

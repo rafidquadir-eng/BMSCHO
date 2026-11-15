@@ -147,8 +147,9 @@ def fig_leakage(m, p):
         ax.bar(x, pts, width=0.62, color=[s[3] for s in schemes], edgecolor=SURFACE, linewidth=2, zorder=2)
         ax.errorbar(x, pts, yerr=err, fmt="none", ecolor=INK, elinewidth=2, capsize=6, capthick=2, zorder=3)
         for xi, v in zip(x, vals):
-            ax.text(xi, v[2] + (0.35 if metric == "rmse" else 0.012), fmt.format(v[0]), ha="center", va="bottom",
-                    fontsize=17, fontweight="bold")
+            # value inside the bar, clear of the CI whisker and the reference line
+            ax.text(xi - 0.17, v[0] * 0.5, fmt.format(v[0]), ha="center", va="center", fontsize=19,
+                    fontweight="bold", color=SURFACE)
         ax.set_xticks(x)
         ax.set_xticklabels([s[2] for s in schemes])
         ax.set_title(title, fontsize=18)
