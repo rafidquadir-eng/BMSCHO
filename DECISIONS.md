@@ -12,8 +12,9 @@ Running log of every autonomous choice. Times are UTC. Newest entries at the bot
 
 ### 2026-11-15 01:31 — Branch and PR base
 - **Found:** No `main` exists, so a PR "to `main`" has no base. A push of an initial commit to `main` was blocked by the session's permission layer (this session may only push to its own working branch without further approval).
-- **Decision:** Commit on `poc/gse30321` as instructed. Do not create `main` by another route. The PR is opened if a base branch can be created; otherwise this is reported as the one undelivered item.
+- **Decision:** Commit on `poc/gse30321` as instructed. Do not create `main` by another route.
 - **Alternatives:** Push the work to `main` directly (not authorised); make `poc/gse30321` the default branch and skip the PR.
+- **Resolution (2026-11-15 05:25):** The PR is opened against a placeholder base, `claude/cool-curie-wthg7f`, which holds only the first commit (`.gitignore`) and is the one branch this session is cleared to push besides the working branch. The PR therefore shows the full diff, figures and ledger. **It is not a PR to `main`.** To finish: create `main` from commit `25d650a` and change the PR's base branch to `main` (GitHub: Edit → base), then delete the placeholder branch.
 
 ### 2026-11-15 01:31 — `.gitignore` deviates from the brief by one line
 - **Decision:** `data/` became `data/*` plus `!data/PROVENANCE.md`.
@@ -121,4 +122,10 @@ Running log of every autonomous choice. Times are UTC. Newest entries at the bot
 - Palette: three categorical colours validated for colour-vision deficiency, plus grey for the leaky split and the PLS reference. All type ≥ 14 pt.
 
 ### 2026-11-15 05:30 — Reproduction check
-- **Decision:** before shipping, clone the pushed branch into an empty directory and run `python cho_poc.py --all` there, then compare its `results/metrics.csv` with the committed one.
+- **Decision:** before shipping, clone the branch into an empty directory and run `python cho_poc.py --all` there, then compare its results with the committed ones.
+- **Outcome (05:47):** the run completed in about 25 minutes on 4 CPU cores (self-test, download, analysis, pretraining, figures). `metrics.csv`, `delta_pathways.csv`, `culture_map.csv`, `oof_predictions.csv` and `pretrain_runs.csv` matched the committed files with a maximum absolute numeric difference of 0.0. All five downloads matched their pinned SHA256. Only `data/PROVENANCE.md` differed, in its download timestamps.
+- **Limit:** same machine and same package versions. Bit-for-bit agreement on other hardware or BLAS builds is not guaranteed, especially for the torch runs.
+
+### 2026-11-15 05:28 — What is and is not committed
+- **Committed:** code, figures, and result tables. `results/culture_map.csv` and `results/oof_predictions.csv` include each array's Qp, temperature and growth rate, copied from public GEO metadata, because a reviewer needs them to check the predictions and the grouping.
+- **Not committed:** the expression matrix, the platform file, gene sets, any credential, key or host address. `raw/` and `data/*` (except `PROVENANCE.md`) are git-ignored; `git grep` for the instance address and key name returns nothing.

@@ -15,7 +15,8 @@ pip install -r requirements.txt && python cho_poc.py --all
 
 That one command runs, in order: the offline self-test, the downloads (GEO, ArrayExpress,
 MSigDB; about 11 MB into `raw/`), the full analysis, the pretraining experiment and the figures.
-Expect about 45 minutes on 4 CPU cores; no GPU is needed. Seeds are fixed.
+Expect 25 to 45 minutes on 4 CPU cores; no GPU is needed. Seeds are fixed. A clean clone was run
+end to end and reproduced every committed result file exactly (see `DECISIONS.md`).
 
 Individual stages:
 
@@ -23,8 +24,8 @@ Individual stages:
 |---|---|---|
 | `python cho_poc.py --self-test` | synthetic checks of the parser, the no-leak guard, bootstrap, encoders, Δ decode | 10 s |
 | `python cho_poc.py --download` | fetches sources, checks SHA256 against pinned values, writes `data/PROVENANCE.md` | 20 s |
-| `python cho_poc.py --run` | grouped-CV metrics, matched baseline, leakage comparison, Δ decode | 25 min |
-| `python cho_poc.py --pretrain` | self-supervised pretraining learning curves (needs `torch`) | 20 min |
+| `python cho_poc.py --run` | grouped-CV metrics, matched baseline, leakage comparison, Δ decode | 15 min |
+| `python cho_poc.py --pretrain` | self-supervised pretraining learning curves (needs `torch`) | 10 min |
 | `python cho_poc.py --figures` | slide figures from `results/` | 10 s |
 
 Add `--quick` for a smoke run with a smaller model grid.
