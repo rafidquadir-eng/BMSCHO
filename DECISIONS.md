@@ -129,3 +129,26 @@ Running log of every autonomous choice. Times are UTC. Newest entries at the bot
 ### 2026-11-15 05:28 — What is and is not committed
 - **Committed:** code, figures, and result tables. `results/culture_map.csv` and `results/oof_predictions.csv` include each array's Qp, temperature and growth rate, copied from public GEO metadata, because a reviewer needs them to check the predictions and the grouping.
 - **Not committed:** the expression matrix, the platform file, gene sets, any credential, key or host address. `raw/` and `data/*` (except `PROVENANCE.md`) are git-ignored; `git grep` for the instance address and key name returns nothing.
+
+---
+
+# Phase 2 — multi-modal extension (branch `poc/multimodal`)
+
+Times in this section are read from the system clock (UTC) when the entry is written.
+
+### 2026-11-15 10:04 UTC — P1: what Yao et al. 2021 actually published
+- **Found:** Full text and supplement retrieved from Europe PMC (PMC8704136; MDPI and CORE returned HTTP 403). The data availability statement reads "Not applicable". The supplement is one PDF. It contains **no per-clone metabolite table** for either library.
+- **What is public:** Table S3 — Pearson correlation of each annotated metabolite with qP and with peak VCD across the 12 clones of library 1 (day 7). Table S1 — the 34 targeted metabolites (names and MRM transitions only, no values). Figures: a 97-row heatmap at about 2 pixels per row, and scatter plots for two metabolites (aspartate, cystine) in both libraries.
+- **Decision:** (a) Run the pathway-recovery test on Table S3, as a summary-statistic test. (b) **Do not run cross-library prediction.** It needs per-clone values for more than the two metabolites the authors chose to plot after seeing their own result; a "prediction" built from those two panels would be circular. (c) Do not digitise the heatmap: the resolution cannot support per-clone values and I will not present guessed numbers as data.
+- **Consequence:** The cross-library box is marked "requires partner data". BMS holds these data.
+
+### 2026-11-15 10:04 UTC — P1 PRE-REGISTRATION (written before any pathway statistic is computed)
+- **Honest status of "blind":** I have read the paper's conclusion (alanine/aspartate/glutamate metabolism and the TCA cycle). The method below is fixed before computing, and it uses the authors' per-metabolite statistics. This is therefore a **concordance check of the Δ-style pathway ranking against the authors' own pathway analysis on the same summary data**, not an independent discovery and not a prediction.
+- **Input:** every row of Table S3 (significant or not): Pearson r between day-7 metabolite level and qP.
+- **Metabolite → KEGG compound:** case-insensitive exact match of the name against KEGG compound synonyms; unmatched names resolved by hand and listed in `results/yao_metabolite_map.csv`. Unresolvable names are dropped and counted.
+- **Pathways:** KEGG reference metabolic pathways (map00010–map00999), from the KEGG compound–pathway links. Global and overview maps (map011xx, map012xx) excluded. Eligible if ≥ 3 Table S3 metabolites are members.
+- **Statistic (Δ analogue for summary data):** mean Fisher-z of r(qP) over pathway members minus the mean over all other measured metabolites. Pathways ranked by this value, descending.
+- **Null:** 10,000 permutations of metabolite labels. One-sided p per pathway.
+- **Pre-specified targets:** map00250 (alanine, aspartate and glutamate metabolism) and map00020 (citrate cycle). Reported: rank of each among eligible pathways, per-pathway p, and a joint p for "mean rank of the two targets at least this good".
+- **Secondary, also fixed now:** the same ranking with the over-representation statistic the authors used (members among metabolites with p(qP) < 0.05, hypergeometric), to separate "the data say so" from "our statistic says so".
+- **Reported whatever the outcome.**
