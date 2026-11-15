@@ -185,7 +185,7 @@ def fig_learning_curve():
     arms = [
         ("scratch", "From scratch", ORANGE, "-", "o"),
         ("pretrained_infold", "Pretrained inside the fold", BLUE, "-", "s"),
-        ("pretrained_transductive", "Pretrained on all arrays\n(upper bound, sees test expression)", AQUA, "--", "^"),
+        ("pretrained_transductive", "Pretrained on all arrays\n(transductive: sees test expression)", AQUA, "--", "^"),
         ("pls", "PLS reference", NEUTRAL, "-", "D"),
     ]
     units = [("culture", "15 cultures held out"), ("experiment", "5 whole experiments held out")]
@@ -199,9 +199,7 @@ def fig_learning_curve():
                         markersize=9, markeredgecolor=SURFACE, markeredgewidth=1.2, capsize=4, elinewidth=1.6,
                         label=label)
         null = d[d.arm == "train_mean"]["mean"].mean()
-        ax.axhline(null, color=INK2, ls=":", lw=1.5)
-        ax.text(d.n_train_cultures.min() - 0.5, null + 0.2, "predict the training mean", color=INK2, fontsize=14,
-                va="bottom")
+        ax.axhline(null, color=INK2, ls=":", lw=2, label="Predict the training mean (no skill)")
         ax.set_title(title, fontsize=18)
         ax.set_xlabel("Labeled cultures used for training")
         ax.set_xticks(sorted(d.n_train_cultures.unique()))

@@ -108,3 +108,17 @@ Running log of every autonomous choice. Times are UTC. Newest entries at the bot
 - **Revision (v2), applied identically to every arm:** LayerNorm on `z`; input dropout 0.2 and weight decay 1e-2 during supervised training; one extra arm that freezes the in-fold encoder and fits ridge regression on `z` (a linear probe).
 - **Commitment made before v2 results exist:** v2 is final. Whatever it shows is what gets reported, and v1 is disclosed next to it. No third protocol.
 - **Risk I am accepting:** changing a protocol after seeing test results is a forking path. Disclosing both runs is the mitigation.
+
+### 2026-11-15 05:20 — Pretraining result (v2, final): no reliable gain; reported as a negative
+- **Result:** in-fold pretrained minus scratch = −0.61 RMSE with cultures held out (17 of 25 runs better; per-seed means −0.21, −0.01, +0.05, −0.64, −2.21) and −0.29 with experiments held out (11 of 20). PLS beats both networks at every size on held-out cultures.
+- **Decision:** `fig3_learning_curve.png` is titled "no consistent gain". The title is computed from the paired differences in `src/figures.py`, not typed by hand.
+- **Not done:** no further tuning of the autoencoder, no extra seeds chosen after the fact, no switch of the headline arm to the frozen-encoder probe (which did slightly better on held-out experiments).
+- **Engineering note:** the first v2 launch stalled because strong weight decay pushed weights into denormal floats, which are about 100× slower on CPU. `torch.set_flush_denormal(True)` fixed it. Values printed before and after the fix were identical.
+
+### 2026-11-15 05:25 — Figure choices
+- `fig1_scatter.png` has two panels so that the ±4.44 band is never read against the wrong samples: left is the matched subset (the head-to-head), right is all labeled arrays, labelled as a different experiment.
+- `fig1_roc.png` shows three curves (held-out cultures, experiments, families) because a single culture-grouped curve at AUC 0.97 would overstate what the model can do on a new cell line.
+- Palette: three categorical colours validated for colour-vision deficiency, plus grey for the leaky split and the PLS reference. All type ≥ 14 pt.
+
+### 2026-11-15 05:30 — Reproduction check
+- **Decision:** before shipping, clone the pushed branch into an empty directory and run `python cho_poc.py --all` there, then compare its `results/metrics.csv` with the committed one.
