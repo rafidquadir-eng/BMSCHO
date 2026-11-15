@@ -18,7 +18,7 @@ pre-registered blinded recovery tests. Start with `figures/fig0_architecture_sta
 pip install -r requirements.txt && python cho_poc.py --download && python src/run_v2.py
 ```
 
-About 30 minutes on 4 CPU cores. Phase-2 outputs: `results/metrics_v2.csv`,
+About 20 minutes on 4 CPU cores; a clean clone reproduced every phase-2 result file (see `DECISIONS.md`). Phase-2 outputs: `results/metrics_v2.csv`,
 `results/knockout_ranking.csv`, `figures/fig0_architecture_status.png`, `fig4`–`fig7`.
 
 ## Reproduce everything (phase 1)

@@ -279,3 +279,9 @@ Times in this section are read from the system clock (UTC) when the entry is wri
 - Any attempt to improve the knockout or alignment results after seeing them.
 - iCHO1766 as a predictive encoder: only 18 subsystems reach five genes on this array.
 - **Temperature-only AUC, now computed:** viability 0.44 (0.25–0.69), growth rate 0.90, viable cell density 0.75, q-lactate 0.94, q-ammonium 0.80, against 0.84, 0.98, 0.82, 0.97 and 0.93 from expression. Viability and q-ammonium are the endpoints where expression clearly adds to temperature. The rerun reproduced every earlier number.
+
+### 2026-11-15 17:24 UTC — Phase-2 reproduction check
+- **What was run:** a clean clone of `poc/multimodal`, then `python cho_poc.py --download && python src/run_v2.py`. About 20 minutes on 4 CPU cores.
+- **Outcome:** `metrics_v2.csv`, `metrics_endpoints.csv`, `knockout_ranking.csv`, `yao_pathway_ranking.csv`, `alignment_pathway_scores.csv`, `scale_format_pathways.csv`, `knockout_ground_truth.csv` and all four result JSON files matched the committed versions with zero numeric difference. Phase-1 `metrics.csv` was untouched.
+- **One difference found and fixed:** `knockout_fba.csv` had the same values in a different row order, because LP solutions carry float noise near 1e-12 and tied genes sorted differently. Ratios are now rounded to six decimals before sorting; two consecutive runs give byte-identical files, and every value still equals the frozen commit `de3fe41`.
+- **Limit:** same machine, same package versions. The public sources (Europe PMC, PRIDE, KEGG, BiGG, UniProt, GEO) are fetched live and only the phase-1 files and iCHO1766 have pinned hashes; KEGG and UniProt content can change.

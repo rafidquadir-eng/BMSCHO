@@ -86,6 +86,9 @@ def fba_deletions(processes=2):
         return pd.DataFrame({"gene_id": ids, col: np.clip(v / wt, 0, None)})
 
     out = tidy(growth, wt_growth, "growth_ratio").merge(tidy(prod, wt_prod, "igg_capacity_ratio"), on="gene_id")
+    # LP solutions carry float noise around 1e-12; round so that ties sort the same way on every run
+    out["growth_ratio"] = out["growth_ratio"].round(6)
+    out["igg_capacity_ratio"] = out["igg_capacity_ratio"].round(6)
     names = {g.id: g.name for g in model.genes}
     nrx = {g.id: len(g.reactions) for g in model.genes}
     subs = {g.id: "; ".join(sorted({r.subsystem for r in g.reactions if r.subsystem})[:4]) for g in model.genes}
@@ -108,7 +111,7 @@ def fba_deletions(processes=2):
     out["subsystems"] = out.gene_id.map(subs)
     out["tolerated"] = (out.growth_ratio >= 0.9) & (out.igg_capacity_ratio >= 0.9)
     out["tradeoff_score"] = np.where((out.igg_capacity_ratio >= 0.99) & (out.growth_ratio >= 0.2),
-                                     1 - out.growth_ratio, 0.0)
+                                     1 - out.growth_ratio, 0.0).round(6) + 0.0  # "+ 0.0" turns -0.0 into 0.0
     out = out.sort_values(["tradeoff_score", "growth_ratio", "gene_id"], ascending=[False, True, True]).reset_index(drop=True)
     out["modality"] = "mechanistic model (iCHO1766 FBA), no omics data"
     out = out[["gene_id", "symbol", "growth_ratio", "igg_capacity_ratio", "tolerated", "tradeoff_score", "n_reactions",
