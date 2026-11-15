@@ -1,0 +1,7 @@
+*.pem
+data/
+raw/
+__pycache__/
+*.gz
+*.CEL
+.env
