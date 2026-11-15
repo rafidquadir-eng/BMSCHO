@@ -1,0 +1,10 @@
+holdout_unit,n_train_cultures,paired_diff_mean,paired_diff_sd,n_seeds,seeds_where_pretrained_better
+culture,10,5.5404,2.0711,5,0
+culture,20,2.2111,1.566,5,0
+culture,30,0.9614,1.1366,5,2
+culture,40,0.8415,1.2601,5,2
+culture,47,0.5399,1.0914,5,2
+experiment,10,5.5659,3.821,5,0
+experiment,20,3.0041,1.0834,5,0
+experiment,30,2.1066,1.778,5,0
+experiment,40,0.2358,0.7515,5,2

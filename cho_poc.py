@@ -920,7 +920,8 @@ def _row(analysis, subset, cv, encoder, n_features, model, df, stats, cluster_co
                      "n_arrays": len(df), "n_cultures": df["culture"].nunique(),
                      "n_experiments": df["experiment"].nunique(),
                      "bootstrap_unit": {"group": "cv group", "culture": "culture",
-                                        "experiment": "experiment", "array": "array"}[cluster_col]})
+                                        "experiment": "experiment", "array": "array"}[cluster_col],
+                     "note": ""})
     return rows
 
 
@@ -951,6 +952,30 @@ def run_cv(D, mask, target, model, encoder, cv_name, seed=SEED):
             te = df["fold"] == f
             assert not (set(df.loc[te, "culture"]) & set(df.loc[~te, "culture"])), "culture leak"
     return df
+
+
+def covariate_baseline(meta, mask, y, cols, cv_name, seed=SEED):
+    """Predict Qp from routinely logged process variables alone (fixed small GBM)."""
+    from sklearn.ensemble import GradientBoostingRegressor
+    from sklearn.impute import SimpleImputer
+    from sklearn.pipeline import Pipeline
+
+    idx = np.where(mask)[0]
+    col, n_splits, scheme, _ = CV_SCHEMES[cv_name]
+    cultures = meta["culture_id"].to_numpy()[idx]
+    experiments = meta["experiment_id"].to_numpy()[idx]
+    groups = {"culture": cultures, "experiment": experiments}[col]
+    C = meta[cols].to_numpy(dtype=float)[idx]
+    yy = y[idx]
+    pred, null, fold = np.full(len(idx), np.nan), np.full(len(idx), np.nan), np.full(len(idx), -1)
+    for f, (tr, te) in enumerate(make_splits(groups, n_splits, seed)):
+        assert_no_group_leak(groups, tr, te)
+        m = Pipeline([("imp", SimpleImputer(strategy="median")),
+                      ("m", GradientBoostingRegressor(n_estimators=200, max_depth=2, learning_rate=0.05,
+                                                      subsample=0.8, random_state=seed))]).fit(C[tr], yy[tr])
+        pred[te], null[te], fold[te] = m.predict(C[te]), yy[tr].mean(), f
+    return pd.DataFrame({"y": yy, "pred": pred, "null": null, "fold": fold, "group": groups,
+                         "culture": cultures, "experiment": experiments, "array": meta.index.to_numpy()[idx]})
 
 
 def n_features_of(D, encoder):
@@ -1024,6 +1049,59 @@ def run_analysis(n_boot=2000, quick=False):
     for cv_name in ["array_kfold_LEAKY", "leave_one_expression_cluster_out"]:
         do("leakage", "all_labeled", labeled, y, "pls", "raw", cv_name)
         do("leakage", "all_labeled_terciles", cls_mask, ycls, "logit", "raw", cv_name)
+
+    # ---- 4a. array-level vs culture-grouped over 10 random partitions ----
+    # One partition is noisy at this sample size, so this comparison is repeated.
+    # Point estimate: mean over the 10 partitions. Interval: cluster bootstrap over
+    # cultures of the stacked out-of-fold predictions (cultures are the independent
+    # unit whichever way the folds were cut).
+    print("leakage comparison: 10 repeated partitions (array-level vs culture-grouped)")
+    for cv_name in ["array_kfold_LEAKY", "culture_grouped_5fold"]:
+        for subset_name, mask, target, model, stat in [("all_labeled", labeled, y, "pls", "rmse"),
+                                                        ("all_labeled_terciles", cls_mask, ycls, "logit", "auc")]:
+            reps = pd.concat([run_cv(D, mask, target, model, "raw", cv_name, seed=SEED + 1000 * (rep + 1)).assign(rep=rep)
+                              for rep in range(10)])
+            fn = rmse if stat == "rmse" else auc
+            per_rep = [fn(g.y, g.pred) for _, g in reps.groupby("rep")]
+            ci = cluster_bootstrap(reps, {stat: lambda d: float(np.mean([fn(g.y, g.pred) for _, g in d.groupby("rep")]))},
+                                   cluster_col="culture", n_boot=max(200, n_boot // 4))[stat]
+            rows.append({"analysis": "leakage_repeated_partitions", "subset": subset_name, "cv_scheme": cv_name,
+                         "encoder": "raw", "n_features": n_features_of(D, "raw"), "model": model,
+                         "metric": stat, "value": round(ci[0], 4), "ci_lo": round(ci[1], 4), "ci_hi": round(ci[2], 4),
+                         "n_arrays": int(mask.sum()), "n_cultures": int(meta.loc[mask, "culture_id"].nunique()),
+                         "n_experiments": int(meta.loc[mask, "experiment_id"].nunique()),
+                         "bootstrap_unit": "culture",
+                         "note": f"mean of 10 random partitions; range across partitions "
+                                 f"{min(per_rep):.3f} to {max(per_rep):.3f}"})
+            print(f"  {cv_name} {model}: {stat}={ci[0]:.3f} [{ci[1]:.3f}, {ci[2]:.3f}] "
+                  f"partition range=[{min(per_rep):.3f}, {max(per_rep):.3f}]")
+
+    # ---- 4c. matched subset, secondary views (not the head-to-head) ----
+    print("matched subset: secondary")
+    for cv_name in ["culture_grouped_5fold", "leave_one_experiment_out"]:
+        do("matched_secondary", "matched_stationary_tempshift", matched, y, "enet", "raw", cv_name)
+        # the full-data model's out-of-fold predictions, scored on the matched arrays only
+        full = preds[f"full_regression|all_labeled|{cv_name}|raw|pls"]
+        sub = full[full["array"].isin(meta.index[matched])].copy()
+        new_rows = _row("matched_secondary_trained_on_all_labeled", "matched_stationary_tempshift", cv_name, "raw",
+                        n_features_of(D, "raw"), "pls", sub, REG_STATS, CV_SCHEMES[cv_name][3], n_boot)
+        for r in new_rows:
+            r["note"] = "model trained on all labeled arrays outside the fold; scored on matched arrays only"
+        rows.extend(new_rows)
+
+    # ---- 4d. adversarial baseline: process covariates only, no expression ----
+    print("process-covariate baseline (no expression)")
+    cov_cols = ["temperature", "growth rate", "cell density", "cell viability"]
+    for cv_name in ["culture_grouped_5fold", "leave_one_experiment_out"]:
+        df = covariate_baseline(meta, labeled, y, cov_cols, cv_name)
+        new_rows = _row("covariate_baseline", "all_labeled", cv_name, "process covariates", len(cov_cols), "gbm",
+                        df, REG_STATS, CV_SCHEMES[cv_name][3], n_boot)
+        for r in new_rows:
+            r["note"] = "features: " + ", ".join(cov_cols) + " (median-imputed in fold); no expression data"
+        rows.extend(new_rows)
+        preds[f"covariate_baseline|all_labeled|{cv_name}|covariates|gbm"] = df.assign(
+            key=f"covariate_baseline|all_labeled|{cv_name}|covariates|gbm")
+        print(f"  {cv_name}: rmse={rmse(df.y, df.pred):.3f}")
 
     # ---- 4b. sensitivity: the two QC-excluded arrays put back, labels as deposited ----
     print("sensitivity: no QC exclusion")
@@ -1118,12 +1196,28 @@ def run_delta(D, labeled, n_boot=2000):
     gene_delta = Xz[y >= hi].mean(axis=0) - Xz[y <= lo].mean(axis=0)
     sym = np.array([s if isinstance(s, str) else "" for s in D["symbols"]])
 
+    # competitive null: is |delta| larger than for random probe sets of the same size?
+    # Cell-line identity makes many arbitrary gene sets differ between high- and
+    # low-Qp arrays, so a bootstrap CI that excludes zero is not enough.
+    rng = np.random.default_rng(SEED)
+    annotated = np.where(sym != "")[0]
+    top, bot = y >= hi, y <= lo
+    p_random = []
+    for m, d in zip(membership, d_cult["delta"]):
+        null_d = np.empty(1000)
+        for b in range(1000):
+            sc = Xz[:, rng.choice(annotated, size=len(m), replace=False)].mean(axis=1)
+            sc = (sc - sc.mean()) / sc.std()
+            null_d[b] = sc[top].mean() - sc[bot].mean()
+        p_random.append((1 + np.sum(np.abs(null_d) >= abs(d))) / 1001)
+
     st = stats.set_index("gene_set")
     out = d_cult.rename(columns={"feature": "pathway", "ci_lo": "ci_lo_culture_boot", "ci_hi": "ci_hi_culture_boot"})
     out = out.drop(columns="ci_excludes_zero")
     out["ci_lo_experiment_boot"] = d_exp["ci_lo"].to_numpy()
     out["ci_hi_experiment_boot"] = d_exp["ci_hi"].to_numpy()
     out["robust_to_experiment_bootstrap"] = d_exp["ci_excludes_zero"].to_numpy()
+    out["p_vs_random_gene_sets"] = p_random
     out["delta_within_experiment"] = d_within["delta"].to_numpy()
     out["within_ci_lo"] = d_within["ci_lo"].to_numpy()
     out["within_ci_hi"] = d_within["ci_hi"].to_numpy()
@@ -1149,11 +1243,12 @@ def run_delta(D, labeled, n_boot=2000):
             "n_experiments_within_experiment_variant": int(len(np.unique(exps[multi])))}
     (RESULTS / "delta_info.json").write_text(json.dumps(info, indent=2))
     print("delta decode: top 12 pathways")
-    print(out[["rank", "pathway", "delta", "ci_lo_culture_boot", "ci_hi_culture_boot",
+    print(out[["rank", "pathway", "delta", "ci_lo_culture_boot", "ci_hi_culture_boot", "p_vs_random_gene_sets",
                "robust_to_experiment_bootstrap", "delta_within_experiment",
                "within_experiment_ci_excludes_zero", "wgcna_theme"]].head(12).to_string(index=False))
     print("delta decode: pre-specified WGCNA themes")
     print(out.loc[out["wgcna_theme"] != "", ["rank", "pathway", "delta", "ci_lo_culture_boot", "ci_hi_culture_boot",
+                                              "p_vs_random_gene_sets",
                                               "robust_to_experiment_bootstrap", "delta_within_experiment",
                                               "within_experiment_ci_excludes_zero", "genes_on_array"]].to_string(index=False))
     return out
