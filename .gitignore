@@ -1,5 +1,6 @@
 *.pem
-data/
+data/*
+!data/PROVENANCE.md
 raw/
 __pycache__/
 *.gz
