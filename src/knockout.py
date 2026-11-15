@@ -20,6 +20,7 @@ import cho_poc as cp  # noqa: E402
 RESULTS = ROOT / "results"
 ICHO_URL = "https://bigg.ucsd.edu/static/models/iCHOv1.json"
 ICHO_PATH = ROOT / "raw" / "icho" / "iCHOv1.json"
+RAW_KEGG = ROOT / "raw" / "kegg"
 ICHO_SHA256 = "0b786b81c08142be3a88f33b366d4e0f05d8689baad877e5375a9fa843a5f87c"
 
 
@@ -88,14 +89,30 @@ def fba_deletions(processes=2):
     names = {g.id: g.name for g in model.genes}
     nrx = {g.id: len(g.reactions) for g in model.genes}
     subs = {g.id: "; ".join(sorted({r.subsystem for r in g.reactions if r.subsystem})[:4]) for g in model.genes}
-    out["symbol"] = out.gene_id.map(names).str.upper()
+    sym = out.gene_id.map(names).str.upper()
+    # model gene names that are bare LOC identifiers get the KEGG symbol where KEGG has one
+    kegg = RAW_KEGG / "cge_genes.txt"
+    if not kegg.exists():
+        import requests
+
+        kegg.parent.mkdir(parents=True, exist_ok=True)
+        kegg.write_bytes(requests.get("https://rest.kegg.jp/list/cge", timeout=300).content)
+    ks = {}
+    for line in kegg.read_text().splitlines():
+        p = line.split("\t")
+        if ";" in p[-1]:
+            ks[p[0].replace("cge:", "")] = p[-1].split(";")[0].split(",")[0].strip().upper()
+    is_loc = sym.isna() | sym.astype(str).str.startswith("LOC")
+    out["symbol"] = [ks.get(g, s) if loc and ks.get(g) else s for g, s, loc in zip(out.gene_id, sym, is_loc)]
     out["n_reactions"] = out.gene_id.map(nrx)
     out["subsystems"] = out.gene_id.map(subs)
     out["tolerated"] = (out.growth_ratio >= 0.9) & (out.igg_capacity_ratio >= 0.9)
     out["tradeoff_score"] = np.where((out.igg_capacity_ratio >= 0.99) & (out.growth_ratio >= 0.2),
                                      1 - out.growth_ratio, 0.0)
-    out = out.sort_values(["tradeoff_score", "growth_ratio"], ascending=[False, True]).reset_index(drop=True)
+    out = out.sort_values(["tradeoff_score", "growth_ratio", "gene_id"], ascending=[False, True, True]).reset_index(drop=True)
     out["modality"] = "mechanistic model (iCHO1766 FBA), no omics data"
+    out = out[["gene_id", "symbol", "growth_ratio", "igg_capacity_ratio", "tolerated", "tradeoff_score", "n_reactions",
+               "subsystems", "modality"]]
     info = {"wt_growth_per_h": float(wt_growth), "wt_igg_flux": float(wt_prod), "n_genes": int(len(out)),
             "n_tolerated": int(out.tolerated.sum()), "n_lethal_growth_lt_0.01": int((out.growth_ratio < 0.01).sum()),
             "n_tradeoff_positive": int((out.tradeoff_score > 1e-6).sum())}

@@ -216,3 +216,25 @@ Times in this section are read from the system clock (UTC) when the entry is wri
 - **Also reported:** the gene-level Spearman correlation for genes measured in both modalities in leg 1. If genes already agree, the pathway basis is not what creates the agreement, and I will say so.
 - **Not run, with reason:** the hamster proteome atlas (tissues and cell lines, no contrast shared with any other dataset here); Metabolomics Workbench (one Chinese hamster study, ST001177, not examined for lack of time); any three-way fusion (no sample has more than one modality).
 - **A null result is reported as a null result.**
+
+### 2026-11-15 10:18 UTC — P4 RESULT: pathway-level alignment is not demonstrated by the pre-registered test
+- **Proteomics processing:** 6,959 protein groups; 4,207 quantified in ≥ 3 of 4 samples per group; 87% mapped to a gene symbol (1,488 from the deposited gene column, 2,178 by protein-name match; UniProt has retired most of the accessions the deposit used); 3,303 unique genes. 557 genes are shared with the array.
+- **Leg 1, pre-registered primary (all temperatures, within experiment; 205 arrays, 22 experiments):**
+  - iCHO1766 subsystems: Spearman **0.20** over only **18** testable subsystems, p = **0.24**.
+  - KEGG hamster pathways: Spearman **0.16** over 266 pathways, p = **0.13**.
+  - Neither is significant.
+- **Gene level, no pathway basis:** Spearman **0.18** over 557 shared genes, p < 0.0001. Transcript and protein contrasts do agree, weakly, gene by gene. The pathway projection did not strengthen that agreement, so the pathway basis cannot be credited with it.
+- **Leg 1, sensitivity (37 °C arrays only; 69 arrays, 11 experiments):** KEGG Spearman **0.34**, p < 0.0001; iCHO1766 Spearman 0.36, p = 0.08. This variant matches the proteomics design better (no temperature shift) and I said so before running it, but it was registered as a sensitivity run and is reported as one.
+- **Leg 2 (Qp association, transcriptomics vs Yao metabolomics):** Spearman −0.12 (iCHO1766, 10 subsystems) and −0.08 (KEGG, 40 pathways); p = 0.63 and 0.66. Null, as expected from the lack of contrast in Yao's table.
+- **Reading:** the primary test is a null. There is a real but weak transcript–protein agreement for the growth-phase contrast, visible at gene level and, once the temperature confound is removed, at KEGG pathway level. The iCHO1766 basis is too sparse on this array to test: 18 subsystems.
+- **Why iCHO1766 is sparse here:** it covers metabolism only (1,766 genes) and the array carries 1,707 genes, so few subsystems reach 5 genes in both modalities.
+
+### 2026-11-15 10:21 UTC — P5: what exists for scale risk, and a pre-registration
+- **GSE30321 has no scale or format variable.** The deposit carries nine per-sample variables (growth rate, temperature, q-ammonia, q-lactate, viability, seeding density, cell density, titre, Qp). The summary says samples span "a wide range of process scales and formats", but that information was not deposited. A small-scale-to-large-scale degradation test cannot be run on it.
+- **Gao et al. 2016** (*Biotechnol J* 11:1190; hypoxia on scale-up to 5,000 L; authors include BMS staff) is closed access with no deposited data that I could find. Not usable.
+- **Found instead:** GSE104787 — one IgG-producing CHO-K1 line grown from the same pre-culture in 3 uncontrolled shake flasks and 3 controlled bioreactors, arrays on days 2, 4 and 5 (18 arrays, genome-wide Affymetrix CHO array, 16,485 gene symbols). This is a **culture-format contrast, not a scale contrast**, and it has 6 culture units, so no predictive metric is possible.
+- **PRE-REGISTRATION (before computing):**
+  - Δ per gene = mean z-scored expression in bioreactor arrays minus flask arrays, after removing each day's mean. Hallmark pathway score = mean Δ of member genes (≥ 10 genes on the array). Pathways ranked by |score|. Null: 1,000 random gene sets of the same size.
+  - **Target 1:** HALLMARK_HYPOXIA. I know from its title that Gao et al. report hypoxia at 5,000 L. Whether oxygen biology also separates a flask from a benchtop bioreactor is a different question; a hit would be suggestive only, and a miss says nothing about Gao et al.
+  - **Target 2:** whatever the dataset's own publication concluded. I have not read it. The Hallmark ranking is committed first, then the abstract is fetched and compared.
+  - The scale-risk box stays "requires partner data" whatever this shows.

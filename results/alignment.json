@@ -1,0 +1,110 @@
+{
+  "bases": {
+    "iCHO1766 subsystems": {
+      "gene_sets": 103,
+      "compound_sets": 106
+    },
+    "KEGG pathways (Chinese hamster)": {
+      "gene_sets": 361,
+      "compound_sets": 294
+    }
+  },
+  "proteomics": {
+    "protein_groups": 6959,
+    "quantified_3_of_4_per_group": 4207,
+    "mapping": {
+      "protein name match": 2178,
+      "deposited gene column": 1488,
+      "unmapped": 541
+    },
+    "mapped_fraction": 0.8714048015212741,
+    "unique_genes": 3303,
+    "n_up_exponential_t_gt_2": 1707,
+    "n_up_stationary_t_lt_-2": 801
+  },
+  "leg1_growth_phase_transcriptomics_vs_proteomics": {
+    "all temperatures, within experiment (pre-registered primary)": {
+      "transcriptomics": {
+        "n_arrays": 205,
+        "n_experiments": 22
+      },
+      "gene_level": {
+        "n_genes": 557,
+        "spearman": 0.1809,
+        "p_perm": 9.999000099990002e-05
+      },
+      "iCHO1766 subsystems": {
+        "n_pathways": 18,
+        "spearman": 0.195,
+        "p_perm": 0.23777622237776222,
+        "null_95": [
+          -0.523,
+          0.521
+        ]
+      },
+      "KEGG pathways (Chinese hamster)": {
+        "n_pathways": 266,
+        "spearman": 0.1566,
+        "p_perm": 0.13138686131386862,
+        "null_95": [
+          -0.246,
+          0.259
+        ]
+      }
+    },
+    "37 C arrays only, within experiment (sensitivity)": {
+      "transcriptomics": {
+        "n_arrays": 69,
+        "n_experiments": 11
+      },
+      "gene_level": {
+        "n_genes": 557,
+        "spearman": 0.1831,
+        "p_perm": 9.999000099990002e-05
+      },
+      "iCHO1766 subsystems": {
+        "n_pathways": 18,
+        "spearman": 0.3581,
+        "p_perm": 0.07779222077792221,
+        "null_95": [
+          -0.494,
+          0.48
+        ]
+      },
+      "KEGG pathways (Chinese hamster)": {
+        "n_pathways": 266,
+        "spearman": 0.3381,
+        "p_perm": 9.999000099990002e-05,
+        "null_95": [
+          -0.169,
+          0.178
+        ]
+      }
+    }
+  },
+  "leg2_qp_transcriptomics_vs_metabolomics": {
+    "transcriptomics": {
+      "n_arrays": 167,
+      "n_experiments": 19
+    },
+    "metabolites": 92,
+    "iCHO1766 subsystems": {
+      "n_pathways": 10,
+      "spearman": -0.1152,
+      "p_perm": 0.6267373262673732,
+      "null_95": [
+        -0.636,
+        0.624
+      ]
+    },
+    "KEGG pathways (Chinese hamster)": {
+      "n_pathways": 40,
+      "spearman": -0.0808,
+      "p_perm": 0.6571342865713429,
+      "null_95": [
+        -0.377,
+        0.366
+      ]
+    }
+  }
+}
