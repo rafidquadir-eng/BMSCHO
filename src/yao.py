@@ -189,6 +189,13 @@ def main():
     (RESULTS / "yao_info.json").write_text(json.dumps(info, indent=2))
     print(json.dumps(info, indent=2))
     print(out[["rank_delta", "name", "n_measured", "n_sig_qp", "mean_r_qp", "delta_z", "p_perm", "rank_ora", "p_ora"]].to_string(index=False))
+    # Post hoc sensitivity (NOT pre-registered): only pathways annotated in Chinese hamster.
+    _get("https://rest.kegg.jp/list/pathway/cge", RAW / "kegg_pathway_cge.txt")
+    cge = {line.split("\t")[0].replace("cge", "map") for line in (RAW / "kegg_pathway_cge.txt").read_text().splitlines()}
+    out_h, info_h, _ = pathway_rank(df, {c: {p for p in ps if p in cge} for c, ps in c2p.items()}, pname)
+    out_h[num] = out_h[num].round(4)
+    out_h.to_csv(RESULTS / "yao_pathway_ranking_hamster_only.csv", index=False)
+    (RESULTS / "yao_info_hamster_only.json").write_text(json.dumps(info_h, indent=2))
     return out, info
 
 
