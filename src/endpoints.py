@@ -33,9 +33,9 @@ SCHEME_UNIT = {"leave_one_experiment_out": "experiment", "leave_one_expression_c
                "culture_grouped_5fold": "culture"}
 
 
-def temperature_baseline(meta, mask, y, cv_name, seed=cp.SEED):
-    """Linear model on culture temperature alone, same split."""
-    from sklearn.linear_model import LinearRegression
+def temperature_baseline(meta, mask, y, cv_name, seed=cp.SEED, classify=False):
+    """Linear (or logistic) model on culture temperature alone, same split."""
+    from sklearn.linear_model import LinearRegression, LogisticRegression
 
     idx = np.where(mask)[0]
     col, n_splits, scheme, _ = cp.CV_SCHEMES[cv_name]
@@ -47,7 +47,13 @@ def temperature_baseline(meta, mask, y, cv_name, seed=cp.SEED):
     pred, null, fold = np.full(len(idx), np.nan), np.full(len(idx), np.nan), np.full(len(idx), -1)
     for f, (tr, te) in enumerate(cp.make_splits(groups, n_splits, seed)):
         cp.assert_no_group_leak(groups, tr, te)
-        pred[te] = LinearRegression().fit(T[tr], yy[tr]).predict(T[te])
+        if classify:
+            if len(np.unique(yy[tr])) < 2:
+                pred[te] = yy[tr].mean()
+            else:
+                pred[te] = LogisticRegression().fit(T[tr], yy[tr].astype(int)).predict_proba(T[te])[:, 1]
+        else:
+            pred[te] = LinearRegression().fit(T[tr], yy[tr]).predict(T[te])
         null[te], fold[te] = yy[tr].mean(), f
     return pd.DataFrame({"y": yy, "pred": pred, "null": null, "fold": fold, "group": groups, "culture": cultures,
                          "experiment": exps, "array": meta.index.to_numpy()[idx]})
@@ -98,6 +104,9 @@ def run_endpoint(args):
             df = cp.run_cv(D, cmask, ycls, "logit", enc, cv)
             add(df, cv, enc, cp.n_features_of(D, enc), "logit", cp.CLF_STATS,
                 note=f"top vs bottom tercile; cut-offs {lo:.4g} / {hi:.4g}")
+        if cv != "culture_grouped_5fold":
+            add(temperature_baseline(meta, cmask, ycls, cv, classify=True), cv, "temperature only", 1, "logit", cp.CLF_STATS,
+                note="reference: culture temperature alone, no expression; top vs bottom tercile")
     print(f"  {label}: n={int(mask.sum())} arrays, {meta.loc[mask, 'experiment_id'].nunique()} experiments, "
           f"{meta.loc[mask, 'expression_cluster'].nunique()} families ({time.time() - t0:.0f}s)", flush=True)
     return rows, pd.concat(preds)
