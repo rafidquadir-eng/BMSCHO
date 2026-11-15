@@ -1,0 +1,11 @@
+{
+  "metabolites_in_table_s3": 92,
+  "mapped_to_kegg": 92,
+  "unique_kegg": 92,
+  "eligible_pathways": 53,
+  "n_sig_qp": 54,
+  "frac_positive_r": 0.967391304347826,
+  "mean_rank_targets": 10.5,
+  "p_joint": 0.061193880611938804,
+  "expected_mean_rank_under_null": 27.2393
+}

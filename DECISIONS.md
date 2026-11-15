@@ -152,3 +152,21 @@ Times in this section are read from the system clock (UTC) when the entry is wri
 - **Pre-specified targets:** map00250 (alanine, aspartate and glutamate metabolism) and map00020 (citrate cycle). Reported: rank of each among eligible pathways, per-pathway p, and a joint p for "mean rank of the two targets at least this good".
 - **Secondary, also fixed now:** the same ranking with the over-representation statistic the authors used (members among metabolites with p(qP) < 0.05, hypergeometric), to separate "the data say so" from "our statistic says so".
 - **Reported whatever the outcome.**
+
+### 2026-11-15 10:06 UTC — P1 RESULT (pre-registered test, reported as it came out)
+- **Input:** 92 metabolites parsed from Table S3 (the paper states 97 unique features; 92 rows are in the table). All 92 mapped to KEGG compounds. 53 KEGG metabolic pathways had ≥ 3 measured members.
+- **Citrate cycle:** rank **6 of 53** by the Δ statistic (permutation p = 0.020); rank **1 of 53** by the authors' own over-representation statistic.
+- **Alanine, aspartate and glutamate metabolism:** rank **15 of 53** (p = 0.050); rank 7 by over-representation.
+- **Joint test:** mean rank of the two targets 10.5 against 27.2 expected by chance, **p = 0.061**. This does not reach 0.05.
+- **Reading:** the TCA cycle is recovered; alanine/aspartate/glutamate metabolism is in the top third, not at the top. The two targets do not "come out on top" under the pre-registered statistic. Ranks 1–5 went to small pathways (3–4 measured metabolites each: terpenoid backbone, butanoate, C5-branched dibasic acid, nicotinate, glutathione).
+- **Why the ranking is flat:** 97% of the metabolites correlate positively with qP, so every pathway has a high mean r (0.38–0.85). A competitive statistic has little contrast to work with.
+- **Post hoc sensitivity (not pre-registered):** restricting to the 38 pathways annotated in Chinese hamster gives TCA rank 6, alanine/aspartate/glutamate rank 13, joint p = 0.10. The pre-registered list included KEGG reference maps that do not exist in mammals (for example carbapenem biosynthesis); that was a flaw in my pre-registration and I am not using the sensitivity run to rescue the result.
+- **Not done:** no cross-library prediction (see the entry above).
+
+### 2026-11-15 10:06 UTC — P3 design: other endpoints on GSE30321
+- **Endpoints:** cell viability, growth rate, cell density, q-lactate, q-ammonium, as deposited in GEO. Modality: transcriptomics only.
+- **Splits:** leave-one-experiment-out is the headline; leave-one-expression-family-out is the strict check; culture-grouped 5-fold is shown only next to them. The leak assertion runs on every split.
+- **Why the family split matters more here than for Qp:** many arrays labeled for these endpoints sit in experiment blocks whose culture assignment I flagged as ambiguous in phase 1. Experiment blocks are firmer than culture IDs, and the family grouping is derived from expression alone, so it does not depend on my reading of the metadata.
+- **The two arrays with offset metadata (248, 251) are excluded from every endpoint**, since all of their deposited variables are suspect, not just Qp.
+- **Extra reference:** a temperature-only linear model under the same split. Growth rate and viability move with the temperature shift, so "expression predicts growth rate" has to beat "the culture was at 31 °C".
+- **Pipeline otherwise unchanged:** raw (1,000 probesets) and pathway (44 Hallmark) encoders; PLS, elastic net, gradient boosting; logistic regression for top-vs-bottom tercile; nested hyperparameters; 2,000-resample cluster bootstrap on the split unit.
