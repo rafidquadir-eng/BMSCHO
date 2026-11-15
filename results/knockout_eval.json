@@ -1,0 +1,506 @@
+{
+  "ground_truth": {
+    "ko_kd_positive_genes": 60,
+    "ko_kd_positive_single_target": 40,
+    "ko_kd_no_benefit_genes": 10,
+    "oe_positive_genes": 153
+  },
+  "route_a_coverage": {
+    "array_genes": 1707,
+    "ko_positives_on_array": 14,
+    "ko_positives_total": 60,
+    "oe_positives_on_array": 37,
+    "oe_positives_total": 153,
+    "ko_on_array": [
+      "BRCA1",
+      "CFL1",
+      "CYP1A2",
+      "DAG1",
+      "ELP4",
+      "FUT8",
+      "GLUL",
+      "LDHA",
+      "MYC",
+      "NEU2",
+      "NID1",
+      "PDK1",
+      "PDK2",
+      "TSC2"
+    ],
+    "named_in_brief_on_array": [
+      "FUT8",
+      "B4GALT1",
+      "GLUL",
+      "LDHA",
+      "NEU2"
+    ],
+    "named_in_brief_not_on_array": [
+      "BAX",
+      "BAK1",
+      "BOK",
+      "BCKDHA",
+      "BCKDHB",
+      "C1GALT1C1",
+      "NEU1",
+      "NEU3"
+    ]
+  },
+  "route_a_knockout_end_within_experiment": {
+    "k100": {
+      "n_universe": 1707,
+      "n_positives": 14,
+      "k": 100,
+      "hits_in_top_k": 2,
+      "expected_hits": 0.82,
+      "p_hits": 0.19148085191480851,
+      "auc": 0.4987,
+      "p_auc": 0.5049495050494951,
+      "auc_null_95": [
+        0.348,
+        0.649
+      ]
+    },
+    "k50": {
+      "n_universe": 1707,
+      "n_positives": 14,
+      "k": 50,
+      "hits_in_top_k": 2,
+      "expected_hits": 0.41,
+      "p_hits": 0.06229377062293771,
+      "auc": 0.4987,
+      "p_auc": 0.5049495050494951,
+      "auc_null_95": [
+        0.348,
+        0.649
+      ]
+    }
+  },
+  "route_a_knockout_end_raw_delta": {
+    "k100": {
+      "n_universe": 1707,
+      "n_positives": 14,
+      "k": 100,
+      "hits_in_top_k": 0,
+      "expected_hits": 0.82,
+      "p_hits": 1.0,
+      "auc": 0.393,
+      "p_auc": 0.9165083491650835,
+      "auc_null_95": [
+        0.347,
+        0.653
+      ]
+    }
+  },
+  "route_a_knockout_end_single_target_only": {
+    "k100": {
+      "n_universe": 1707,
+      "n_positives": 10,
+      "k": 100,
+      "hits_in_top_k": 2,
+      "expected_hits": 0.59,
+      "p_hits": 0.1161883811618838,
+      "auc": 0.5265,
+      "p_auc": 0.391960803919608,
+      "auc_null_95": [
+        0.32,
+        0.675
+      ]
+    }
+  },
+  "route_a_overexpression_end_within_experiment": {
+    "k100": {
+      "n_universe": 1707,
+      "n_positives": 37,
+      "k": 100,
+      "hits_in_top_k": 2,
+      "expected_hits": 2.17,
+      "p_hits": 0.6561343865613438,
+      "auc": 0.3942,
+      "p_auc": 0.9875012498750125,
+      "auc_null_95": [
+        0.404,
+        0.592
+      ]
+    },
+    "k50": {
+      "n_universe": 1707,
+      "n_positives": 37,
+      "k": 50,
+      "hits_in_top_k": 2,
+      "expected_hits": 1.08,
+      "p_hits": 0.293970602939706,
+      "auc": 0.3942,
+      "p_auc": 0.9875012498750125,
+      "auc_null_95": [
+        0.404,
+        0.592
+      ]
+    }
+  },
+  "route_a_overexpression_end_raw_delta": {
+    "k100": {
+      "n_universe": 1707,
+      "n_positives": 37,
+      "k": 100,
+      "hits_in_top_k": 2,
+      "expected_hits": 2.17,
+      "p_hits": 0.6514348565143485,
+      "auc": 0.4159,
+      "p_auc": 0.9599040095990401,
+      "auc_null_95": [
+        0.406,
+        0.596
+      ]
+    }
+  },
+  "route_a_named_ranks": {
+    "GLUL": {
+      "knockout_rank": 29,
+      "of": 1707,
+      "delta_within": -1.0657,
+      "class": "KO/KD raised titer or qP"
+    },
+    "DAG1": {
+      "knockout_rank": 30,
+      "of": 1707,
+      "delta_within": -1.0652,
+      "class": "KO/KD raised titer or qP"
+    },
+    "LDHA": {
+      "knockout_rank": 182,
+      "of": 1707,
+      "delta_within": -0.7091,
+      "class": "KO/KD raised titer or qP"
+    },
+    "NID1": {
+      "knockout_rank": 192,
+      "of": 1707,
+      "delta_within": -0.6873,
+      "class": "KO/KD raised titer or qP"
+    },
+    "B4GALT1": {
+      "knockout_rank": 367,
+      "of": 1707,
+      "delta_within": -0.466,
+      "class": ""
+    },
+    "TSC2": {
+      "knockout_rank": 656,
+      "of": 1707,
+      "delta_within": -0.2224,
+      "class": "KO/KD raised titer or qP"
+    },
+    "PDK2": {
+      "knockout_rank": 677,
+      "of": 1707,
+      "delta_within": -0.2094,
+      "class": "KO/KD raised titer or qP"
+    },
+    "NEU2": {
+      "knockout_rank": 856,
+      "of": 1707,
+      "delta_within": -0.0826,
+      "class": "KO/KD raised titer or qP"
+    },
+    "CYP1A2": {
+      "knockout_rank": 1146,
+      "of": 1707,
+      "delta_within": 0.1781,
+      "class": "KO/KD raised titer or qP"
+    },
+    "PDK1": {
+      "knockout_rank": 1165,
+      "of": 1707,
+      "delta_within": 0.2006,
+      "class": "KO/KD raised titer or qP"
+    },
+    "FUT8": {
+      "knockout_rank": 1197,
+      "of": 1707,
+      "delta_within": 0.2228,
+      "class": "KO/KD raised titer or qP"
+    },
+    "CYFIP1": {
+      "knockout_rank": 1243,
+      "of": 1707,
+      "delta_within": 0.2787,
+      "class": "KO/KD no benefit"
+    },
+    "BRCA1": {
+      "knockout_rank": 1321,
+      "of": 1707,
+      "delta_within": 0.3952,
+      "class": "KO/KD raised titer or qP"
+    },
+    "CFL1": {
+      "knockout_rank": 1347,
+      "of": 1707,
+      "delta_within": 0.4206,
+      "class": "KO/KD raised titer or qP"
+    },
+    "ELP4": {
+      "knockout_rank": 1488,
+      "of": 1707,
+      "delta_within": 0.6121,
+      "class": "KO/KD raised titer or qP"
+    },
+    "MYC": {
+      "knockout_rank": 1700,
+      "of": 1707,
+      "delta_within": 1.2261,
+      "class": "KO/KD raised titer or qP"
+    }
+  },
+  "route_b_coverage": {
+    "model_genes": 1766,
+    "ko_positives_in_model": 17,
+    "ko_in_model": [
+      "BCAT1",
+      "BCKDHA",
+      "BCKDHB",
+      "DGKI",
+      "DHFR",
+      "DNMT1",
+      "DNMT3A",
+      "FUT8",
+      "GLUL",
+      "LDHA",
+      "NDUFA13",
+      "NEU1",
+      "NEU2",
+      "PKM",
+      "PNP",
+      "SETDB1",
+      "XYLT2"
+    ],
+    "named_in_brief_in_model": [
+      "FUT8",
+      "B4GALT1",
+      "BCKDHA",
+      "BCKDHB",
+      "GLUL",
+      "LDHA",
+      "NEU1",
+      "NEU2"
+    ],
+    "named_in_brief_not_in_model": [
+      "BAX",
+      "BAK1",
+      "BOK",
+      "C1GALT1C1",
+      "NEU3"
+    ]
+  },
+  "route_b_tolerance": {
+    "share_tolerated_ko_positives": 0.9411764705882353,
+    "share_tolerated_all_model_genes": 0.9280860702151755,
+    "calls": {
+      "BCKDHA": {
+        "growth_ratio": 1.0,
+        "igg_capacity_ratio": 1.0,
+        "tolerated": true,
+        "tradeoff_score": 0.0
+      },
+      "LDHA": {
+        "growth_ratio": 1.0,
+        "igg_capacity_ratio": 1.0,
+        "tolerated": true,
+        "tradeoff_score": 0.0
+      },
+      "DNMT1": {
+        "growth_ratio": 1.0,
+        "igg_capacity_ratio": 1.0,
+        "tolerated": true,
+        "tradeoff_score": 0.0
+      },
+      "BCKDHB": {
+        "growth_ratio": 1.0,
+        "igg_capacity_ratio": 1.0,
+        "tolerated": true,
+        "tradeoff_score": 0.0
+      },
+      "FUT8": {
+        "growth_ratio": 1.0,
+        "igg_capacity_ratio": 0.0,
+        "tolerated": false,
+        "tradeoff_score": 0.0
+      },
+      "DNMT3A": {
+        "growth_ratio": 1.0,
+        "igg_capacity_ratio": 1.0,
+        "tolerated": true,
+        "tradeoff_score": -0.0
+      },
+      "PKM": {
+        "growth_ratio": 1.0,
+        "igg_capacity_ratio": 1.0,
+        "tolerated": true,
+        "tradeoff_score": -0.0
+      },
+      "B4GALT1": {
+        "growth_ratio": 1.0,
+        "igg_capacity_ratio": 1.0,
+        "tolerated": true,
+        "tradeoff_score": -0.0
+      },
+      "BCAT1": {
+        "growth_ratio": 1.0,
+        "igg_capacity_ratio": 1.0,
+        "tolerated": true,
+        "tradeoff_score": -0.0
+      },
+      "GLUL": {
+        "growth_ratio": 1.0,
+        "igg_capacity_ratio": 1.0,
+        "tolerated": true,
+        "tradeoff_score": -0.0
+      },
+      "DHFR": {
+        "growth_ratio": 1.0,
+        "igg_capacity_ratio": 1.0,
+        "tolerated": true,
+        "tradeoff_score": -0.0
+      },
+      "SETDB1": {
+        "growth_ratio": 1.0,
+        "igg_capacity_ratio": 1.0,
+        "tolerated": true,
+        "tradeoff_score": -0.0
+      },
+      "XYLT2": {
+        "growth_ratio": 1.0,
+        "igg_capacity_ratio": 1.0,
+        "tolerated": true,
+        "tradeoff_score": -0.0
+      },
+      "NEU1": {
+        "growth_ratio": 1.0,
+        "igg_capacity_ratio": 1.0,
+        "tolerated": true,
+        "tradeoff_score": -0.0
+      },
+      "DGKI": {
+        "growth_ratio": 1.0,
+        "igg_capacity_ratio": 1.0,
+        "tolerated": true,
+        "tradeoff_score": -0.0
+      },
+      "NDUFA13": {
+        "growth_ratio": 1.0,
+        "igg_capacity_ratio": 1.0,
+        "tolerated": true,
+        "tradeoff_score": -0.0
+      },
+      "PNP": {
+        "growth_ratio": 1.0,
+        "igg_capacity_ratio": 1.0,
+        "tolerated": true,
+        "tradeoff_score": -0.0
+      },
+      "NEU2": {
+        "growth_ratio": 1.0,
+        "igg_capacity_ratio": 1.0,
+        "tolerated": true,
+        "tradeoff_score": -0.0
+      }
+    }
+  },
+  "route_b_tradeoff_score": {
+    "n_universe": 1766,
+    "n_positives": 17,
+    "k": 50,
+    "hits_in_top_k": 0,
+    "expected_hits": 0.48,
+    "p_hits": 1.0,
+    "auc": 0.4851,
+    "p_auc": 1.0,
+    "auc_null_95": [
+      0.485,
+      0.545
+    ]
+  },
+  "route_b_marzluf": {
+    "candidates_total": 70,
+    "candidates_in_model": 14,
+    "named_incompatible_in_model": [
+      "ALDOA",
+      "GAPDH",
+      "LDHA",
+      "PGK1"
+    ],
+    "auc_growth_ratio_low_predicts_incompatible": 0.5,
+    "calls": {
+      "FUCA1": {
+        "growth_ratio": 1.0,
+        "tolerated": true,
+        "reported": "not individually reported"
+      },
+      "LDHA": {
+        "growth_ratio": 1.0,
+        "tolerated": true,
+        "reported": "reverted to wild type (selective disadvantage)"
+      },
+      "ACLY": {
+        "growth_ratio": 1.0,
+        "tolerated": true,
+        "reported": "not individually reported"
+      },
+      "PGK1": {
+        "growth_ratio": 1.0,
+        "tolerated": true,
+        "reported": "reverted to wild type (selective disadvantage)"
+      },
+      "GAPDH": {
+        "growth_ratio": 1.0,
+        "tolerated": true,
+        "reported": "pool failed to recover"
+      },
+      "FASN": {
+        "growth_ratio": 1.0,
+        "tolerated": true,
+        "reported": "not individually reported"
+      },
+      "CTSA": {
+        "growth_ratio": 1.0,
+        "tolerated": true,
+        "reported": "not individually reported"
+      },
+      "TKT": {
+        "growth_ratio": 1.0,
+        "tolerated": true,
+        "reported": "not individually reported"
+      },
+      "PKM": {
+        "growth_ratio": 1.0,
+        "tolerated": true,
+        "reported": "not individually reported"
+      },
+      "LPL": {
+        "growth_ratio": 1.0,
+        "tolerated": true,
+        "reported": "not individually reported"
+      },
+      "AKR1B1": {
+        "growth_ratio": 1.0,
+        "tolerated": true,
+        "reported": "not individually reported"
+      },
+      "ALDOA": {
+        "growth_ratio": 1.0,
+        "tolerated": true,
+        "reported": "pool failed to recover"
+      },
+      "ENO3": {
+        "growth_ratio": 1.0,
+        "tolerated": true,
+        "reported": "not individually reported"
+      },
+      "PLOD1": {
+        "growth_ratio": 1.0,
+        "tolerated": true,
+        "reported": "not individually reported"
+      }
+    },
+    "caveat": "the 36 retained knockouts are not published by name; unnamed candidates are a mix of retained and rejected"
+  }
+}
