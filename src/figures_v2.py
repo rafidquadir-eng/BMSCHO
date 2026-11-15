@@ -264,12 +264,12 @@ OK, WEAK, NEED = "#199e70", "#c98500", "#8a8985"
 STATUS = {"ok": (OK, "TESTED: POSITIVE EVIDENCE", "-"), "weak": (WEAK, "TESTED: WEAK OR NULL", "-"), "need": (NEED, "REQUIRES PARTNER DATA", (0, (4, 3)))}
 
 
-def _box(ax, x, y, w, h, title, lines, status, title_size=17, body_size=12.6):
+def _box(ax, x, y, w, h, title, lines, status, title_size=17, body_size=12.4):
     col, tag, ls = STATUS[status]
     ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0,rounding_size=0.9", fc=CARD, ec=col, lw=2.6, ls=ls, zorder=2))
-    ax.text(x + 1.0, y + h - 1.15, title, color=TXT, fontsize=title_size, fontweight="bold", va="top", zorder=3)
-    ax.text(x + w - 1.0, y + h - 1.25, tag, color=col, fontsize=10.5, fontweight="bold", va="top", ha="right", zorder=3)
-    ax.text(x + 1.0, y + h - 3.75, "\n".join(lines), color=TXT2, fontsize=body_size, va="top", linespacing=1.32, zorder=3)
+    ax.text(x + 1.0, y + h - 0.95, tag, color=col, fontsize=10.5, fontweight="bold", va="top", zorder=3)
+    ax.text(x + 1.0, y + h - 2.45, title, color=TXT, fontsize=title_size, fontweight="bold", va="top", zorder=3)
+    ax.text(x + 1.0, y + h - 5.15, "\n".join(lines), color=TXT2, fontsize=body_size, va="top", linespacing=1.34, zorder=3)
 
 
 def _arrow(ax, x0, y0, x1, y1):
@@ -290,6 +290,7 @@ def fig0():
     cov = _m1("covariate_baseline", "all_labeled", "leave_one_experiment_out", "process covariates", "gbm", "rmse")
     via = _ep("Viability", "leave_one_experiment_out", "raw", "logit", "auc")
     viaf = _ep("Viability", "leave_one_expression_cluster_out", "raw", "logit", "auc")
+    via_r2 = _ep("Viability", "leave_one_experiment_out", "raw", "pls", "r2_cv")
     prim = al["leg1_growth_phase_transcriptomics_vs_proteomics"]
     v0, v1 = list(prim.keys())
     kegg = "KEGG pathways (Chinese hamster)"
@@ -300,108 +301,112 @@ def fig0():
     pt = pd_[pd_.holdout_unit == "experiment"]
     sf = _j("scale_format.json") if (R / "scale_format.json").exists() else None
 
-    fig = plt.figure(figsize=(19.2, 12.4), facecolor=BG)
+    H = 73.0
+    fig = plt.figure(figsize=(19.2, 19.2 * H / 100), facecolor=BG)
     ax = fig.add_axes([0, 0, 1, 1])
     ax.set_xlim(0, 100)
-    ax.set_ylim(0, 64.6)
+    ax.set_ylim(0, H)
     ax.axis("off")
     ax.set_facecolor(BG)
-    ax.text(2, 62.6, "Architecture status on public data: what is tested, what is weak, what needs partner data",
+    ax.text(2, H - 1.8, "Architecture status on public data: what is tested, what is weak, what needs partner data",
             color=TXT, fontsize=23, fontweight="bold", va="top")
-    ax.text(2, 59.6, "Every metric is single-modality and carries its holdout scheme. No public sample has more than one modality with an outcome, "
+    ax.text(2, H - 5.0, "Every metric is single-modality and names its holdout. No public sample has more than one modality with an outcome, "
             "so nothing here is a fused multi-omic prediction.", color=TXT2, fontsize=13.5, va="top")
-    # legend
     lx = 2
     for key in ["ok", "weak", "need"]:
         col, tag, ls = STATUS[key]
-        ax.add_patch(FancyBboxPatch((lx, 56.0), 2.2, 1.1, boxstyle="round,pad=0,rounding_size=0.3", fc=CARD, ec=col, lw=2.4, ls=ls))
-        ax.text(lx + 2.8, 56.55, tag, color=col, fontsize=11.5, fontweight="bold", va="center")
+        ax.add_patch(FancyBboxPatch((lx, H - 9.0), 2.2, 1.1, boxstyle="round,pad=0,rounding_size=0.3", fc=CARD, ec=col, lw=2.4, ls=ls))
+        ax.text(lx + 2.8, H - 8.45, tag, color=col, fontsize=11.5, fontweight="bold", va="center")
         lx += 21
 
     # ---- inputs ----
-    yI, hI, wI = 45.6, 9.3, 23.2
+    yI, hI, wI = 51.6, 10.6, 23.2
     xs = [2, 26.27, 50.53, 74.8]
     _box(ax, xs[0], yI, wI, hI, "Transcriptomics", [
-        "GSE30321: 295 arrays, 167 with Qp, 19 experiments",
+        "GSE30321: 295 arrays, 19 labeled experiments",
         f"High vs low Qp: AUC {auc_q[0]:.2f} ({auc_q[1]:.2f}–{auc_q[2]:.2f})",
         "holdout: whole experiments"], "ok")
     g0 = prim[v0]["gene_level"]
     _box(ax, xs[1], yI, wI, hI, "Proteomics", [
         "PXD053511: 8 samples, no outcome labels",
-        f"Agrees with transcripts gene by gene: ρ = {g0['spearman']:.2f}",
-        f"({g0['n_genes']} genes, growth-phase contrast, unpaired)"], "weak")
+        f"Agrees with transcripts, gene level: ρ = {g0['spearman']:.2f}",
+        f"{g0['n_genes']} genes, growth-phase contrast, unpaired"], "weak")
     _box(ax, xs[2], yI, wI, hI, "Metabolomics", [
-        "Yao 2021: summary statistics only (12 clones)",
+        "Yao 2021: summary statistics only, 12 clones",
         f"TCA cycle rank {tca} of {len(pr)}; Ala/Asp/Glu rank {aag}",
-        "Per-clone data and library 2: not public"], "weak")
+        "Per-clone data, library 2: not public"], "weak")
+    worse = "worse than none" if cov[0] > rm_null[0] else "no better than none"
     _box(ax, xs[3], yI, wI, hI, "Process settings", [
-        "4 logged variables alone, GSE30321",
-        f"RMSE {cov[0]:.1f} vs {rm_null[0]:.1f} no-skill: no skill",
+        "4 logged variables alone (GSE30321)",
+        f"RMSE {cov[0]:.1f} vs {rm_null[0]:.1f} no-skill: {worse}",
         "holdout: whole experiments"], "weak")
     # ---- encoder ----
-    yE, hE = 34.6, 8.2
+    yE, hE = 38.2, 10.6
     for x in xs:
         _arrow(ax, x + wI / 2, yI, x + wI / 2, yE + hE)
     ic = prim[v0]["iCHO1766 subsystems"]
     kg0, kg1 = prim[v0][kegg], prim[v1][kegg]
     _box(ax, 2, yE, 96, hE, "Pathway-constrained encoder", [
-        f"Fixed pathway average (44 Hallmark sets; array covers 15% of their genes): Qp RMSE {rm_path[0]:.1f} vs {rm_q[0]:.1f} for raw genes   ·   "
-        "modality: transcriptomics, holdout: whole experiments",
-        f"Cross-modality alignment on a pathway basis (transcripts vs proteins, unpaired): pre-registered test null, ρ = {kg0['spearman']:.2f}, p = {kg0['p_perm']:.2f} "
-        f"(KEGG); ρ = {kg1['spearman']:.2f} at 37 °C only   ·   iCHO1766: {ic['n_pathways']} testable subsystems, ρ = {ic['spearman']:.2f}, p = {ic['p_perm']:.2f}"],
-         "weak", body_size=12.4)
+        f"Fixed pathway average (44 Hallmark sets; the array covers 15% of their genes): Qp RMSE {rm_path[0]:.1f} vs {rm_q[0]:.1f} for raw genes. "
+        "Transcriptomics; whole experiments held out.",
+        f"Transcript–protein alignment on a pathway basis (unpaired data): pre-registered test null, ρ = {kg0['spearman']:.2f}, p = {kg0['p_perm']:.2f} "
+        f"(KEGG, {kg0['n_pathways']} pathways); ρ = {kg1['spearman']:.2f} in the 37 °C sensitivity run.",
+        f"iCHO1766 basis: only {ic['n_pathways']} subsystems testable on this array, ρ = {ic['spearman']:.2f}, p = {ic['p_perm']:.2f}. "
+        "A trained pathway-constrained encoder was not tested."], "weak")
     # ---- culture state + delta ----
-    yZ, hZ = 23.6, 8.2
-    _arrow(ax, 50, yE, 26, yZ + hZ)
+    yZ, hZ = 24.8, 10.6
+    _arrow(ax, 25, yE, 25, yZ + hZ)
     _box(ax, 2, yZ, 46, hZ, "Culture state z (32 dimensions)", [
         f"Self-supervised z vs training from scratch: {pt.paired_diff_mean.mean():+.1f} RMSE, better in "
-        f"{int(pt.seeds_where_pretrained_better.sum())} of {int(pt.n_seeds.sum())} runs",
-        "No reliable gain; PLS matches or beats it. iMEMORY initialisation: not tested",
-        "modality: transcriptomics, holdout: whole experiments"], "weak")
+        f"{int(pt.seeds_where_pretrained_better.sum())} of {int(pt.n_seeds.sum())} runs.",
+        "No reliable gain; PLS matches or beats it. iMEMORY initialisation: not tested.",
+        "Transcriptomics; whole experiments held out."], "weak")
     _arrow(ax, 48, yZ + hZ / 2, 52, yZ + hZ / 2)
     _box(ax, 52, yZ, 46, hZ, "Δ branch: top quartile minus bottom quartile", [
-        f"Transcriptomics: Golgi vesicle transport rank {int(golgi['rank'])} of {len(dp)} (p = {golgi.p_vs_random_gene_sets:.2f}), holds within experiment",
-        f"Metabolomics: TCA cycle rank {tca} of {len(pr)} (p = {float(pr[pr.pathway == 'map00020'].p_perm.iloc[0]):.2f}); joint test p = {yi['p_joint']:.2f}",
-        "descriptive contrasts on fixed pathway scores, not on a learned z"], "weak")
+        f"Transcriptomics: Golgi vesicle transport rank {int(golgi['rank'])} of {len(dp)} (p = {golgi.p_vs_random_gene_sets:.2f}); holds within experiment.",
+        f"Metabolomics: TCA cycle rank {tca} of {len(pr)} (p = {float(pr[pr.pathway == 'map00020'].p_perm.iloc[0]):.2f}); "
+        f"joint test for both target pathways p = {yi['p_joint']:.2f}.",
+        "Descriptive contrasts on fixed pathway scores, not on a learned z."], "weak")
     # ---- dynamics ----
-    yD, hD = 15.4, 5.6
+    yD, hD = 16.6, 6.4
     _arrow(ax, 25, yZ, 40, yD + hD)
     _box(ax, 27, yD, 46, hD, "Latent dynamics, 14-day run", [
-        "No public CHO dataset has time-resolved omics with day labels and outcomes"], "need")
+        "No public CHO dataset has time-resolved omics with day labels and outcomes."], "need")
     # ---- heads ----
-    yH, hH, wH = 2.4, 10.4, 18.4
+    yH, hH, wH = 1.9, 11.9, 18.4
     xh = [2, 21.4, 40.8, 60.2, 79.6]
     for x in xh:
         _arrow(ax, 50, yD, x + wH / 2, yH + hH)
+    bs = 11.4
     _box(ax, xh[0], yH, wH, hH, "Titer, qP", [
-        f"AUC {auc_q[0]:.2f} ({auc_q[1]:.2f}–{auc_q[2]:.2f})",
+        f"High vs low: AUC {auc_q[0]:.2f} ({auc_q[1]:.2f}–{auc_q[2]:.2f})",
+        "with whole experiments held out",
+        f"Families held out: {auc_qf[0]:.2f} ({auc_qf[1]:.2f}–{auc_qf[2]:.2f})",
         f"RMSE {rm_q[0]:.1f} vs {rm_null[0]:.1f} no-skill",
-        f"Families held out: AUC {auc_qf[0]:.2f}",
-        f"Published 4.44 not beaten ({rm_match[0]:.1f})",
-        "transcriptomics; experiments held out"], "ok", body_size=12)
+        f"Published 4.44 not beaten ({rm_match[0]:.1f})"], "ok", body_size=bs)
     _box(ax, xh[1], yH, wH, hH, "Viability", [
-        f"AUC {via[0]:.2f} ({via[1]:.2f}–{via[2]:.2f})",
-        f"{via[4]} experiments held out",
-        f"Families held out: AUC {viaf[0]:.2f}",
-        f"({viaf[1]:.2f}–{viaf[2]:.2f})",
-        "transcriptomics"], "ok" if via[1] > 0.5 else "weak", body_size=12)
+        f"High vs low: AUC {via[0]:.2f} ({via[1]:.2f}–{via[2]:.2f})",
+        "with whole experiments held out",
+        f"Families held out: {viaf[0]:.2f} ({viaf[1]:.2f}–{viaf[2]:.2f})",
+        f"Regression: R² {via_r2[0]:.2f}, no skill",
+        "Modality: transcriptomics"], "ok" if via[1] > 0.5 else "weak", body_size=bs)
     _box(ax, xh[2], yH, wH, hH, "Glycans", [
         "No public CHO dataset pairs",
         "glycan profiles with omics on",
-        "the same clones at usable n"], "need", body_size=12)
-    scale_lines = ["GSE30321 deposits no scale", "or format variable"]
+        "the same clones at usable n."], "need", body_size=bs)
+    scale_lines = ["GSE30321 deposits no scale variable."]
     if sf:
-        scale_lines += [f"Flask vs bioreactor (n = {sf['n_flask_cultures']} + {sf['n_bioreactor_cultures']}",
-                        f"cultures): hypoxia rank {sf['hypoxia_rank']} of {sf['hallmark_sets_ranked']}", "format contrast, not scale"]
-    _box(ax, xh[3], yH, wH, hH, "Scale risk", scale_lines, "need", body_size=12)
+        scale_lines += [f"Flask vs bioreactor, {sf['n_flask_cultures']} + {sf['n_bioreactor_cultures']} cultures:",
+                        f"hypoxia rank {sf['hypoxia_rank']} of {sf['hallmark_sets_ranked']}.", "A format contrast, not scale."]
+    _box(ax, xh[3], yH, wH, hH, "Scale risk", scale_lines, "need", body_size=bs)
     _box(ax, xh[4], yH, wH, hH, "Ranked fixes", [
         "Knockout recovery at chance:",
-        f"AUC {ko['auc']:.2f} (p = {ko['p_auc']:.2f})",
-        f"{ko['hits_in_top_k']} of {ko['n_positives']} validated targets",
-        f"in top 100 (p = {ko['p_hits']:.2f})",
-        "transcriptomics Δ; frozen ranking"], "weak", body_size=12)
-    ax.text(2, 0.9, "Intervals are 95% cluster-bootstrap CIs over the held-out unit. Blinded tests were pre-registered and frozen before the ground truth was loaded. "
-            "Calibration of intervals was not assessed. Sources: results/metrics.csv, results/metrics_v2.csv.", color=TXT2, fontsize=11.5, va="bottom")
+        f"AUC {ko['auc']:.2f}; {ko['hits_in_top_k']} of {ko['n_positives']} validated targets",
+        f"in the top 100 (p = {ko['p_hits']:.2f}).",
+        "Ranking frozen before the",
+        "ground truth was loaded."], "weak", body_size=bs)
+    ax.text(2, 0.35, "Brackets are 95% cluster-bootstrap CIs over the held-out unit. Blinded tests were pre-registered and frozen before the ground truth was loaded. "
+            "Calibration of intervals was not assessed.", color=TXT2, fontsize=11.2, va="bottom")
     fig.savefig(F / "fig0_architecture_status.png", dpi=150, facecolor=BG)
     plt.close(fig)
 
