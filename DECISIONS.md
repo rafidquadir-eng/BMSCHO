@@ -129,3 +129,159 @@ Running log of every autonomous choice. Times are UTC. Newest entries at the bot
 ### 2026-11-15 05:28 — What is and is not committed
 - **Committed:** code, figures, and result tables. `results/culture_map.csv` and `results/oof_predictions.csv` include each array's Qp, temperature and growth rate, copied from public GEO metadata, because a reviewer needs them to check the predictions and the grouping.
 - **Not committed:** the expression matrix, the platform file, gene sets, any credential, key or host address. `raw/` and `data/*` (except `PROVENANCE.md`) are git-ignored; `git grep` for the instance address and key name returns nothing.
+
+---
+
+# Phase 2 — multi-modal extension (branch `poc/multimodal`)
+
+Times in this section are read from the system clock (UTC) when the entry is written.
+
+### 2026-11-15 10:04 UTC — P1: what Yao et al. 2021 actually published
+- **Found:** Full text and supplement retrieved from Europe PMC (PMC8704136; MDPI and CORE returned HTTP 403). The data availability statement reads "Not applicable". The supplement is one PDF. It contains **no per-clone metabolite table** for either library.
+- **What is public:** Table S3 — Pearson correlation of each annotated metabolite with qP and with peak VCD across the 12 clones of library 1 (day 7). Table S1 — the 34 targeted metabolites (names and MRM transitions only, no values). Figures: a 97-row heatmap at about 2 pixels per row, and scatter plots for two metabolites (aspartate, cystine) in both libraries.
+- **Decision:** (a) Run the pathway-recovery test on Table S3, as a summary-statistic test. (b) **Do not run cross-library prediction.** It needs per-clone values for more than the two metabolites the authors chose to plot after seeing their own result; a "prediction" built from those two panels would be circular. (c) Do not digitise the heatmap: the resolution cannot support per-clone values and I will not present guessed numbers as data.
+- **Consequence:** The cross-library box is marked "requires partner data". BMS holds these data.
+
+### 2026-11-15 10:04 UTC — P1 PRE-REGISTRATION (written before any pathway statistic is computed)
+- **Honest status of "blind":** I have read the paper's conclusion (alanine/aspartate/glutamate metabolism and the TCA cycle). The method below is fixed before computing, and it uses the authors' per-metabolite statistics. This is therefore a **concordance check of the Δ-style pathway ranking against the authors' own pathway analysis on the same summary data**, not an independent discovery and not a prediction.
+- **Input:** every row of Table S3 (significant or not): Pearson r between day-7 metabolite level and qP.
+- **Metabolite → KEGG compound:** case-insensitive exact match of the name against KEGG compound synonyms; unmatched names resolved by hand and listed in `results/yao_metabolite_map.csv`. Unresolvable names are dropped and counted.
+- **Pathways:** KEGG reference metabolic pathways (map00010–map00999), from the KEGG compound–pathway links. Global and overview maps (map011xx, map012xx) excluded. Eligible if ≥ 3 Table S3 metabolites are members.
+- **Statistic (Δ analogue for summary data):** mean Fisher-z of r(qP) over pathway members minus the mean over all other measured metabolites. Pathways ranked by this value, descending.
+- **Null:** 10,000 permutations of metabolite labels. One-sided p per pathway.
+- **Pre-specified targets:** map00250 (alanine, aspartate and glutamate metabolism) and map00020 (citrate cycle). Reported: rank of each among eligible pathways, per-pathway p, and a joint p for "mean rank of the two targets at least this good".
+- **Secondary, also fixed now:** the same ranking with the over-representation statistic the authors used (members among metabolites with p(qP) < 0.05, hypergeometric), to separate "the data say so" from "our statistic says so".
+- **Reported whatever the outcome.**
+
+### 2026-11-15 10:06 UTC — P1 RESULT (pre-registered test, reported as it came out)
+- **Input:** 92 metabolites parsed from Table S3 (the paper states 97 unique features; 92 rows are in the table). All 92 mapped to KEGG compounds. 53 KEGG metabolic pathways had ≥ 3 measured members.
+- **Citrate cycle:** rank **6 of 53** by the Δ statistic (permutation p = 0.020); rank **1 of 53** by the authors' own over-representation statistic.
+- **Alanine, aspartate and glutamate metabolism:** rank **15 of 53** (p = 0.050); rank 7 by over-representation.
+- **Joint test:** mean rank of the two targets 10.5 against 27.2 expected by chance, **p = 0.061**. This does not reach 0.05.
+- **Reading:** the TCA cycle is recovered; alanine/aspartate/glutamate metabolism is in the top third, not at the top. The two targets do not "come out on top" under the pre-registered statistic. Ranks 1–5 went to small pathways (3–4 measured metabolites each: terpenoid backbone, butanoate, C5-branched dibasic acid, nicotinate, glutathione).
+- **Why the ranking is flat:** 97% of the metabolites correlate positively with qP, so every pathway has a high mean r (0.38–0.85). A competitive statistic has little contrast to work with.
+- **Post hoc sensitivity (not pre-registered):** restricting to the 38 pathways annotated in Chinese hamster gives TCA rank 6, alanine/aspartate/glutamate rank 13, joint p = 0.10. The pre-registered list included KEGG reference maps that do not exist in mammals (for example carbapenem biosynthesis); that was a flaw in my pre-registration and I am not using the sensitivity run to rescue the result.
+- **Not done:** no cross-library prediction (see the entry above).
+
+### 2026-11-15 10:06 UTC — P3 design: other endpoints on GSE30321
+- **Endpoints:** cell viability, growth rate, cell density, q-lactate, q-ammonium, as deposited in GEO. Modality: transcriptomics only.
+- **Splits:** leave-one-experiment-out is the headline; leave-one-expression-family-out is the strict check; culture-grouped 5-fold is shown only next to them. The leak assertion runs on every split.
+- **Why the family split matters more here than for Qp:** many arrays labeled for these endpoints sit in experiment blocks whose culture assignment I flagged as ambiguous in phase 1. Experiment blocks are firmer than culture IDs, and the family grouping is derived from expression alone, so it does not depend on my reading of the metadata.
+- **The two arrays with offset metadata (248, 251) are excluded from every endpoint**, since all of their deposited variables are suspect, not just Qp.
+- **Extra reference:** a temperature-only linear model under the same split. Growth rate and viability move with the temperature shift, so "expression predicts growth rate" has to beat "the culture was at 31 °C".
+- **Pipeline otherwise unchanged:** raw (1,000 probesets) and pathway (44 Hallmark) encoders; PLS, elastic net, gradient boosting; logistic regression for top-vs-bottom tercile; nested hyperparameters; 2,000-resample cluster bootstrap on the split unit.
+
+### 2026-11-15 10:08 UTC — P2 PRE-REGISTRATION (written before any ground-truth list is loaded)
+- **What I already know and cannot un-know:** the brief names FUT8, BAX, BAK, BOK, B4GALT1, BCKDHA/B, GLUL, LDHA, COSMC and NEU1/2/3. None of them was used to design the scores below. The Schulz et al. review and the Marzluf et al. screen have **not** been opened at the time of this entry.
+- **Route A, data-driven (modality: transcriptomics, GSE30321):** gene-level Δ = mean standardised expression in the top Qp quartile minus the bottom quartile, computed **within experiment** (each experiment's mean removed from expression and from Qp; experiments with ≥ 4 labeled arrays). A knockout acts inside one cell line, so the within-experiment contrast is the relevant one. Probesets are averaged per gene symbol. Knockout candidates = most negative Δ. Overexpression candidates = most positive Δ. The raw (between-experiment) Δ is reported as a secondary column.
+- **Route B, mechanistic (iCHO1766 from BiGG, COBRApy FBA, default medium bounds):** for every model gene, single-gene deletion gives g = maximum growth relative to wild type, and p = maximum IgG synthesis flux relative to wild type with growth held at ≥ 20% of wild-type maximum.
+  - *Stated limit, before running:* an FBA optimum cannot increase when a gene is deleted, so FBA cannot predict benefit directly. Route B therefore yields (B1) a **tolerance call** — tolerated if g ≥ 0.9 and p ≥ 0.9 — and (B2) an exploratory **trade-off score** = 1 − g for deletions with p ≥ 0.99 and g ≥ 0.2 (growth capacity cut, product capacity intact), 0 otherwise.
+- **Frozen artefacts:** `results/knockout_ranking.csv` (Route A, all array genes, ranked) and `results/knockout_fba.csv` (Route B, all 1,766 model genes) are committed before the ground truth is fetched. The commit hash is the timestamp.
+- **Ground truth, to be collected afterwards:** (i) genes whose knockout, knockdown or inhibition raised titer or qP in CHO; (ii) genes whose overexpression did; (iii) reported neutral or harmful knockouts (for example BOK); (iv) the Marzluf screen's compatible vs incompatible knockouts. Source priority: the Schulz et al. systematic review if its target table can be obtained; otherwise open-access reviews, with the source of every gene recorded.
+- **Metrics, fixed now:**
+  - Route A, knockout end: among genes on the array, AUC of −Δ for set (i) against all other array genes; number of set-(i) genes in the 100 most negative; permutation p from 10,000 random gene sets of the same size. k = 50 reported as secondary.
+  - Route A, overexpression end: the same with +Δ and set (ii).
+  - Route B: share of set (i) called tolerated against the share for all model genes; for the Marzluf screen, AUC of g for compatible vs incompatible knockouts; AUC of the trade-off score for set (i).
+  - Known negatives: their ranks are reported individually.
+  - **Coverage is reported first.** The array carries about 1,700 genes and the model 1,766, so many validated targets will be untestable. Untestable is reported as untestable, not as a miss.
+- **Expectation, stated in advance:** weak. Most famous knockouts act on glycosylation or apoptosis, which neither a Qp expression contrast nor steady-state FBA is built to see.
+
+### 2026-11-15 10:16 UTC — P2 freeze and ground truth
+- **Freeze:** commit `de3fe41` (2026-11-15 10:10 UTC) holds both rankings. The ground-truth files were downloaded after it (Europe PMC, 10:11 UTC).
+- **Ground truth obtained:** Schulz et al. 2026, *mAbs* (PMC12818826), supplementary sheet `B_SingleTargetData`: 466 rows, each an engineered target with mechanism and maximum fold improvement. After removing miRNAs, lncRNAs, engineered variants and non-gene interventions, and resolving aliases by hand (`ALIAS` in `src/knockout_eval.py`): **60 genes whose knockout or knockdown raised titer or qP** (40 with single-target evidence), 10 knockout/knockdown genes with no benefit, **153 genes whose overexpression raised titer or qP**.
+- **Marzluf et al. 2026 (PMC12902299):** the 36 retained knockouts are **not published by name** (they are one bar in Figure 2G). Only the genes the text names are usable: 8 growth-incompatible, 5 performance-reducing, 3 neutral or beneficial. This is a much weaker labeled set than the brief assumed.
+- **BOK:** appears in the review only inside the BAX/BAK/BOK triple knockout. Treated as a named negative, not a positive, per the brief.
+- **Rows with mixed mechanisms** (knockout plus overexpression in one construct) are excluded from both sets because the direction per gene is not machine-readable.
+
+### 2026-11-15 10:16 UTC — P2 RESULT: knockout recovery is at chance
+- **Coverage first:** of the 60 validated knockout/knockdown targets, **14 are on the array** and **17 are in iCHO1766**. BAX, BAK1, BOK, BCKDHA/B, COSMC, NEU1 and NEU3 are not on the array; BAX, BAK1, BOK, COSMC and NEU3 are not in the metabolic model. BOK is untestable by either route.
+- **Route A (transcriptomics Δ, within experiment), knockout end:** AUC **0.50** (permutation p = 0.50; null 95% range 0.35–0.65). **2 of 14** validated targets in the 100 most negative genes against 0.8 expected (p = 0.19). The two are GLUL (rank 29 of 1,707) and DAG1 (rank 30). With k = 50 the same two hits give p = 0.06. FUT8 ranks 1,197, LDHA 182, MYC 1,700.
+- **Route A, overexpression end:** AUC **0.39** (p = 0.99); 2 of 37 in the top 100 against 2.2 expected. If anything the sign is the wrong way round.
+- **Route A with the raw (between-experiment) Δ:** AUC 0.39, 0 of 14 in the top 100.
+- **Route B (iCHO1766 FBA):** uninformative. 93% of all model genes are called tolerated, and 94% of the validated targets. The trade-off score has AUC 0.49 and no validated target in its top 50. FBA calls GAPDH, ALDOA, PGK1 and LDHA knockouts tolerated (growth ratio 1.0) where the Marzluf screen found them lethal or selected against; the model's isozyme rules make single deletions harmless. One mechanistically sensible call: FUT8 deletion drops the model's IgG synthesis capacity to zero, because the model's IgG carries a core-fucosylated glycan.
+- **Reading:** neither route recovers validated knockout targets above chance. With 14 testable positives the test could only have detected a strong effect, so this is "no evidence of recovery", not "evidence of no ability". The two top-30 hits are not enough to claim anything.
+- **Not done:** no re-scoring, no alternative statistics tried after seeing this.
+
+### 2026-11-15 10:16 UTC — P4 PRE-REGISTRATION: cross-modality alignment on a pathway basis (written before any cross-modality statistic is computed)
+- **Claim under test:** independent modalities, projected onto a common pathway basis, give concordant pathway-level contrasts for the same biological contrast.
+- **Leg 1 — growth phase, transcriptomics vs proteomics (the main test).**
+  - *Proteomics:* PRIDE PXD053511 (CHO-K1GS, label-free, day 4 exponential n = 4 vs day 7 stationary n = 4, 37 °C throughout). Deposited `AllQuantifiedProteinGroups.tsv`. Proteins quantified in ≥ 3 of 4 samples in each group; log2 intensity, median-centred per sample; statistic = Welch t (day 4 − day 7). Positive = higher in exponential phase.
+  - *Transcriptomics:* GSE30321. Gene-level Δ for **growth rate, within experiment**: top quartile minus bottom quartile of experiment-centred growth rate (experiments with ≥ 4 arrays). Positive = higher when the culture grows faster.
+  - *Known mismatch, stated now:* in GSE30321 slow growth mostly coincides with the temperature shift to 31 °C; the proteomics study has no temperature shift. A 37 °C-only variant is reported as a sensitivity run. It has only 44 arrays in 5 experiments with a usable growth range, which is why it is not primary.
+  - *Protein → gene:* the deposited gene column where it is a real symbol; otherwise exact match of the protein name to UniProt names (hamster, then mouse and human reviewed entries). Mapping rate reported.
+- **Leg 2 — Qp association, transcriptomics vs metabolomics.** Yao Table S3 (r with qP across 12 clones) against the GSE30321 gene Δ for Qp. The **raw, between-experiment Δ** is used because Yao's contrast is between clones. Expected to be weak: 97% of Yao's correlations are positive.
+- **Pathway bases:** (a) **iCHO1766 subsystems** (primary, as the architecture specifies): genes through the model's gene–reaction rules; metabolites through the reactions they take part in, currency metabolites excluded. (b) **KEGG pathways annotated for Chinese hamster** (secondary; includes non-metabolic processes the metabolic model cannot represent). A pathway is used if it has ≥ 5 measured genes in each gene-level modality, or ≥ 3 metabolites for metabolomics.
+- **Pathway score:** mean over member features of the modality's statistic, after converting that statistic to a z-score across all features of the modality.
+- **Test statistic:** Spearman correlation between the two modalities' pathway vectors. **P-value:** 10,000 permutations of feature labels within one modality (protein labels for leg 1, metabolite labels for leg 2), pathway scores recomputed each time; one-sided for a positive correlation.
+- **Also reported:** the gene-level Spearman correlation for genes measured in both modalities in leg 1. If genes already agree, the pathway basis is not what creates the agreement, and I will say so.
+- **Not run, with reason:** the hamster proteome atlas (tissues and cell lines, no contrast shared with any other dataset here); Metabolomics Workbench (one Chinese hamster study, ST001177, not examined for lack of time); any three-way fusion (no sample has more than one modality).
+- **A null result is reported as a null result.**
+
+### 2026-11-15 10:18 UTC — P4 RESULT: pathway-level alignment is not demonstrated by the pre-registered test
+- **Proteomics processing:** 6,959 protein groups; 4,207 quantified in ≥ 3 of 4 samples per group; 87% mapped to a gene symbol (1,488 from the deposited gene column, 2,178 by protein-name match; UniProt has retired most of the accessions the deposit used); 3,303 unique genes. 557 genes are shared with the array.
+- **Leg 1, pre-registered primary (all temperatures, within experiment; 205 arrays, 22 experiments):**
+  - iCHO1766 subsystems: Spearman **0.20** over only **18** testable subsystems, p = **0.24**.
+  - KEGG hamster pathways: Spearman **0.16** over 266 pathways, p = **0.13**.
+  - Neither is significant.
+- **Gene level, no pathway basis:** Spearman **0.18** over 557 shared genes, p < 0.0001. Transcript and protein contrasts do agree, weakly, gene by gene. The pathway projection did not strengthen that agreement, so the pathway basis cannot be credited with it.
+- **Leg 1, sensitivity (37 °C arrays only; 69 arrays, 11 experiments):** KEGG Spearman **0.34**, p < 0.0001; iCHO1766 Spearman 0.36, p = 0.08. This variant matches the proteomics design better (no temperature shift) and I said so before running it, but it was registered as a sensitivity run and is reported as one.
+- **Leg 2 (Qp association, transcriptomics vs Yao metabolomics):** Spearman −0.12 (iCHO1766, 10 subsystems) and −0.08 (KEGG, 40 pathways); p = 0.63 and 0.66. Null, as expected from the lack of contrast in Yao's table.
+- **Reading:** the primary test is a null. There is a real but weak transcript–protein agreement for the growth-phase contrast, visible at gene level and, once the temperature confound is removed, at KEGG pathway level. The iCHO1766 basis is too sparse on this array to test: 18 subsystems.
+- **Why iCHO1766 is sparse here:** it covers metabolism only (1,766 genes) and the array carries 1,707 genes, so few subsystems reach 5 genes in both modalities.
+
+### 2026-11-15 10:21 UTC — P5: what exists for scale risk, and a pre-registration
+- **GSE30321 has no scale or format variable.** The deposit carries nine per-sample variables (growth rate, temperature, q-ammonia, q-lactate, viability, seeding density, cell density, titre, Qp). The summary says samples span "a wide range of process scales and formats", but that information was not deposited. A small-scale-to-large-scale degradation test cannot be run on it.
+- **Gao et al. 2016** (*Biotechnol J* 11:1190; hypoxia on scale-up to 5,000 L; authors include BMS staff) is closed access with no deposited data that I could find. Not usable.
+- **Found instead:** GSE104787 — one IgG-producing CHO-K1 line grown from the same pre-culture in 3 uncontrolled shake flasks and 3 controlled bioreactors, arrays on days 2, 4 and 5 (18 arrays, genome-wide Affymetrix CHO array, 16,485 gene symbols). This is a **culture-format contrast, not a scale contrast**, and it has 6 culture units, so no predictive metric is possible.
+- **PRE-REGISTRATION (before computing):**
+  - Δ per gene = mean z-scored expression in bioreactor arrays minus flask arrays, after removing each day's mean. Hallmark pathway score = mean Δ of member genes (≥ 10 genes on the array). Pathways ranked by |score|. Null: 1,000 random gene sets of the same size.
+  - **Target 1:** HALLMARK_HYPOXIA. I know from its title that Gao et al. report hypoxia at 5,000 L. Whether oxygen biology also separates a flask from a benchtop bioreactor is a different question; a hit would be suggestive only, and a miss says nothing about Gao et al.
+  - **Target 2:** whatever the dataset's own publication concluded. I have not read it. The Hallmark ranking is committed first, then the abstract is fetched and compared.
+  - The scale-risk box stays "requires partner data" whatever this shows.
+
+### 2026-11-15 10:22 UTC — P5 RESULT (frozen in commit `0785634` before the dataset's publication was looked up)
+- **Hypoxia:** HALLMARK_HYPOXIA ranks **17 of 50** in the bioreactor-vs-flask contrast (Δ = +0.14, p = 0.012 against random gene sets). It is not near the top. Sixteen of 50 sets pass p < 0.05, so passing means little here.
+- **What does lead:** proliferation programmes are higher in the bioreactor (E2F targets, MYC targets, G2M checkpoint, DNA repair) together with the unfolded protein response; protein secretion is lower.
+- **Target 2:** I could not find a publication for this deposit, and its GEO summary names no pathway. The one checkable statement in it — large differences over time, much smaller ones between systems — holds: sampling day explains a median 24.6% of expression variance, culture system 2.1%.
+- **Reading:** no support here for hypoxia as the main difference between a shake flask and a benchtop bioreactor, which is not what Gao et al. claimed anyway (they compared 5,000 L with small scale). The scale-risk box stays "requires partner data".
+- **Lead not followed for lack of time:** Alsayyari et al. 2018 (*Biotechnol Bioeng*), transcriptomes of a 10 L process and its ambr 15 scale-down. That is a true scale contrast and may be on GEO.
+
+### 2026-11-15 10:22 UTC — P6: glycans, stopped inside the timebox
+- **Searched:** GEO (Chinese hamster series mentioning glycan, glycosylation or glycoform: 3 hits, none with glycan profiles) and Europe PMC (open-access CHO papers with glycan profiles and omics on the same clones: glycoengineering panels and vaccine glycoprofiling, no clone-level omics-plus-glycan matrix).
+- **Decision:** the glycan head is marked "requires partner data". The FUT8 and B4GALT1 knockout literature gives mechanism, not a prediction set. One mechanistic note from P2: deleting FUT8 in iCHO1766 removes the model's capacity to make its (core-fucosylated) IgG, which is the model encoding known biology, not a prediction.
+
+### 2026-11-15 16:50 UTC — P3 RESULT: other endpoints (transcriptomics, GSE30321)
+- **Viability:** high vs low AUC 0.84 (0.70–0.94) with experiments held out, 0.77 (0.60–0.90) with families held out. Regression has no skill: R² 0.09 (−0.84–0.26). Temperature alone: R² 0.01.
+- **Growth rate:** AUC 0.98, R² 0.76 (0.68–0.83). Temperature alone already gives R² 0.62.
+- **Viable cell density:** AUC 0.82 (0.68–0.96), R² 0.08. Temperature alone 0.17.
+- **q-lactate:** AUC 0.97, R² 0.62. Temperature alone 0.61. Expression adds nothing measurable.
+- **q-ammonium:** AUC 0.93, R² 0.42. Temperature alone 0.35.
+- **Leak size:** culture-grouped R² for viability is 0.77 and for density 0.77, against 0.09 and 0.08 with experiments held out. The culture-level split overstates these endpoints even more than it did Qp.
+- **Decision:** the viability box is marked positive on the strength of the high-vs-low AUC only, and the box says in the same breath that regression has no skill.
+- **Added after seeing the regression table:** a temperature-only reference for the AUCs as well, since "temperature alone explains the R²" raised the same question for the classification numbers. It is a reference row, not a model choice.
+
+### 2026-11-15 16:50 UTC — fig0 design choices
+- **Three statuses, not two.** "Tested: positive evidence", "tested: weak or null", "requires partner data". A two-state figure (metric vs grey) would have forced null results into the same colour as successes.
+- **A box is green only if** its headline metric has an interval that excludes chance under experiment-level holdout. That gives two green boxes plus the transcriptomics input that feeds them.
+- **Status is carried by a text tag and the border style** as well as colour, so it survives a greyscale print.
+- **Every number on the figure is read from a results file** by `src/figures_v2.py`.
+- **Dark background** to match the deck the diagram came from; phase-1 figures stay light.
+- **"iMEMORY initialisation: not tested"** is written into the culture-state box. The brief's diagram names it; nothing public lets me test it.
+
+### 2026-11-15 16:50 UTC — Reproducibility of the frozen P2 files
+- Re-running `src/knockout.py freeze` and `src/knockout_eval.py` from the committed scripts reproduces the frozen ranking file exactly (all 1,707 rows), the FBA ratios with zero numeric difference, and an identical evaluation JSON.
+- One fix made along the way: the gene-symbol fill-in for model genes named only by a LOC identifier had been applied by hand before the freeze; it now lives in `src/knockout.py`. Symbols are identifiers, not scores, and the regenerated table matches the frozen one on every symbol.
+
+### 2026-11-15 16:50 UTC — What was cut or not attempted
+- Cross-library prediction on the Yao data (no per-clone data).
+- The hamster proteome atlas and Metabolomics Workbench study ST001177 (no shared contrast / no time).
+- The Alsayyari et al. 2018 scale-down transcriptomes (a real scale contrast; found late).
+- Any attempt to improve the knockout or alignment results after seeing them.
+- iCHO1766 as a predictive encoder: only 18 subsystems reach five genes on this array.
+- **Temperature-only AUC, now computed:** viability 0.44 (0.25–0.69), growth rate 0.90, viable cell density 0.75, q-lactate 0.94, q-ammonium 0.80, against 0.84, 0.98, 0.82, 0.97 and 0.93 from expression. Viability and q-ammonium are the endpoints where expression clearly adds to temperature. The rerun reproduced every earlier number.
+
+### 2026-11-15 17:24 UTC — Phase-2 reproduction check
+- **What was run:** a clean clone of `poc/multimodal`, then `python cho_poc.py --download && python src/run_v2.py`. About 20 minutes on 4 CPU cores.
+- **Outcome:** `metrics_v2.csv`, `metrics_endpoints.csv`, `knockout_ranking.csv`, `yao_pathway_ranking.csv`, `alignment_pathway_scores.csv`, `scale_format_pathways.csv`, `knockout_ground_truth.csv` and all four result JSON files matched the committed versions with zero numeric difference. Phase-1 `metrics.csv` was untouched.
+- **One difference found and fixed:** `knockout_fba.csv` had the same values in a different row order, because LP solutions carry float noise near 1e-12 and tied genes sorted differently. Ratios are now rounded to six decimals before sorting; two consecutive runs give byte-identical files, and every value still equals the frozen commit `de3fe41`.
+- **Limit:** same machine, same package versions. The public sources (Europe PMC, PRIDE, KEGG, BiGG, UniProt, GEO) are fetched live and only the phase-1 files and iCHO1766 have pinned hashes; KEGG and UniProt content can change.

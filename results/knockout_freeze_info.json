@@ -1,0 +1,15 @@
+{
+  "route_a": {
+    "n_genes": 1707,
+    "n_arrays_within": 158,
+    "n_experiments_within": 16
+  },
+  "route_b": {
+    "wt_growth_per_h": 0.03236897160200818,
+    "wt_igg_flux": 7.737833128169307e-05,
+    "n_genes": 1766,
+    "n_tolerated": 1639,
+    "n_lethal_growth_lt_0.01": 38,
+    "n_tradeoff_positive": 52
+  }
+}

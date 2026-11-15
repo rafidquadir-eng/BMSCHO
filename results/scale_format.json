@@ -1,0 +1,58 @@
+{
+  "dataset": "GSE104787",
+  "n_arrays": 18,
+  "n_flask_cultures": 3,
+  "n_bioreactor_cultures": 3,
+  "genes": 12952,
+  "hallmark_sets_ranked": 50,
+  "hypoxia_rank": 17,
+  "hypoxia_delta": 0.13670402597864212,
+  "hypoxia_p_vs_random_sets": 0.011988011988011988,
+  "n_sets_p_lt_0.05": 16,
+  "top5": [
+    "HALLMARK_E2F_TARGETS",
+    "HALLMARK_MYC_TARGETS_V2",
+    "HALLMARK_ANGIOGENESIS",
+    "HALLMARK_UNFOLDED_PROTEIN_RESPONSE",
+    "HALLMARK_DNA_REPAIR"
+  ],
+  "median_variance_share_day": 0.246,
+  "median_variance_share_system": 0.021,
+  "metric_rows": [
+    {
+      "phase": "P5",
+      "box": "Scale risk",
+      "evidence_type": "blinded recovery (culture format, not scale)",
+      "modality": "transcriptomics (GSE104787, Affymetrix CHO Gene array)",
+      "endpoint": "bioreactor vs shake flask contrast",
+      "holdout_scheme": "not applicable: descriptive contrast, no model fitted; 6 culture units",
+      "encoder": "MSigDB Hallmark",
+      "model": "delta (bioreactor minus flask), day-centred",
+      "n": 18,
+      "n_unit": "arrays (3 flasks, 3 bioreactors, 3 days)",
+      "source_data": "GSE104787",
+      "ci_level": "",
+      "metric": "rank of HALLMARK_HYPOXIA among 50 Hallmark sets (by |delta|)",
+      "value": 17,
+      "p_value": 0.011988011988011988,
+      "note": "pre-registered target from Gao et al. 2016; delta = +0.137 (positive = higher in bioreactor)"
+    },
+    {
+      "phase": "P5",
+      "box": "Scale risk",
+      "evidence_type": "blinded recovery (culture format, not scale)",
+      "modality": "transcriptomics (GSE104787, Affymetrix CHO Gene array)",
+      "endpoint": "bioreactor vs shake flask contrast",
+      "holdout_scheme": "not applicable: descriptive contrast, no model fitted; 6 culture units",
+      "encoder": "none (probeset level)",
+      "model": "variance decomposition",
+      "n": 18,
+      "n_unit": "arrays (3 flasks, 3 bioreactors, 3 days)",
+      "source_data": "GSE104787",
+      "ci_level": "",
+      "metric": "median share of expression variance explained by culture system",
+      "value": 0.021,
+      "note": "sampling day explains 0.246; the deposit's summary reports large differences over time and much smaller ones between systems"
+    }
+  ]
+}

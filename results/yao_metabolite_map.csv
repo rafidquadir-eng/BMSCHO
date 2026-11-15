@@ -1,0 +1,93 @@
+metabolite,r_qp,p_qp,r_growth,p_growth,kegg,match
+L-Glutamate 5-semialdehyde,0.817,0.008,-0.829,0.03,C01165,exact
+2-Oxobutanoate,0.799,0.01,-0.827,0.03,C00109,exact
+2-Hydroxy-dATP,0.901,0.002,-0.738,0.032,C19969,manual
+Biotin,0.875,0.004,-0.692,0.032,C00120,exact
+cis-Aconitate,0.815,0.008,-0.696,0.032,C00417,exact
+Citrate,0.822,0.008,-0.7,0.032,C00158,exact
+Biotin amide,0.813,0.008,-0.732,0.032,C01893,exact
+D-Glucuronate,0.806,0.009,-0.734,0.032,C00191,exact
+5-Hydroxyindoleacetaldehyde,0.787,0.011,-0.739,0.032,C05634,exact
+L-Formylkynurenine,0.782,0.011,-0.803,0.032,C02700,exact
+N-Acetyl-D-mannosamine,0.787,0.011,-0.74,0.032,C00645,exact
+N-Acetylneuraminate,0.772,0.013,-0.736,0.032,C00270,exact
+Adenosine,0.766,0.014,-0.708,0.032,C00212,exact
+L-Tryptophan,0.762,0.014,-0.732,0.032,C00078,exact
+L-Arginine,0.758,0.015,-0.756,0.032,C00062,exact
+5-Hydroxy-L-tryptophan,0.755,0.015,-0.707,0.032,C00643,exact
+alpha-D-Glucose,0.74,0.019,-0.776,0.032,C00267,manual
+Guanine,0.732,0.021,-0.702,0.032,C00242,exact
+"7,8-Dihydroneopterin 3'-triphosphate",0.722,0.022,-0.7,0.032,C04895,manual
+Inosine,0.722,0.022,-0.724,0.032,C00294,exact
+L-Histidine,0.697,0.028,-0.721,0.032,C00135,exact
+L-Phenylalanine,0.697,0.028,-0.715,0.032,C00079,exact
+L-Isoleucine,0.691,0.029,-0.78,0.032,C00407,exact
+L-Methionine,0.683,0.031,-0.776,0.032,C00073,exact
+5-Acetylamino-6-formylamino-3-methyluracil,0.667,0.038,-0.717,0.032,C16365,manual
+L-methionine-S-oxide,0.658,0.041,-0.767,0.032,C02989,manual
+Sorbitol 6-phosphate,0.649,0.044,-0.81,0.032,C01096,exact
+Leukotriene C4,0.639,0.046,-0.695,0.032,C02166,exact
+Sucrose,0.635,0.048,-0.775,0.032,C00089,exact
+Glycine,0.839,0.007,-0.684,0.034,C00037,exact
+L-2-Aminoadipate,0.784,0.011,-0.684,0.034,C00956,exact
+Folate,0.781,0.011,-0.683,0.034,C00504,exact
+Dihydrobiopterin,0.751,0.016,-0.675,0.036,C00268,exact
+L-Glutamate,0.907,0.002,-0.665,0.038,C00025,exact
+Succinate,0.836,0.007,-0.656,0.041,C00042,exact
+5-Oxoproline,0.918,0.002,-0.638,0.049,C01879,exact
+4-Aminobutanoate,0.897,0.002,-0.626,0.053,C00334,exact
+Farnesylcysteine,0.865,0.005,-0.626,0.053,C19691,exact
+L-Alanine,0.722,0.022,-0.627,0.053,C00041,exact
+sn-Glycero-3-phospho-1-inositol,0.818,0.008,-0.621,0.054,C01225,manual
+"5,10-Methenyltetrahydrofolate",0.7,0.027,-0.623,0.054,C00445,exact
+UDP-N-acetyl-alpha-D-glucosamine,0.701,0.027,-0.611,0.058,C00043,exact
+Uridine,0.78,0.011,-0.582,0.072,C00299,exact
+Glycolate,0.653,0.042,-0.582,0.072,C00160,exact
+(R)-Mevalonate,0.779,0.011,-0.567,0.079,C00418,exact
+L-Aspartate,0.76,0.015,-0.548,0.088,C00049,exact
+(R)-5-Phosphomevalonate,0.914,0.002,-0.531,0.097,C01107,exact
+Fumarate,0.756,0.015,-0.524,0.102,C00122,exact
+(S)-1-Pyrroline-5-carboxylate,0.802,0.009,-0.509,0.113,C03912,exact
+sn-Glycero-3-phosphoethanolamine,0.64,0.046,-0.507,0.113,C01233,exact
+D-Gluconic acid,0.81,0.009,-0.489,0.128,C00257,manual
+2-Hydroxy-dAMP,0.817,0.008,-0.43,0.182,C19970,manual
+(S)-Malate,0.77,0.013,-0.41,0.205,C00149,exact
+Hypoxanthine,0.643,0.045,-0.372,0.249,C00262,exact
+3-Cyano-L-alanine,0.618,0.056,-0.696,0.032,C02512,exact
+3-Aminopropanal,0.614,0.057,-0.741,0.032,C05665,exact
+"2,5-Dioxopentanoate",0.569,0.085,-0.711,0.032,C00433,exact
+L-Proline,0.558,0.092,-0.704,0.032,C00148,exact
+L-Tyrosine,0.536,0.105,-0.782,0.032,C00082,exact
+D-Sorbitol,0.524,0.116,-0.78,0.032,C00794,exact
+L-Threonine,0.506,0.132,-0.696,0.032,C00188,exact
+1-(5-Phospho-D-ribosyl)-5-amino-4-imidazolecarboxylate,0.46,0.178,-0.775,0.032,C04751,manual
+L-Lysine,0.458,0.178,-0.701,0.032,C00047,exact
+L-Leucine,0.443,0.191,-0.702,0.032,C00123,exact
+Carboxyphosphamide,0.406,0.234,-0.75,0.032,C07646,exact
+S-Adenosyl-L-homocysteine,0.401,0.24,-0.7,0.032,C00021,exact
+4-Fumarylacetoacetate,0.391,0.252,-0.761,0.032,C01061,exact
+Dopamine,0.305,0.375,-0.713,0.032,C03758,exact
+L-Cysteine,0.327,0.344,-0.676,0.036,C00097,exact
+"D-myo-Inositol 1,2-cyclic phosphate",0.322,0.351,-0.674,0.036,C04299,manual
+2-Aminobut-2-enoate,0.549,0.098,-0.665,0.038,C17234,exact
+5-Guanidino-2-oxopentanoate,0.426,0.211,-0.667,0.038,C03771,exact
+L-Cystine,0.387,0.257,-0.663,0.038,C00491,exact
+Dopaquinone,0.627,0.052,-0.652,0.042,C00822,exact
+Betaine,0.358,0.296,-0.618,0.055,C00719,exact
+Pterine,0.411,0.229,-0.568,0.079,C00715,manual
+6-Phospho-D-gluconate,0.2,0.575,-0.56,0.081,C00345,exact
+L-Glutamine,0.167,0.637,-0.558,0.082,C00064,exact
+L-Pipecolate,0.617,0.056,-0.545,0.089,C00408,exact
+Taurine,0.469,0.169,-0.536,0.094,C00245,exact
+L-Asparagine,0.18,0.613,-0.513,0.109,C00152,exact
+Guanidinoacetate,0.365,0.286,-0.455,0.158,C00581,exact
+"5,10-Methylenetetrahydrofolate",0.503,0.134,-0.435,0.178,C00143,exact
+L-Serine,-0.188,0.598,-0.405,0.209,C00065,exact
+D-Glycerate,0.241,0.492,-0.401,0.213,C00258,exact
+(S)-3-Methyl-2-oxopentanoic acid,0.008,0.986,-0.396,0.218,C00671,manual
+"1,2-Dibromoethane",0.54,0.103,-0.376,0.245,C11088,exact
+L-Cysteate,0.424,0.211,-0.368,0.252,C00506,exact
+3-Methoxy-4-hydroxyphenylglycolaldehyde,0.581,0.077,-0.326,0.314,C05583,manual
+"3,4-Dihydroxymandelate",0.313,0.366,-0.293,0.368,C05580,exact
+"1D-myo-Inositol 1,3,4,5,6-pentakisphosphate",-0.044,0.915,0.27,0.406,C01284,manual
+Alcophosphamide,-0.302,0.378,-0.119,0.717,C16551,exact
