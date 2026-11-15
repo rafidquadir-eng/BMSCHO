@@ -303,6 +303,7 @@ def fig0():
     via = _ep("Viability", "leave_one_experiment_out", "raw", "logit", "auc")
     viaf = _ep("Viability", "leave_one_expression_cluster_out", "raw", "logit", "auc")
     via_r2 = _ep("Viability", "leave_one_experiment_out", "raw", "pls", "r2_cv")
+    via_t = _ep("Viability", "leave_one_experiment_out", "temperature only", "logit", "auc")
     prim = al["leg1_growth_phase_transcriptomics_vs_proteomics"]
     v0, v1 = list(prim.keys())
     kegg = "KEGG pathways (Chinese hamster)"
@@ -400,8 +401,8 @@ def fig0():
         f"High vs low: AUC {via[0]:.2f} ({via[1]:.2f}–{via[2]:.2f})",
         "with whole experiments held out",
         f"Families held out: {viaf[0]:.2f} ({viaf[1]:.2f}–{viaf[2]:.2f})",
-        f"Regression: R² {via_r2[0]:.2f}, no skill",
-        "Modality: transcriptomics"], "ok" if via[1] > 0.5 else "weak", body_size=bs)
+        f"Temperature alone: {via_t[0]:.2f}",
+        f"Regression: R² {via_r2[0]:.2f}, no skill"], "ok" if via[1] > 0.5 else "weak", body_size=bs)
     _box(ax, xh[2], yH, wH, hH, "Glycans", [
         "No public CHO dataset pairs",
         "glycan profiles with omics on",

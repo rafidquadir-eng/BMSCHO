@@ -3848,6 +3848,168 @@ y,pred,null,fold,group,culture,experiment,array,endpoint,holdout_scheme,encoder,
 1.0,0.34465215180720027,0.49056603773584906,24,E35,E35_sd0.352,E35,GSM751910,Viability,leave_one_experiment_out,pathway,logit
 1.0,0.291748034142664,0.49056603773584906,24,E35,E35_sd0.379,E35,GSM751911,Viability,leave_one_experiment_out,pathway,logit
 0.0,0.9893579850316522,0.5031055900621118,26,E39,E39_s293,E39,GSM751921,Viability,leave_one_experiment_out,pathway,logit
+1.0,0.6548208280985469,0.5,0,E01,E01_sd0.323,E01,GSM751629,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.6548208280985469,0.5,0,E01,E01_sd0.383,E01,GSM751630,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6469062843004652,0.4968944099378882,1,E02,E02_s6,E02,GSM751634,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6413480445621998,0.4840764331210191,2,E03,E03_sd0.3,E03,GSM751636,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6413480445621998,0.4840764331210191,2,E03,E03_sd0.36,E03,GSM751637,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.32969344777585996,0.4840764331210191,2,E03,E03_sd0.35,E03,GSM751638,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.32969344777585996,0.4840764331210191,2,E03,E03_sd0.3,E03,GSM751639,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.32969344777585996,0.4840764331210191,2,E03,E03_sd0.36,E03,GSM751640,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6360250639547576,0.474025974025974,3,E04,E04_sd0.36,E04,GSM751644,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6360250639547576,0.474025974025974,3,E04,E04_sd0.4,E04,GSM751645,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6360250639547576,0.474025974025974,3,E04,E04_sd0.37,E04,GSM751646,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.3125644138204392,0.474025974025974,3,E04,E04_sd0.36,E04,GSM751647,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.3125644138204392,0.474025974025974,3,E04,E04_sd0.4,E04,GSM751648,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.3125644138204392,0.474025974025974,3,E04,E04_sd0.37,E04,GSM751649,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.3125644138204392,0.474025974025974,3,E04,E04_sd0.36,E04,GSM751650,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.3125644138204392,0.474025974025974,3,E04,E04_sd0.4,E04,GSM751651,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6756442112590567,0.5064102564102564,4,E05,E05_p25_0,E05,GSM751653,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6756442112590567,0.5064102564102564,4,E05,E05_p25_2,E05,GSM751655,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.6756442112590567,0.5064102564102564,4,E05,E05_p25_0,E05,GSM751657,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.6756442112590567,0.5064102564102564,4,E05,E05_p25_1,E05,GSM751658,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.6756442112590567,0.5064102564102564,4,E05,E05_p25_2,E05,GSM751659,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.6756442112590567,0.5064102564102564,4,E05,E05_p25_3,E05,GSM751660,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6437656648848996,0.5096774193548387,5,E06,E06_sd1.84,E06,GSM751663,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.37547396269034333,0.5096774193548387,5,E06,E06_sd2.134,E06,GSM751664,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.37547396269034333,0.5096774193548387,5,E06,E06_sd2.134,E06,GSM751665,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6437656648848996,0.5096774193548387,5,E06,E06_sd2.17,E06,GSM751667,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.37547396269034333,0.5096774193548387,5,E06,E06_sd2.17,E06,GSM751670,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.37547396269034333,0.5096774193548387,5,E06,E06_sd2.17,E06,GSM751671,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.37547396269034333,0.5096774193548387,5,E06,E06_sd1.84,E06,GSM751672,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6469062843004655,0.4968944099378882,6,E07,E07_s45,E07,GSM751673,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6629272622865116,0.5031446540880503,7,E08,E08_p49_3,E08,GSM751680,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.6629272622865116,0.5031446540880503,7,E08,E08_p49_2,E08,GSM751683,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.6629272622865116,0.5031446540880503,7,E08,E08_p49_3,E08,GSM751684,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.658991642319191,0.5031055900621118,8,E09,E09_s59,E09,GSM751687,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6381610459726887,0.49056603773584906,9,E10,E10_s61,E10,GSM751689,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6381610459726887,0.49056603773584906,9,E10,E10_s62,E10,GSM751690,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6381610459726887,0.49056603773584906,9,E10,E10_s63,E10,GSM751691,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6425871707865466,0.49375,10,E11,E11_sd0.34,E11,GSM751692,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6425871707865466,0.49375,10,E11,E11_sd0.281,E11,GSM751693,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6401508871230278,0.5165562913907285,11,E12,E12_a,E12,GSM751694,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6401508871230278,0.5165562913907285,11,E12,E12_b,E12,GSM751695,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6401508871230278,0.5165562913907285,11,E12,E12_d,E12,GSM751696,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.38974339669294394,0.5165562913907285,11,E12,E12_a,E12,GSM751697,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.38974339669294394,0.5165562913907285,11,E12,E12_b,E12,GSM751698,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.38974339669294394,0.5165562913907285,11,E12,E12_c,E12,GSM751699,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.38974339669294394,0.5165562913907285,11,E12,E12_d,E12,GSM751700,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.38974339669294394,0.5165562913907285,11,E12,E12_a,E12,GSM751701,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.38974339669294394,0.5165562913907285,11,E12,E12_b,E12,GSM751702,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.38974339669294394,0.5165562913907285,11,E12,E12_c,E12,GSM751703,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.38974339669294394,0.5165562913907285,11,E12,E12_d,E12,GSM751704,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.7283191862742964,0.5234899328859061,12,E13,E13_lump77,E13,GSM751707,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.7283191862742964,0.5234899328859061,12,E13,E13_lump77,E13,GSM751708,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.7283191862742964,0.5234899328859061,12,E13,E13_lump77,E13,GSM751709,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.7283191862742964,0.5234899328859061,12,E13,E13_lump77,E13,GSM751710,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.7283191862742964,0.5234899328859061,12,E13,E13_lump77,E13,GSM751711,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.7283191862742964,0.5234899328859061,12,E13,E13_p84_0,E13,GSM751712,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.7283191862742964,0.5234899328859061,12,E13,E13_p84_1,E13,GSM751713,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.7283191862742964,0.5234899328859061,12,E13,E13_p84_2,E13,GSM751714,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.7283191862742964,0.5234899328859061,12,E13,E13_p84_0,E13,GSM751718,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.7283191862742964,0.5234899328859061,12,E13,E13_p84_1,E13,GSM751719,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.7283191862742964,0.5234899328859061,12,E13,E13_p84_2,E13,GSM751720,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.7283191862742964,0.5234899328859061,12,E13,E13_p84_0,E13,GSM751721,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.7283191862742964,0.5234899328859061,12,E13,E13_p84_1,E13,GSM751722,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.3580825763167713,0.5031055900621118,13,E16,E16_p110_2,E16,GSM751746,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.6604040144810336,0.5225806451612903,14,E17,E17_p119_0,E17,GSM751747,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.3811476557900207,0.5225806451612903,14,E17,E17_p119_0,E17,GSM751750,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.3811476557900207,0.5225806451612903,14,E17,E17_p119_1,E17,GSM751751,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.3811476557900207,0.5225806451612903,14,E17,E17_p119_2,E17,GSM751752,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.3811476557900207,0.5225806451612903,14,E17,E17_p119_0,E17,GSM751753,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.3811476557900207,0.5225806451612903,14,E17,E17_p119_1,E17,GSM751754,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.3811476557900207,0.5225806451612903,14,E17,E17_p119_2,E17,GSM751755,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6356388919357051,0.5133333333333333,15,E21,E21_sd0.2,E21,GSM751778,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6356388919357051,0.5133333333333333,15,E21,E21_sd0.19,E21,GSM751779,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6356388919357051,0.5133333333333333,15,E21,E21_sd0.18,E21,GSM751780,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6356388919357051,0.5133333333333333,15,E21,E21_sd0.15,E21,GSM751781,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.3894762206157051,0.5133333333333333,15,E21,E21_sd0.2,E21,GSM751782,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.3894762206157051,0.5133333333333333,15,E21,E21_sd0.19,E21,GSM751783,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.3894762206157051,0.5133333333333333,15,E21,E21_sd0.18,E21,GSM751784,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.3894762206157051,0.5133333333333333,15,E21,E21_sd0.15,E21,GSM751785,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.3894762206157051,0.5133333333333333,15,E21,E21_sd0.2,E21,GSM751786,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.3894762206157051,0.5133333333333333,15,E21,E21_sd0.19,E21,GSM751787,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.3894762206157051,0.5133333333333333,15,E21,E21_sd0.18,E21,GSM751788,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.3894762206157051,0.5133333333333333,15,E21,E21_sd0.15,E21,GSM751789,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6391019039692227,0.5032258064516129,16,E23,E23_p163_0,E23,GSM751791,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6391019039692227,0.5032258064516129,16,E23,E23_p163_1,E23,GSM751792,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6391019039692227,0.5032258064516129,16,E23,E23_p163_2,E23,GSM751793,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.37061630292117914,0.5032258064516129,16,E23,E23_p163_0,E23,GSM751794,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.37061630292117914,0.5032258064516129,16,E23,E23_p163_0,E23,GSM751797,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.37061630292117914,0.5032258064516129,16,E23,E23_p163_1,E23,GSM751798,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.37061630292117914,0.5032258064516129,16,E23,E23_p163_2,E23,GSM751799,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6238445642516236,0.4452054794520548,17,E24,E24_a,E24,GSM751800,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6238445642516236,0.4452054794520548,17,E24,E24_b,E24,GSM751801,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6238445642516236,0.4452054794520548,17,E24,E24_a,E24,GSM751802,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6238445642516236,0.4452054794520548,17,E24,E24_b,E24,GSM751803,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.25519542488923747,0.4452054794520548,17,E24,E24_a,E24,GSM751804,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.25519542488923747,0.4452054794520548,17,E24,E24_b,E24,GSM751805,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.25519542488923747,0.4452054794520548,17,E24,E24_a,E24,GSM751806,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.25519542488923747,0.4452054794520548,17,E24,E24_b,E24,GSM751807,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.25519542488923747,0.4452054794520548,17,E24,E24_a,E24,GSM751808,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.25519542488923747,0.4452054794520548,17,E24,E24_b,E24,GSM751809,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.25519542488923747,0.4452054794520548,17,E24,E24_a,E24,GSM751811,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.25519542488923747,0.4452054794520548,17,E24,E24_b,E24,GSM751812,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.33274920235340993,0.525974025974026,18,E27,E27_sd4.33,E27,GSM751823,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.33274920235340993,0.525974025974026,18,E27,E27_sd4.17,E27,GSM751825,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.33274920235340993,0.525974025974026,18,E27,E27_sd4.33,E27,GSM751826,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.33274920235340993,0.525974025974026,18,E27,E27_sd3.77,E27,GSM751827,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.33274920235340993,0.525974025974026,18,E27,E27_sd4.17,E27,GSM751828,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.33274920235340993,0.525974025974026,18,E27,E27_sd4.33,E27,GSM751829,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.33274920235340993,0.525974025974026,18,E27,E27_sd3.77,E27,GSM751830,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.33274920235340993,0.525974025974026,18,E27,E27_sd4.17,E27,GSM751831,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6238445642516236,0.4452054794520548,17,E24,E24_c,E24,GSM751837,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.729476652610782,0.5294117647058824,19,E30,E30_sd0.28,E30,GSM751838,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.729476652610782,0.5294117647058824,19,E30,E30_sd0.21,E30,GSM751839,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.729476652610782,0.5294117647058824,19,E30,E30_sd0.22,E30,GSM751840,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.25519542488923747,0.4452054794520548,17,E24,E24_c,E24,GSM751841,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.729476652610782,0.5294117647058824,19,E30,E30_sd0.28,E30,GSM751842,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.729476652610782,0.5294117647058824,19,E30,E30_sd0.21,E30,GSM751843,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.25519542488923747,0.4452054794520548,17,E24,E24_c,E24,GSM751845,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.729476652610782,0.5294117647058824,19,E30,E30_sd0.28,E30,GSM751846,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.729476652610782,0.5294117647058824,19,E30,E30_sd0.21,E30,GSM751847,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.25519542488923747,0.4452054794520548,17,E24,E24_c,E24,GSM751849,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.729476652610782,0.5294117647058824,19,E30,E30_sd0.28,E30,GSM751850,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.729476652610782,0.5294117647058824,19,E30,E30_sd0.22,E30,GSM751851,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6355714231772475,0.47058823529411764,20,E31,E31_p224_0,E31,GSM751852,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6355714231772475,0.47058823529411764,20,E31,E31_p224_1,E31,GSM751853,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6355714231772475,0.47058823529411764,20,E31,E31_p224_2,E31,GSM751854,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.30375062794837476,0.47058823529411764,20,E31,E31_p224_0,E31,GSM751855,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.30375062794837476,0.47058823529411764,20,E31,E31_p224_1,E31,GSM751856,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.30375062794837476,0.47058823529411764,20,E31,E31_p224_2,E31,GSM751857,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.30375062794837476,0.47058823529411764,20,E31,E31_p224_0,E31,GSM751858,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.30375062794837476,0.47058823529411764,20,E31,E31_p224_1,E31,GSM751859,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.30375062794837476,0.47058823529411764,20,E31,E31_p224_2,E31,GSM751860,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.32620280877935853,0.5225806451612903,21,E32,E32_sd0.311,E32,GSM751861,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.32620280877935853,0.5225806451612903,21,E32,E32_sd0.311,E32,GSM751864,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.32620280877935853,0.5225806451612903,21,E32,E32_sd0.297,E32,GSM751865,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.32620280877935853,0.5225806451612903,21,E32,E32_sd0.293,E32,GSM751866,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.32620280877935853,0.5225806451612903,21,E32,E32_sd0.311,E32,GSM751867,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.32620280877935853,0.5225806451612903,21,E32,E32_sd0.297,E32,GSM751868,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.32620280877935853,0.5225806451612903,21,E32,E32_sd0.293,E32,GSM751869,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6340849523945565,0.4935897435897436,22,E33,E33_lump242,E33,GSM751870,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6340849523945565,0.4935897435897436,22,E33,E33_lump242,E33,GSM751871,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6340849523945565,0.4935897435897436,22,E33,E33_lump242,E33,GSM751872,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6340849523945565,0.4935897435897436,22,E33,E33_lump242,E33,GSM751873,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.3614720960052355,0.4935897435897436,22,E33,E33_lump242,E33,GSM751877,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.3614720960052355,0.4935897435897436,22,E33,E33_lump242,E33,GSM751878,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.6359784037859846,0.48026315789473684,23,E34,E34_sd0.315,E34,GSM751880,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6359784037859846,0.48026315789473684,23,E34,E34_sd0.344,E34,GSM751881,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6359784037859846,0.48026315789473684,23,E34,E34_sd0.363,E34,GSM751882,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6359784037859846,0.48026315789473684,23,E34,E34_sd0.331,E34,GSM751883,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6359784037859846,0.48026315789473684,23,E34,E34_sd0.428,E34,GSM751884,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6359784037859846,0.48026315789473684,23,E34,E34_sd0.374,E34,GSM751885,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.3335044055010316,0.48026315789473684,23,E34,E34_sd0.418,E34,GSM751886,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.3335044055010316,0.48026315789473684,23,E34,E34_sd0.428,E34,GSM751887,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.3335044055010316,0.48026315789473684,23,E34,E34_sd0.374,E34,GSM751888,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.3335044055010316,0.48026315789473684,23,E34,E34_sd0.315,E34,GSM751891,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6428098496626841,0.4968553459119497,25,E36,E36_sd0.353,E36,GSM751901,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6428098496626841,0.4968553459119497,25,E36,E36_sd0.352,E36,GSM751902,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.35763964467946424,0.4968553459119497,25,E36,E36_sd0.352,E36,GSM751908,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6381610459726902,0.49056603773584906,24,E35,E35_sd0.377,E35,GSM751909,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6381610459726902,0.49056603773584906,24,E35,E35_sd0.352,E35,GSM751910,Viability,leave_one_experiment_out,temperature only,logit
+1.0,0.6381610459726902,0.49056603773584906,24,E35,E35_sd0.379,E35,GSM751911,Viability,leave_one_experiment_out,temperature only,logit
+0.0,0.658991642319191,0.5031055900621118,26,E39,E39_s293,E39,GSM751921,Viability,leave_one_experiment_out,temperature only,logit
 1.0,0.8656626738606593,0.4968553459119497,3,L05,E01_sd0.323,E01,GSM751629,Viability,leave_one_expression_cluster_out,raw,logit
 0.0,0.839620577084911,0.4968553459119497,3,L05,E01_sd0.383,E01,GSM751630,Viability,leave_one_expression_cluster_out,raw,logit
 1.0,0.828922797102173,0.4968553459119497,3,L05,E02_s6,E02,GSM751634,Viability,leave_one_expression_cluster_out,raw,logit
@@ -4172,6 +4334,168 @@ y,pred,null,fold,group,culture,experiment,array,endpoint,holdout_scheme,encoder,
 1.0,0.44663065021336557,0.41353383458646614,0,L01,E35_sd0.352,E35,GSM751910,Viability,leave_one_expression_cluster_out,pathway,logit
 1.0,0.4401042731042825,0.41353383458646614,0,L01,E35_sd0.379,E35,GSM751911,Viability,leave_one_expression_cluster_out,pathway,logit
 0.0,0.9990879720385971,0.5031055900621118,5,L07,E39_s293,E39,GSM751921,Viability,leave_one_expression_cluster_out,pathway,logit
+1.0,0.6505451254194817,0.4968553459119497,3,L05,E01_sd0.323,E01,GSM751629,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.6505451254194817,0.4968553459119497,3,L05,E01_sd0.383,E01,GSM751630,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6505451254194817,0.4968553459119497,3,L05,E02_s6,E02,GSM751634,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.5778205069061506,0.41353383458646614,0,L01,E03_sd0.3,E03,GSM751636,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.5778205069061506,0.41353383458646614,0,L01,E03_sd0.36,E03,GSM751637,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.26037679816220205,0.41353383458646614,0,L01,E03_sd0.35,E03,GSM751638,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.26037679816220205,0.41353383458646614,0,L01,E03_sd0.3,E03,GSM751639,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.26037679816220205,0.41353383458646614,0,L01,E03_sd0.36,E03,GSM751640,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.5778205069061506,0.41353383458646614,0,L01,E04_sd0.36,E04,GSM751644,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.5778205069061506,0.41353383458646614,0,L01,E04_sd0.4,E04,GSM751645,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.5778205069061506,0.41353383458646614,0,L01,E04_sd0.37,E04,GSM751646,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.26037679816220205,0.41353383458646614,0,L01,E04_sd0.36,E04,GSM751647,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.26037679816220205,0.41353383458646614,0,L01,E04_sd0.4,E04,GSM751648,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.26037679816220205,0.41353383458646614,0,L01,E04_sd0.37,E04,GSM751649,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.26037679816220205,0.41353383458646614,0,L01,E04_sd0.36,E04,GSM751650,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.26037679816220205,0.41353383458646614,0,L01,E04_sd0.4,E04,GSM751651,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6639127370323852,0.5135135135135135,4,L06,E05_p25_0,E05,GSM751653,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6639127370323852,0.5135135135135135,4,L06,E05_p25_2,E05,GSM751655,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.6639127370323852,0.5135135135135135,4,L06,E05_p25_0,E05,GSM751657,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.6639127370323852,0.5135135135135135,4,L06,E05_p25_1,E05,GSM751658,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.6639127370323852,0.5135135135135135,4,L06,E05_p25_2,E05,GSM751659,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.6639127370323852,0.5135135135135135,4,L06,E05_p25_3,E05,GSM751660,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6639127370323852,0.5135135135135135,4,L06,E06_sd1.84,E06,GSM751663,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.37661635296179247,0.5135135135135135,4,L06,E06_sd2.134,E06,GSM751664,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.37661635296179247,0.5135135135135135,4,L06,E06_sd2.134,E06,GSM751665,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6639127370323852,0.5135135135135135,4,L06,E06_sd2.17,E06,GSM751667,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.37661635296179247,0.5135135135135135,4,L06,E06_sd2.17,E06,GSM751670,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.37661635296179247,0.5135135135135135,4,L06,E06_sd2.17,E06,GSM751671,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.37661635296179247,0.5135135135135135,4,L06,E06_sd1.84,E06,GSM751672,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6639127370323852,0.5135135135135135,4,L06,E07_s45,E07,GSM751673,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.7460150339206989,0.5333333333333333,1,L03,E08_p49_3,E08,GSM751680,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.7460150339206989,0.5333333333333333,1,L03,E08_p49_2,E08,GSM751683,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.7460150339206989,0.5333333333333333,1,L03,E08_p49_3,E08,GSM751684,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.6370614235850897,0.48717948717948717,8,L10,E09_s59,E09,GSM751687,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6370614235850897,0.48717948717948717,8,L10,E10_s61,E10,GSM751689,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6370614235850897,0.48717948717948717,8,L10,E10_s62,E10,GSM751690,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6370614235850897,0.48717948717948717,8,L10,E10_s63,E10,GSM751691,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6370614235850897,0.48717948717948717,8,L10,E11_sd0.34,E11,GSM751692,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6370614235850897,0.48717948717948717,8,L10,E11_sd0.281,E11,GSM751693,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6240288875821843,0.5323741007194245,11,L14,E12_a,E12,GSM751694,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6240288875821843,0.5323741007194245,11,L14,E12_b,E12,GSM751695,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6240288875821843,0.5323741007194245,11,L14,E12_d,E12,GSM751696,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.4329719417545581,0.5323741007194245,11,L14,E12_a,E12,GSM751697,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.4329719417545581,0.5323741007194245,11,L14,E12_b,E12,GSM751698,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.4329719417545581,0.5323741007194245,11,L14,E12_c,E12,GSM751699,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.4329719417545581,0.5323741007194245,11,L14,E12_d,E12,GSM751700,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.4329719417545581,0.5323741007194245,11,L14,E12_a,E12,GSM751701,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.4329719417545581,0.5323741007194245,11,L14,E12_b,E12,GSM751702,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.4329719417545581,0.5323741007194245,11,L14,E12_c,E12,GSM751703,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.4329719417545581,0.5323741007194245,11,L14,E12_d,E12,GSM751704,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.7283191862742964,0.5234899328859061,12,L15,E13_lump77,E13,GSM751707,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.7283191862742964,0.5234899328859061,12,L15,E13_lump77,E13,GSM751708,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.7283191862742964,0.5234899328859061,12,L15,E13_lump77,E13,GSM751709,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.7283191862742964,0.5234899328859061,12,L15,E13_lump77,E13,GSM751710,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.7283191862742964,0.5234899328859061,12,L15,E13_lump77,E13,GSM751711,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.7283191862742964,0.5234899328859061,12,L15,E13_p84_0,E13,GSM751712,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.7283191862742964,0.5234899328859061,12,L15,E13_p84_1,E13,GSM751713,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.7283191862742964,0.5234899328859061,12,L15,E13_p84_2,E13,GSM751714,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.7283191862742964,0.5234899328859061,12,L15,E13_p84_0,E13,GSM751718,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.7283191862742964,0.5234899328859061,12,L15,E13_p84_1,E13,GSM751719,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.7283191862742964,0.5234899328859061,12,L15,E13_p84_2,E13,GSM751720,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.7283191862742964,0.5234899328859061,12,L15,E13_p84_0,E13,GSM751721,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.7283191862742964,0.5234899328859061,12,L15,E13_p84_1,E13,GSM751722,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.386009360920221,0.525974025974026,10,L13,E16_p110_2,E16,GSM751746,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.6606625145254937,0.525974025974026,10,L13,E17_p119_0,E17,GSM751747,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.386009360920221,0.525974025974026,10,L13,E17_p119_0,E17,GSM751750,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.386009360920221,0.525974025974026,10,L13,E17_p119_1,E17,GSM751751,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.386009360920221,0.525974025974026,10,L13,E17_p119_2,E17,GSM751752,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.386009360920221,0.525974025974026,10,L13,E17_p119_0,E17,GSM751753,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.386009360920221,0.525974025974026,10,L13,E17_p119_1,E17,GSM751754,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.386009360920221,0.525974025974026,10,L13,E17_p119_2,E17,GSM751755,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6240288875821843,0.5323741007194245,11,L14,E21_sd0.2,E21,GSM751778,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6240288875821843,0.5323741007194245,11,L14,E21_sd0.19,E21,GSM751779,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6240288875821843,0.5323741007194245,11,L14,E21_sd0.18,E21,GSM751780,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6240288875821843,0.5323741007194245,11,L14,E21_sd0.15,E21,GSM751781,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.4329719417545581,0.5323741007194245,11,L14,E21_sd0.2,E21,GSM751782,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.4329719417545581,0.5323741007194245,11,L14,E21_sd0.19,E21,GSM751783,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.4329719417545581,0.5323741007194245,11,L14,E21_sd0.18,E21,GSM751784,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.4329719417545581,0.5323741007194245,11,L14,E21_sd0.15,E21,GSM751785,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.4329719417545581,0.5323741007194245,11,L14,E21_sd0.2,E21,GSM751786,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.4329719417545581,0.5323741007194245,11,L14,E21_sd0.19,E21,GSM751787,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.4329719417545581,0.5323741007194245,11,L14,E21_sd0.18,E21,GSM751788,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.4329719417545581,0.5323741007194245,11,L14,E21_sd0.15,E21,GSM751789,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6223699954572016,0.4726027397260274,6,L08,E23_p163_0,E23,GSM751791,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6223699954572016,0.4726027397260274,6,L08,E23_p163_1,E23,GSM751792,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6223699954572016,0.4726027397260274,6,L08,E23_p163_2,E23,GSM751793,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.31940668861831084,0.4726027397260274,6,L08,E23_p163_0,E23,GSM751794,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.31940668861831084,0.4726027397260274,6,L08,E23_p163_0,E23,GSM751797,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.31940668861831084,0.4726027397260274,6,L08,E23_p163_1,E23,GSM751798,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.31940668861831084,0.4726027397260274,6,L08,E23_p163_2,E23,GSM751799,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6238445642516236,0.4452054794520548,2,L04,E24_a,E24,GSM751800,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6238445642516236,0.4452054794520548,2,L04,E24_b,E24,GSM751801,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6238445642516236,0.4452054794520548,2,L04,E24_a,E24,GSM751802,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6238445642516236,0.4452054794520548,2,L04,E24_b,E24,GSM751803,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.25519542488923747,0.4452054794520548,2,L04,E24_a,E24,GSM751804,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.25519542488923747,0.4452054794520548,2,L04,E24_b,E24,GSM751805,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.25519542488923747,0.4452054794520548,2,L04,E24_a,E24,GSM751806,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.25519542488923747,0.4452054794520548,2,L04,E24_b,E24,GSM751807,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.25519542488923747,0.4452054794520548,2,L04,E24_a,E24,GSM751808,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.25519542488923747,0.4452054794520548,2,L04,E24_b,E24,GSM751809,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.25519542488923747,0.4452054794520548,2,L04,E24_a,E24,GSM751811,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.25519542488923747,0.4452054794520548,2,L04,E24_b,E24,GSM751812,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.38833467410412187,0.5510204081632653,9,L12,E27_sd4.33,E27,GSM751823,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.38833467410412187,0.5510204081632653,9,L12,E27_sd4.17,E27,GSM751825,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.38833467410412187,0.5510204081632653,9,L12,E27_sd4.33,E27,GSM751826,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.38833467410412187,0.5510204081632653,9,L12,E27_sd3.77,E27,GSM751827,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.38833467410412187,0.5510204081632653,9,L12,E27_sd4.17,E27,GSM751828,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.38833467410412187,0.5510204081632653,9,L12,E27_sd4.33,E27,GSM751829,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.38833467410412187,0.5510204081632653,9,L12,E27_sd3.77,E27,GSM751830,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.38833467410412187,0.5510204081632653,9,L12,E27_sd4.17,E27,GSM751831,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6238445642516236,0.4452054794520548,2,L04,E24_c,E24,GSM751837,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.7460150339206989,0.5333333333333333,1,L03,E30_sd0.28,E30,GSM751838,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.7460150339206989,0.5333333333333333,1,L03,E30_sd0.21,E30,GSM751839,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.7460150339206989,0.5333333333333333,1,L03,E30_sd0.22,E30,GSM751840,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.25519542488923747,0.4452054794520548,2,L04,E24_c,E24,GSM751841,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.7460150339206989,0.5333333333333333,1,L03,E30_sd0.28,E30,GSM751842,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.7460150339206989,0.5333333333333333,1,L03,E30_sd0.21,E30,GSM751843,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.25519542488923747,0.4452054794520548,2,L04,E24_c,E24,GSM751845,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.7460150339206989,0.5333333333333333,1,L03,E30_sd0.28,E30,GSM751846,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.7460150339206989,0.5333333333333333,1,L03,E30_sd0.21,E30,GSM751847,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.25519542488923747,0.4452054794520548,2,L04,E24_c,E24,GSM751849,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.7460150339206989,0.5333333333333333,1,L03,E30_sd0.28,E30,GSM751850,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.7460150339206989,0.5333333333333333,1,L03,E30_sd0.22,E30,GSM751851,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6223699954572016,0.4726027397260274,6,L08,E31_p224_0,E31,GSM751852,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6223699954572016,0.4726027397260274,6,L08,E31_p224_1,E31,GSM751853,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6223699954572016,0.4726027397260274,6,L08,E31_p224_2,E31,GSM751854,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.31940668861831084,0.4726027397260274,6,L08,E31_p224_0,E31,GSM751855,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.31940668861831084,0.4726027397260274,6,L08,E31_p224_1,E31,GSM751856,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.31940668861831084,0.4726027397260274,6,L08,E31_p224_2,E31,GSM751857,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.31940668861831084,0.4726027397260274,6,L08,E31_p224_0,E31,GSM751858,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.31940668861831084,0.4726027397260274,6,L08,E31_p224_1,E31,GSM751859,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.31940668861831084,0.4726027397260274,6,L08,E31_p224_2,E31,GSM751860,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.38833467410412187,0.5510204081632653,9,L12,E32_sd0.311,E32,GSM751861,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.38833467410412187,0.5510204081632653,9,L12,E32_sd0.311,E32,GSM751864,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.38833467410412187,0.5510204081632653,9,L12,E32_sd0.297,E32,GSM751865,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.38833467410412187,0.5510204081632653,9,L12,E32_sd0.293,E32,GSM751866,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.38833467410412187,0.5510204081632653,9,L12,E32_sd0.311,E32,GSM751867,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.38833467410412187,0.5510204081632653,9,L12,E32_sd0.297,E32,GSM751868,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.38833467410412187,0.5510204081632653,9,L12,E32_sd0.293,E32,GSM751869,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6340849523945565,0.4935897435897436,7,L09,E33_lump242,E33,GSM751870,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6340849523945565,0.4935897435897436,7,L09,E33_lump242,E33,GSM751871,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6340849523945565,0.4935897435897436,7,L09,E33_lump242,E33,GSM751872,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.6340849523945565,0.4935897435897436,7,L09,E33_lump242,E33,GSM751873,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.3614720960052355,0.4935897435897436,7,L09,E33_lump242,E33,GSM751877,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.3614720960052355,0.4935897435897436,7,L09,E33_lump242,E33,GSM751878,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.5778205069061506,0.41353383458646614,0,L01,E34_sd0.315,E34,GSM751880,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.5778205069061506,0.41353383458646614,0,L01,E34_sd0.344,E34,GSM751881,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.5778205069061506,0.41353383458646614,0,L01,E34_sd0.363,E34,GSM751882,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.5778205069061506,0.41353383458646614,0,L01,E34_sd0.331,E34,GSM751883,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.5778205069061506,0.41353383458646614,0,L01,E34_sd0.428,E34,GSM751884,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.5778205069061506,0.41353383458646614,0,L01,E34_sd0.374,E34,GSM751885,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.26037679816220205,0.41353383458646614,0,L01,E34_sd0.418,E34,GSM751886,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.26037679816220205,0.41353383458646614,0,L01,E34_sd0.428,E34,GSM751887,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.26037679816220205,0.41353383458646614,0,L01,E34_sd0.374,E34,GSM751888,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.26037679816220205,0.41353383458646614,0,L01,E34_sd0.315,E34,GSM751891,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.5778205069061506,0.41353383458646614,0,L01,E36_sd0.353,E36,GSM751901,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.5778205069061506,0.41353383458646614,0,L01,E36_sd0.352,E36,GSM751902,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.26037679816220205,0.41353383458646614,0,L01,E36_sd0.352,E36,GSM751908,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.5778205069061506,0.41353383458646614,0,L01,E35_sd0.377,E35,GSM751909,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.5778205069061506,0.41353383458646614,0,L01,E35_sd0.352,E35,GSM751910,Viability,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.5778205069061506,0.41353383458646614,0,L01,E35_sd0.379,E35,GSM751911,Viability,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.658991642319191,0.5031055900621118,5,L07,E39_s293,E39,GSM751921,Viability,leave_one_expression_cluster_out,temperature only,logit
 1.0,0.9996164147369805,0.5109489051094891,2,E01_sd0.323,E01_sd0.323,E01,GSM751629,Viability,culture_grouped_5fold,raw,logit
 0.0,0.9995973801910305,0.5109489051094891,2,E01_sd0.383,E01_sd0.383,E01,GSM751630,Viability,culture_grouped_5fold,raw,logit
 1.0,0.9973928157157894,0.5109489051094891,2,E02_s6,E02_s6,E02,GSM751634,Viability,culture_grouped_5fold,raw,logit
@@ -7981,6 +8305,157 @@ y,pred,null,fold,group,culture,experiment,array,endpoint,holdout_scheme,encoder,
 1.0,0.9755070484416861,0.4864864864864865,27,E39,E39_s293,E39,GSM751921,Growth rate,leave_one_experiment_out,pathway,logit
 1.0,0.9864866126259781,0.4864864864864865,27,E39,E39_s294,E39,GSM751922,Growth rate,leave_one_experiment_out,pathway,logit
 1.0,0.9873870339113265,0.4864864864864865,27,E39,E39_s295,E39,GSM751923,Growth rate,leave_one_experiment_out,pathway,logit
+1.0,0.9070271036453692,0.48299319727891155,0,E02,E02_s3,E02,GSM751631,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9070271036453692,0.48299319727891155,0,E02,E02_s4,E02,GSM751632,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9070271036453692,0.48299319727891155,0,E02,E02_s5,E02,GSM751633,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9070271036453692,0.48299319727891155,0,E02,E02_s6,E02,GSM751634,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9093935945680431,0.4899328859060403,1,E03,E03_sd0.35,E03,GSM751635,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9093935945680431,0.4899328859060403,1,E03,E03_sd0.3,E03,GSM751636,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9082365967354685,0.4864864864864865,2,E04,E04_sd0.36,E04,GSM751644,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9082365967354685,0.4864864864864865,2,E04,E04_sd0.4,E04,GSM751645,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9082365967354685,0.4864864864864865,2,E04,E04_sd0.37,E04,GSM751646,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9070271036453692,0.48299319727891155,3,E05,E05_p25_0,E05,GSM751653,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9070271036453692,0.48299319727891155,3,E05,E05_p25_1,E05,GSM751654,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9070271036453692,0.48299319727891155,3,E05,E05_p25_2,E05,GSM751655,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9070271036453692,0.48299319727891155,3,E05,E05_p25_3,E05,GSM751656,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9105895604006244,0.5174825174825175,4,E06,E06_sd2.134,E06,GSM751661,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.02213157270113458,0.5174825174825175,4,E06,E06_sd2.134,E06,GSM751664,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.02213157270113458,0.5174825174825175,4,E06,E06_sd2.134,E06,GSM751665,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.02213157270113458,0.5174825174825175,4,E06,E06_sd1.84,E06,GSM751666,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.02213157270113458,0.5174825174825175,4,E06,E06_sd2.17,E06,GSM751668,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.02213157270113458,0.5174825174825175,4,E06,E06_sd2.17,E06,GSM751670,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.02213157270113458,0.5174825174825175,4,E06,E06_sd2.17,E06,GSM751671,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.02213157270113458,0.5174825174825175,4,E06,E06_sd1.84,E06,GSM751672,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9105216649430368,0.49333333333333335,5,E07,E07_s45,E07,GSM751673,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9082365967354685,0.4864864864864865,6,E09,E09_s57,E09,GSM751685,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9082365967354685,0.4864864864864865,6,E09,E09_s58,E09,GSM751686,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9082365967354685,0.4864864864864865,6,E09,E09_s59,E09,GSM751687,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9070271036454142,0.48299319727891155,7,E10,E10_s60,E10,GSM751688,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9070271036454142,0.48299319727891155,7,E10,E10_s61,E10,GSM751689,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9070271036454142,0.48299319727891155,7,E10,E10_s62,E10,GSM751690,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9070271036454142,0.48299319727891155,7,E10,E10_s63,E10,GSM751691,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9093935945680419,0.4899328859060403,8,E11,E11_sd0.34,E11,GSM751692,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9093935945680419,0.4899328859060403,8,E11,E11_sd0.281,E11,GSM751693,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9105216649430368,0.49333333333333335,9,E12,E12_b,E12,GSM751695,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.8992328260242026,0.46099290780141844,10,E14,E14_p95_0,E14,GSM751723,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.8992328260242026,0.46099290780141844,10,E14,E14_p95_1,E14,GSM751724,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.8992328260242026,0.46099290780141844,10,E14,E14_p95_0,E14,GSM751727,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.8992328260242026,0.46099290780141844,10,E14,E14_p95_1,E14,GSM751728,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.8992328260242026,0.46099290780141844,10,E14,E14_p95_2,E14,GSM751729,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.8992328260242026,0.46099290780141844,10,E14,E14_p95_3,E14,GSM751730,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.8992328260242026,0.46099290780141844,10,E14,E14_p95_0,E14,GSM751731,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.8992328260242026,0.46099290780141844,10,E14,E14_p95_1,E14,GSM751732,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.8992328260242026,0.46099290780141844,10,E14,E14_p95_2,E14,GSM751733,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.8992328260242026,0.46099290780141844,10,E14,E14_p95_3,E14,GSM751734,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9093935945680419,0.4899328859060403,11,E15,E15_sd0.156,E15,GSM751736,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9093935945680419,0.4899328859060403,11,E15,E15_sd0.252,E15,GSM751737,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.021745431464225126,0.5172413793103449,12,E16,E16_p110_0,E16,GSM751741,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.021745431464225126,0.5172413793103449,12,E16,E16_p110_1,E16,GSM751742,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.021745431464225126,0.5172413793103449,12,E16,E16_p110_2,E16,GSM751743,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.021745431464225126,0.5172413793103449,12,E16,E16_p110_0,E16,GSM751744,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.021745431464225126,0.5172413793103449,12,E16,E16_p110_1,E16,GSM751745,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.021745431464225126,0.5172413793103449,12,E16,E16_p110_2,E16,GSM751746,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.021745431464225126,0.5172413793103449,13,E17,E17_p119_0,E17,GSM751750,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.021745431464225126,0.5172413793103449,13,E17,E17_p119_1,E17,GSM751751,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.021745431464225126,0.5172413793103449,13,E17,E17_p119_2,E17,GSM751752,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.021745431464225126,0.5172413793103449,13,E17,E17_p119_0,E17,GSM751753,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.021745431464225126,0.5172413793103449,13,E17,E17_p119_1,E17,GSM751754,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.021745431464225126,0.5172413793103449,13,E17,E17_p119_2,E17,GSM751755,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9071025249687522,0.5,14,E21,E21_sd0.2,E21,GSM751778,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9071025249687522,0.5,14,E21,E21_sd0.19,E21,GSM751779,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9071025249687522,0.5,14,E21,E21_sd0.18,E21,GSM751780,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9071025249687522,0.5,14,E21,E21_sd0.15,E21,GSM751781,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.02131862790164902,0.5,14,E21,E21_sd0.18,E21,GSM751784,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.02131862790164902,0.5,14,E21,E21_sd0.2,E21,GSM751786,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.02131862790164902,0.5,14,E21,E21_sd0.19,E21,GSM751787,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.02131862790164902,0.5,14,E21,E21_sd0.18,E21,GSM751788,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.02131862790164902,0.5,14,E21,E21_sd0.15,E21,GSM751789,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9082365967354685,0.4864864864864865,26,E37,E37_s162,E37,GSM751790,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9082775592432423,0.5,15,E23,E23_p163_0,E23,GSM751791,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9082775592432423,0.5,15,E23,E23_p163_1,E23,GSM751792,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9082775592432423,0.5,15,E23,E23_p163_2,E23,GSM751793,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.02096431546864601,0.5,15,E23,E23_p163_1,E23,GSM751795,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.02096431546864601,0.5,15,E23,E23_p163_2,E23,GSM751796,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.02096431546864601,0.5,15,E23,E23_p163_0,E23,GSM751797,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.02096431546864601,0.5,15,E23,E23_p163_1,E23,GSM751798,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9058971564450999,0.5,16,E24,E24_a,E24,GSM751800,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9058971564450999,0.5,16,E24,E24_b,E24,GSM751801,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9058971564450999,0.5,16,E24,E24_a,E24,GSM751802,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9058971564450999,0.5,16,E24,E24_b,E24,GSM751803,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.02168351705635141,0.5,16,E24,E24_a,E24,GSM751808,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.02168351705635141,0.5,16,E24,E24_b,E24,GSM751809,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.02168351705635141,0.5,16,E24,E24_a,E24,GSM751811,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.02168351705635141,0.5,16,E24,E24_b,E24,GSM751812,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9443532942681157,0.496551724137931,17,E25,E25_sd0.45,E25,GSM751813,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9443532942681157,0.496551724137931,17,E25,E25_sd0.44,E25,GSM751814,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9443532942681157,0.496551724137931,17,E25,E25_sd0.42,E25,GSM751815,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.9443532942681157,0.496551724137931,17,E25,E25_sd0.45,E25,GSM751819,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.9443532942681157,0.496551724137931,17,E25,E25_sd0.44,E25,GSM751820,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.9443532942681157,0.496551724137931,17,E25,E25_sd0.42,E25,GSM751821,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.00433206541805127,0.5172413793103449,18,E27,E27_sd4.33,E27,GSM751826,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.00433206541805127,0.5172413793103449,18,E27,E27_sd3.77,E27,GSM751827,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.00433206541805127,0.5172413793103449,18,E27,E27_sd4.17,E27,GSM751828,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.00433206541805127,0.5172413793103449,18,E27,E27_sd4.33,E27,GSM751829,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.00433206541805127,0.5172413793103449,18,E27,E27_sd3.77,E27,GSM751830,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.00433206541805127,0.5172413793103449,18,E27,E27_sd4.17,E27,GSM751831,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9058971564450999,0.5,16,E24,E24_c,E24,GSM751837,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.02168351705635141,0.5,16,E24,E24_c,E24,GSM751845,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.9464841570737502,0.5067567567567568,19,E30,E30_sd0.28,E30,GSM751846,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.02168351705635141,0.5,16,E24,E24_c,E24,GSM751849,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.9464841570737502,0.5067567567567568,19,E30,E30_sd0.28,E30,GSM751850,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.9464841570737502,0.5067567567567568,19,E30,E30_sd0.22,E30,GSM751851,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9082365967354685,0.4864864864864865,20,E31,E31_p224_0,E31,GSM751852,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9082365967354685,0.4864864864864865,20,E31,E31_p224_1,E31,GSM751853,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9082365967354685,0.4864864864864865,20,E31,E31_p224_2,E31,GSM751854,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.004382179072613998,0.5244755244755245,21,E32,E32_sd0.311,E32,GSM751861,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.004382179072613998,0.5244755244755245,21,E32,E32_sd0.297,E32,GSM751862,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.004382179072613998,0.5244755244755245,21,E32,E32_sd0.311,E32,GSM751864,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.004382179072613998,0.5244755244755245,21,E32,E32_sd0.297,E32,GSM751865,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.004382179072613998,0.5244755244755245,21,E32,E32_sd0.293,E32,GSM751866,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.004382179072613998,0.5244755244755245,21,E32,E32_sd0.311,E32,GSM751867,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.004382179072613998,0.5244755244755245,21,E32,E32_sd0.297,E32,GSM751868,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.004382179072613998,0.5244755244755245,21,E32,E32_sd0.293,E32,GSM751869,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9082536724637568,0.4931506849315068,22,E33,E33_lump242,E33,GSM751870,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9082536724637568,0.4931506849315068,22,E33,E33_lump242,E33,GSM751871,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9082536724637568,0.4931506849315068,22,E33,E33_lump242,E33,GSM751872,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.020267832472198995,0.4931506849315068,22,E33,E33_lump242,E33,GSM751877,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.020267832472198995,0.4931506849315068,22,E33,E33_lump242,E33,GSM751878,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9058971564450999,0.5,23,E34,E34_sd0.344,E34,GSM751881,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9058971564450999,0.5,23,E34,E34_sd0.363,E34,GSM751882,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9058971564450999,0.5,23,E34,E34_sd0.331,E34,GSM751883,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9058971564450999,0.5,23,E34,E34_sd0.428,E34,GSM751884,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9058971564450999,0.5,23,E34,E34_sd0.374,E34,GSM751885,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.021683517056351253,0.5,23,E34,E34_sd0.418,E34,GSM751886,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.021683517056351253,0.5,23,E34,E34_sd0.344,E34,GSM751889,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.021683517056351253,0.5,23,E34,E34_sd0.363,E34,GSM751890,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.021683517056351253,0.5,23,E34,E34_sd0.315,E34,GSM751891,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.021683517056351253,0.5,23,E34,E34_sd0.344,E34,GSM751892,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.021683517056351253,0.5,23,E34,E34_sd0.363,E34,GSM751893,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.022512237339461002,0.5142857142857142,24,E35,E35_sd0.352,E35,GSM751895,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.022512237339461002,0.5142857142857142,24,E35,E35_sd0.379,E35,GSM751896,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.022512237339461002,0.5142857142857142,24,E35,E35_sd0.377,E35,GSM751897,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.022512237339461002,0.5142857142857142,24,E35,E35_sd0.352,E35,GSM751898,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.022512237339461002,0.5142857142857142,24,E35,E35_sd0.379,E35,GSM751899,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.920283969112691,0.5070422535211268,25,E36,E36_sd0.427,E36,GSM751900,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.920283969112691,0.5070422535211268,25,E36,E36_sd0.353,E36,GSM751901,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.920283969112691,0.5070422535211268,25,E36,E36_sd0.352,E36,GSM751902,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.0041950451319042355,0.5070422535211268,25,E36,E36_sd0.353,E36,GSM751904,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.0041950451319042355,0.5070422535211268,25,E36,E36_sd0.352,E36,GSM751905,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.0041950451319042355,0.5070422535211268,25,E36,E36_sd0.427,E36,GSM751906,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.0041950451319042355,0.5070422535211268,25,E36,E36_sd0.353,E36,GSM751907,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.0041950451319042355,0.5070422535211268,25,E36,E36_sd0.352,E36,GSM751908,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9083227577630958,0.5142857142857142,24,E35,E35_sd0.377,E35,GSM751909,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9083227577630958,0.5142857142857142,24,E35,E35_sd0.352,E35,GSM751910,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9083227577630958,0.5142857142857142,24,E35,E35_sd0.379,E35,GSM751911,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.022512237339461002,0.5142857142857142,24,E35,E35_sd0.377,E35,GSM751912,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.022512237339461002,0.5142857142857142,24,E35,E35_sd0.352,E35,GSM751913,Growth rate,leave_one_experiment_out,temperature only,logit
+0.0,0.022512237339461002,0.5142857142857142,24,E35,E35_sd0.379,E35,GSM751914,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.0041950451319042355,0.5070422535211268,25,E36,E36_sd0.427,E36,GSM751915,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9082365967354685,0.4864864864864865,26,E37,E37_s290,E37,GSM751918,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.9082365967354685,0.4864864864864865,26,E37,E37_s291,E37,GSM751919,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.908236596735468,0.4864864864864865,27,E39,E39_s293,E39,GSM751921,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.908236596735468,0.4864864864864865,27,E39,E39_s294,E39,GSM751922,Growth rate,leave_one_experiment_out,temperature only,logit
+1.0,0.908236596735468,0.4864864864864865,27,E39,E39_s295,E39,GSM751923,Growth rate,leave_one_experiment_out,temperature only,logit
 1.0,0.8732020766686259,0.48299319727891155,3,L05,E02_s3,E02,GSM751631,Growth rate,leave_one_expression_cluster_out,raw,logit
 1.0,0.8825231394940016,0.48299319727891155,3,L05,E02_s4,E02,GSM751632,Growth rate,leave_one_expression_cluster_out,raw,logit
 1.0,0.8634907706088149,0.48299319727891155,3,L05,E02_s5,E02,GSM751633,Growth rate,leave_one_expression_cluster_out,raw,logit
@@ -8283,6 +8758,157 @@ y,pred,null,fold,group,culture,experiment,array,endpoint,holdout_scheme,encoder,
 1.0,0.9932016614537275,0.47586206896551725,5,L07,E39_s293,E39,GSM751921,Growth rate,leave_one_expression_cluster_out,pathway,logit
 1.0,0.9978937711824504,0.47586206896551725,5,L07,E39_s294,E39,GSM751922,Growth rate,leave_one_expression_cluster_out,pathway,logit
 1.0,0.9984577657824852,0.47586206896551725,5,L07,E39_s295,E39,GSM751923,Growth rate,leave_one_expression_cluster_out,pathway,logit
+1.0,0.9070271036453692,0.48299319727891155,3,L05,E02_s3,E02,GSM751631,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9070271036453692,0.48299319727891155,3,L05,E02_s4,E02,GSM751632,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9070271036453692,0.48299319727891155,3,L05,E02_s5,E02,GSM751633,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9070271036453692,0.48299319727891155,3,L05,E02_s6,E02,GSM751634,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9454335812063723,0.5137614678899083,0,L01,E03_sd0.35,E03,GSM751635,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9454335812063723,0.5137614678899083,0,L01,E03_sd0.3,E03,GSM751636,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9454335812063723,0.5137614678899083,0,L01,E04_sd0.36,E04,GSM751644,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9454335812063723,0.5137614678899083,0,L01,E04_sd0.4,E04,GSM751645,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9454335812063723,0.5137614678899083,0,L01,E04_sd0.37,E04,GSM751646,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9046600035165085,0.5,4,L06,E05_p25_0,E05,GSM751653,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9046600035165085,0.5,4,L06,E05_p25_1,E05,GSM751654,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9046600035165085,0.5,4,L06,E05_p25_2,E05,GSM751655,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9046600035165085,0.5,4,L06,E05_p25_3,E05,GSM751656,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9046600035165085,0.5,4,L06,E06_sd2.134,E06,GSM751661,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.02206368469523796,0.5,4,L06,E06_sd2.134,E06,GSM751664,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.02206368469523796,0.5,4,L06,E06_sd2.134,E06,GSM751665,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.02206368469523796,0.5,4,L06,E06_sd1.84,E06,GSM751666,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.02206368469523796,0.5,4,L06,E06_sd2.17,E06,GSM751668,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.02206368469523796,0.5,4,L06,E06_sd2.17,E06,GSM751670,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.02206368469523796,0.5,4,L06,E06_sd2.17,E06,GSM751671,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.02206368469523796,0.5,4,L06,E06_sd1.84,E06,GSM751672,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9046600035165085,0.5,4,L06,E07_s45,E07,GSM751673,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9006260663631861,0.4647887323943662,8,L10,E09_s57,E09,GSM751685,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9006260663631861,0.4647887323943662,8,L10,E09_s58,E09,GSM751686,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9006260663631861,0.4647887323943662,8,L10,E09_s59,E09,GSM751687,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9006260663631861,0.4647887323943662,8,L10,E10_s60,E10,GSM751688,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9006260663631861,0.4647887323943662,8,L10,E10_s61,E10,GSM751689,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9006260663631861,0.4647887323943662,8,L10,E10_s62,E10,GSM751690,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9006260663631861,0.4647887323943662,8,L10,E10_s63,E10,GSM751691,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9006260663631861,0.4647887323943662,8,L10,E11_sd0.34,E11,GSM751692,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9006260663631861,0.4647887323943662,8,L10,E11_sd0.281,E11,GSM751693,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9058871100103244,0.49645390070921985,12,L14,E12_b,E12,GSM751695,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8963256674472243,0.45323741007194246,9,L11,E14_p95_0,E14,GSM751723,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8963256674472243,0.45323741007194246,9,L11,E14_p95_1,E14,GSM751724,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8963256674472243,0.45323741007194246,9,L11,E14_p95_0,E14,GSM751727,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8963256674472243,0.45323741007194246,9,L11,E14_p95_1,E14,GSM751728,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8963256674472243,0.45323741007194246,9,L11,E14_p95_2,E14,GSM751729,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8963256674472243,0.45323741007194246,9,L11,E14_p95_3,E14,GSM751730,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8963256674472243,0.45323741007194246,9,L11,E14_p95_0,E14,GSM751731,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8963256674472243,0.45323741007194246,9,L11,E14_p95_1,E14,GSM751732,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8963256674472243,0.45323741007194246,9,L11,E14_p95_2,E14,GSM751733,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8963256674472243,0.45323741007194246,9,L11,E14_p95_3,E14,GSM751734,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8963256674472243,0.45323741007194246,9,L11,E15_sd0.156,E15,GSM751736,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8963256674472243,0.45323741007194246,9,L11,E15_sd0.252,E15,GSM751737,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.024344190092761637,0.539568345323741,11,L13,E16_p110_0,E16,GSM751741,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.024344190092761637,0.539568345323741,11,L13,E16_p110_1,E16,GSM751742,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.024344190092761637,0.539568345323741,11,L13,E16_p110_2,E16,GSM751743,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.024344190092761637,0.539568345323741,11,L13,E16_p110_0,E16,GSM751744,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.024344190092761637,0.539568345323741,11,L13,E16_p110_1,E16,GSM751745,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.024344190092761637,0.539568345323741,11,L13,E16_p110_2,E16,GSM751746,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.024344190092761637,0.539568345323741,11,L13,E17_p119_0,E17,GSM751750,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.024344190092761637,0.539568345323741,11,L13,E17_p119_1,E17,GSM751751,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.024344190092761637,0.539568345323741,11,L13,E17_p119_2,E17,GSM751752,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.024344190092761637,0.539568345323741,11,L13,E17_p119_0,E17,GSM751753,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.024344190092761637,0.539568345323741,11,L13,E17_p119_1,E17,GSM751754,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.024344190092761637,0.539568345323741,11,L13,E17_p119_2,E17,GSM751755,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9058871100103244,0.49645390070921985,12,L14,E21_sd0.2,E21,GSM751778,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9058871100103244,0.49645390070921985,12,L14,E21_sd0.19,E21,GSM751779,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9058871100103244,0.49645390070921985,12,L14,E21_sd0.18,E21,GSM751780,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9058871100103244,0.49645390070921985,12,L14,E21_sd0.15,E21,GSM751781,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.021304615842182663,0.49645390070921985,12,L14,E21_sd0.18,E21,GSM751784,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.021304615842182663,0.49645390070921985,12,L14,E21_sd0.2,E21,GSM751786,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.021304615842182663,0.49645390070921985,12,L14,E21_sd0.19,E21,GSM751787,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.021304615842182663,0.49645390070921985,12,L14,E21_sd0.18,E21,GSM751788,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.021304615842182663,0.49645390070921985,12,L14,E21_sd0.15,E21,GSM751789,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9039296327427343,0.47586206896551725,5,L07,E37_s162,E37,GSM751790,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.904626941564459,0.48936170212765956,6,L08,E23_p163_0,E23,GSM751791,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.904626941564459,0.48936170212765956,6,L08,E23_p163_1,E23,GSM751792,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.904626941564459,0.48936170212765956,6,L08,E23_p163_2,E23,GSM751793,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.020928669153859904,0.48936170212765956,6,L08,E23_p163_1,E23,GSM751795,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.020928669153859904,0.48936170212765956,6,L08,E23_p163_2,E23,GSM751796,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.020928669153859904,0.48936170212765956,6,L08,E23_p163_0,E23,GSM751797,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.020928669153859904,0.48936170212765956,6,L08,E23_p163_1,E23,GSM751798,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9058971564450999,0.5,2,L04,E24_a,E24,GSM751800,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9058971564450999,0.5,2,L04,E24_b,E24,GSM751801,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9058971564450999,0.5,2,L04,E24_a,E24,GSM751802,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9058971564450999,0.5,2,L04,E24_b,E24,GSM751803,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.02168351705635141,0.5,2,L04,E24_a,E24,GSM751808,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.02168351705635141,0.5,2,L04,E24_b,E24,GSM751809,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.02168351705635141,0.5,2,L04,E24_a,E24,GSM751811,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.02168351705635141,0.5,2,L04,E24_b,E24,GSM751812,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9454335812063723,0.5137614678899083,0,L01,E25_sd0.45,E25,GSM751813,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9454335812063723,0.5137614678899083,0,L01,E25_sd0.44,E25,GSM751814,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9454335812063723,0.5137614678899083,0,L01,E25_sd0.42,E25,GSM751815,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.9454335812063723,0.5137614678899083,0,L01,E25_sd0.45,E25,GSM751819,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.9454335812063723,0.5137614678899083,0,L01,E25_sd0.44,E25,GSM751820,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.9454335812063723,0.5137614678899083,0,L01,E25_sd0.42,E25,GSM751821,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.004540163945427447,0.5474452554744526,10,L12,E27_sd4.33,E27,GSM751826,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.004540163945427447,0.5474452554744526,10,L12,E27_sd3.77,E27,GSM751827,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.004540163945427447,0.5474452554744526,10,L12,E27_sd4.17,E27,GSM751828,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.004540163945427447,0.5474452554744526,10,L12,E27_sd4.33,E27,GSM751829,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.004540163945427447,0.5474452554744526,10,L12,E27_sd3.77,E27,GSM751830,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.004540163945427447,0.5474452554744526,10,L12,E27_sd4.17,E27,GSM751831,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9058971564450999,0.5,2,L04,E24_c,E24,GSM751837,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.02168351705635141,0.5,2,L04,E24_c,E24,GSM751845,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.9464841570737502,0.5067567567567568,1,L03,E30_sd0.28,E30,GSM751846,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.02168351705635141,0.5,2,L04,E24_c,E24,GSM751849,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.9464841570737502,0.5067567567567568,1,L03,E30_sd0.28,E30,GSM751850,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.9464841570737502,0.5067567567567568,1,L03,E30_sd0.22,E30,GSM751851,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.904626941564459,0.48936170212765956,6,L08,E31_p224_0,E31,GSM751852,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.904626941564459,0.48936170212765956,6,L08,E31_p224_1,E31,GSM751853,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.904626941564459,0.48936170212765956,6,L08,E31_p224_2,E31,GSM751854,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.004540163945427447,0.5474452554744526,10,L12,E32_sd0.311,E32,GSM751861,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.004540163945427447,0.5474452554744526,10,L12,E32_sd0.297,E32,GSM751862,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.004540163945427447,0.5474452554744526,10,L12,E32_sd0.311,E32,GSM751864,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.004540163945427447,0.5474452554744526,10,L12,E32_sd0.297,E32,GSM751865,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.004540163945427447,0.5474452554744526,10,L12,E32_sd0.293,E32,GSM751866,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.004540163945427447,0.5474452554744526,10,L12,E32_sd0.311,E32,GSM751867,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.004540163945427447,0.5474452554744526,10,L12,E32_sd0.297,E32,GSM751868,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.004540163945427447,0.5474452554744526,10,L12,E32_sd0.293,E32,GSM751869,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9082536724637568,0.4931506849315068,7,L09,E33_lump242,E33,GSM751870,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9082536724637568,0.4931506849315068,7,L09,E33_lump242,E33,GSM751871,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9082536724637568,0.4931506849315068,7,L09,E33_lump242,E33,GSM751872,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.020267832472198995,0.4931506849315068,7,L09,E33_lump242,E33,GSM751877,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.020267832472198995,0.4931506849315068,7,L09,E33_lump242,E33,GSM751878,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9454335812063723,0.5137614678899083,0,L01,E34_sd0.344,E34,GSM751881,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9454335812063723,0.5137614678899083,0,L01,E34_sd0.363,E34,GSM751882,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9454335812063723,0.5137614678899083,0,L01,E34_sd0.331,E34,GSM751883,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9454335812063723,0.5137614678899083,0,L01,E34_sd0.428,E34,GSM751884,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9454335812063723,0.5137614678899083,0,L01,E34_sd0.374,E34,GSM751885,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.005788627690395213,0.5137614678899083,0,L01,E34_sd0.418,E34,GSM751886,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.005788627690395213,0.5137614678899083,0,L01,E34_sd0.344,E34,GSM751889,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.005788627690395213,0.5137614678899083,0,L01,E34_sd0.363,E34,GSM751890,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.005788627690395213,0.5137614678899083,0,L01,E34_sd0.315,E34,GSM751891,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.005788627690395213,0.5137614678899083,0,L01,E34_sd0.344,E34,GSM751892,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.005788627690395213,0.5137614678899083,0,L01,E34_sd0.363,E34,GSM751893,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.005788627690395213,0.5137614678899083,0,L01,E35_sd0.352,E35,GSM751895,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.005788627690395213,0.5137614678899083,0,L01,E35_sd0.379,E35,GSM751896,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.005788627690395213,0.5137614678899083,0,L01,E35_sd0.377,E35,GSM751897,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.005788627690395213,0.5137614678899083,0,L01,E35_sd0.352,E35,GSM751898,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.005788627690395213,0.5137614678899083,0,L01,E35_sd0.379,E35,GSM751899,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9454335812063723,0.5137614678899083,0,L01,E36_sd0.427,E36,GSM751900,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9454335812063723,0.5137614678899083,0,L01,E36_sd0.353,E36,GSM751901,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.9454335812063723,0.5137614678899083,0,L01,E36_sd0.352,E36,GSM751902,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.005788627690395213,0.5137614678899083,0,L01,E36_sd0.353,E36,GSM751904,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.005788627690395213,0.5137614678899083,0,L01,E36_sd0.352,E36,GSM751905,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.005788627690395213,0.5137614678899083,0,L01,E36_sd0.427,E36,GSM751906,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.005788627690395213,0.5137614678899083,0,L01,E36_sd0.353,E36,GSM751907,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.005788627690395213,0.5137614678899083,0,L01,E36_sd0.352,E36,GSM751908,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9454335812063723,0.5137614678899083,0,L01,E35_sd0.377,E35,GSM751909,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9454335812063723,0.5137614678899083,0,L01,E35_sd0.352,E35,GSM751910,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9454335812063723,0.5137614678899083,0,L01,E35_sd0.379,E35,GSM751911,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.005788627690395213,0.5137614678899083,0,L01,E35_sd0.377,E35,GSM751912,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.005788627690395213,0.5137614678899083,0,L01,E35_sd0.352,E35,GSM751913,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.005788627690395213,0.5137614678899083,0,L01,E35_sd0.379,E35,GSM751914,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.005788627690395213,0.5137614678899083,0,L01,E36_sd0.427,E36,GSM751915,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9039296327427343,0.47586206896551725,5,L07,E37_s290,E37,GSM751918,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9039296327427343,0.47586206896551725,5,L07,E37_s291,E37,GSM751919,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9039296327427343,0.47586206896551725,5,L07,E39_s293,E39,GSM751921,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9039296327427343,0.47586206896551725,5,L07,E39_s294,E39,GSM751922,Growth rate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9039296327427343,0.47586206896551725,5,L07,E39_s295,E39,GSM751923,Growth rate,leave_one_expression_cluster_out,temperature only,logit
 1.0,0.8733940321372425,0.48333333333333334,3,E02_s3,E02_s3,E02,GSM751631,Growth rate,culture_grouped_5fold,raw,logit
 1.0,0.882785536143222,0.48333333333333334,3,E02_s4,E02_s4,E02,GSM751632,Growth rate,culture_grouped_5fold,raw,logit
 1.0,0.8746191578826036,0.5121951219512195,2,E02_s5,E02_s5,E02,GSM751633,Growth rate,culture_grouped_5fold,raw,logit
@@ -12844,6 +13470,186 @@ y,pred,null,fold,group,culture,experiment,array,endpoint,holdout_scheme,encoder,
 0.0,0.28438734625744744,0.5084745762711864,31,E39,E39_s293,E39,GSM751921,Viable cell density,leave_one_experiment_out,pathway,logit
 0.0,0.20850378257726523,0.5084745762711864,31,E39,E39_s294,E39,GSM751922,Viable cell density,leave_one_experiment_out,pathway,logit
 0.0,0.20326127324203158,0.5084745762711864,31,E39,E39_s295,E39,GSM751923,Viable cell density,leave_one_experiment_out,pathway,logit
+1.0,0.15475249670937716,0.4972067039106145,0,E01,E01_sd0.383,E01,GSM751630,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.17027177948627764,0.5113636363636364,1,E02,E02_s3,E02,GSM751631,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.17027177948627764,0.5113636363636364,1,E02,E02_s4,E02,GSM751632,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.17027177948627764,0.5113636363636364,1,E02,E02_s5,E02,GSM751633,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.17027177948627764,0.5113636363636364,1,E02,E02_s6,E02,GSM751634,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.1684162918647973,0.5,2,E03,E03_sd0.35,E03,GSM751635,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.1684162918647973,0.5,2,E03,E03_sd0.3,E03,GSM751636,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.1684162918647973,0.5,2,E03,E03_sd0.36,E03,GSM751637,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.891626401998958,0.5,2,E03,E03_sd0.35,E03,GSM751641,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.891626401998958,0.5,2,E03,E03_sd0.3,E03,GSM751642,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.891626401998958,0.5,2,E03,E03_sd0.36,E03,GSM751643,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.166596906797733,0.4883720930232558,3,E04,E04_sd0.4,E04,GSM751645,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.166596906797733,0.4883720930232558,3,E04,E04_sd0.37,E04,GSM751646,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8871880432270955,0.4883720930232558,3,E04,E04_sd0.36,E04,GSM751647,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8871880432270955,0.4883720930232558,3,E04,E04_sd0.4,E04,GSM751648,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8871880432270955,0.4883720930232558,3,E04,E04_sd0.37,E04,GSM751649,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8871880432270955,0.4883720930232558,3,E04,E04_sd0.36,E04,GSM751650,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8871880432270955,0.4883720930232558,3,E04,E04_sd0.4,E04,GSM751651,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8871880432270955,0.4883720930232558,3,E04,E04_sd0.37,E04,GSM751652,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.1523008793749003,0.5057471264367817,4,E05,E05_p25_0,E05,GSM751653,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.1523008793749003,0.5057471264367817,4,E05,E05_p25_1,E05,GSM751654,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.1523008793749003,0.5057471264367817,4,E05,E05_p25_2,E05,GSM751655,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.1523008793749003,0.5057471264367817,4,E05,E05_p25_3,E05,GSM751656,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.1523008793749003,0.5057471264367817,4,E05,E05_p25_1,E05,GSM751658,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.1523008793749003,0.5057471264367817,4,E05,E05_p25_2,E05,GSM751659,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.1368432839247794,0.46745562130177515,5,E06,E06_sd2.134,E06,GSM751661,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8835314875471199,0.46745562130177515,5,E06,E06_sd2.134,E06,GSM751662,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.1368432839247794,0.46745562130177515,5,E06,E06_sd1.84,E06,GSM751663,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8835314875471199,0.46745562130177515,5,E06,E06_sd2.134,E06,GSM751664,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8835314875471199,0.46745562130177515,5,E06,E06_sd2.134,E06,GSM751665,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8835314875471199,0.46745562130177515,5,E06,E06_sd1.84,E06,GSM751666,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.1368432839247794,0.46745562130177515,5,E06,E06_sd2.17,E06,GSM751667,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8835314875471199,0.46745562130177515,5,E06,E06_sd2.17,E06,GSM751668,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8835314875471199,0.46745562130177515,5,E06,E06_sd2.17,E06,GSM751670,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8835314875471199,0.46745562130177515,5,E06,E06_sd2.17,E06,GSM751671,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8835314875471199,0.46745562130177515,5,E06,E06_sd1.84,E06,GSM751672,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16502369995300117,0.5027932960893855,6,E07,E07_s45,E07,GSM751673,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16673900005731032,0.5174418604651163,7,E08,E08_p49_0,E08,GSM751677,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16673900005731032,0.5174418604651163,7,E08,E08_p49_1,E08,GSM751678,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16673900005731032,0.5174418604651163,7,E08,E08_p49_2,E08,GSM751679,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16673900005731032,0.5174418604651163,7,E08,E08_p49_3,E08,GSM751680,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16673900005731032,0.5174418604651163,7,E08,E08_p49_0,E08,GSM751681,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.16673900005731032,0.5174418604651163,7,E08,E08_p49_1,E08,GSM751682,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16673900005731032,0.5174418604651163,7,E08,E08_p49_2,E08,GSM751683,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16673900005731032,0.5174418604651163,7,E08,E08_p49_3,E08,GSM751684,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16848472607657744,0.5084745762711864,8,E09,E09_s57,E09,GSM751685,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16848472607657744,0.5084745762711864,8,E09,E09_s58,E09,GSM751686,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16848472607657744,0.5084745762711864,8,E09,E09_s59,E09,GSM751687,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.17027177948627814,0.5113636363636364,9,E10,E10_s60,E10,GSM751688,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.17027177948627814,0.5113636363636364,9,E10,E10_s61,E10,GSM751689,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.17027177948627814,0.5113636363636364,9,E10,E10_s62,E10,GSM751690,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.17027177948627814,0.5113636363636364,9,E10,E10_s63,E10,GSM751691,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16673433551726036,0.5056179775280899,10,E11,E11_sd0.34,E11,GSM751692,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16673433551726036,0.5056179775280899,10,E11,E11_sd0.281,E11,GSM751693,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.1705682137204096,0.5325443786982249,11,E12,E12_a,E12,GSM751694,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.1705682137204096,0.5325443786982249,11,E12,E12_b,E12,GSM751695,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.1705682137204096,0.5325443786982249,11,E12,E12_d,E12,GSM751696,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.9969324992347808,0.5325443786982249,11,E12,E12_a,E12,GSM751697,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.9969324992347808,0.5325443786982249,11,E12,E12_b,E12,GSM751698,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.9969324992347808,0.5325443786982249,11,E12,E12_c,E12,GSM751699,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.9969324992347808,0.5325443786982249,11,E12,E12_d,E12,GSM751700,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.9969324992347808,0.5325443786982249,11,E12,E12_a,E12,GSM751701,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.9969324992347808,0.5325443786982249,11,E12,E12_b,E12,GSM751702,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.9969324992347808,0.5325443786982249,11,E12,E12_c,E12,GSM751703,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.9969324992347808,0.5325443786982249,11,E12,E12_d,E12,GSM751704,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.17395683367095083,0.5172413793103449,12,E13,E13_lump77,E13,GSM751708,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.17395683367095083,0.5172413793103449,12,E13,E13_lump77,E13,GSM751710,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.17395683367095083,0.5172413793103449,12,E13,E13_lump77,E13,GSM751711,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.17395683367095083,0.5172413793103449,12,E13,E13_p84_0,E13,GSM751712,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.17395683367095083,0.5172413793103449,12,E13,E13_p84_1,E13,GSM751713,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.17395683367095083,0.5172413793103449,12,E13,E13_p84_2,E13,GSM751714,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.17209351105488135,0.5142857142857142,13,E14,E14_p95_0,E14,GSM751723,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.17209351105488135,0.5142857142857142,13,E14,E14_p95_1,E14,GSM751724,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.17209351105488135,0.5142857142857142,13,E14,E14_p95_2,E14,GSM751725,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.17209351105488135,0.5142857142857142,13,E14,E14_p95_3,E14,GSM751726,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.17209351105488135,0.5142857142857142,13,E14,E14_p95_0,E14,GSM751727,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16848472607657697,0.5084745762711864,14,E15,E15_sd0.222,E15,GSM751735,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16848472607657697,0.5084745762711864,14,E15,E15_sd0.156,E15,GSM751736,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16848472607657697,0.5084745762711864,14,E15,E15_sd0.252,E15,GSM751737,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8871355090639144,0.4827586206896552,15,E16,E16_p110_0,E16,GSM751741,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8871355090639144,0.4827586206896552,15,E16,E16_p110_1,E16,GSM751742,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8871355090639144,0.4827586206896552,15,E16,E16_p110_2,E16,GSM751743,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8871355090639144,0.4827586206896552,15,E16,E16_p110_0,E16,GSM751744,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8871355090639144,0.4827586206896552,15,E16,E16_p110_1,E16,GSM751745,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8871355090639144,0.4827586206896552,15,E16,E16_p110_2,E16,GSM751746,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8915484690549325,0.4915254237288136,16,E17,E17_p119_0,E17,GSM751750,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8915484690549325,0.4915254237288136,16,E17,E17_p119_2,E17,GSM751752,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8915484690549325,0.4915254237288136,16,E17,E17_p119_0,E17,GSM751753,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16836863351882325,0.4941860465116279,17,E18,E18_a,E18,GSM751756,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16836863351882325,0.4941860465116279,17,E18,E18_b,E18,GSM751757,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16836863351882325,0.4941860465116279,17,E18,E18_c,E18,GSM751758,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8887239446343562,0.4941860465116279,17,E18,E18_a,E18,GSM751759,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8887239446343562,0.4941860465116279,17,E18,E18_b,E18,GSM751760,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8887239446343562,0.4941860465116279,17,E18,E18_a,E18,GSM751761,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8887239446343562,0.4941860465116279,17,E18,E18_b,E18,GSM751762,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8887239446343562,0.4941860465116279,17,E18,E18_c,E18,GSM751763,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16848472607657697,0.5084745762711864,18,E19,E19_sd0.276,E19,GSM751764,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16848472607657697,0.5084745762711864,18,E19,E19_sd0.261,E19,GSM751765,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16848472607657697,0.5084745762711864,18,E19,E19_sd0.269,E19,GSM751766,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.17027177948627814,0.5113636363636364,19,E21,E21_sd0.2,E21,GSM751778,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.17027177948627814,0.5113636363636364,19,E21,E21_sd0.19,E21,GSM751779,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.17027177948627814,0.5113636363636364,19,E21,E21_sd0.18,E21,GSM751780,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.17027177948627814,0.5113636363636364,19,E21,E21_sd0.15,E21,GSM751781,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16848472607657697,0.5084745762711864,30,E37,E37_s162,E37,GSM751790,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16848472607657697,0.5084745762711864,20,E23,E23_p163_0,E23,GSM751791,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16848472607657697,0.5084745762711864,20,E23,E23_p163_1,E23,GSM751792,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16848472607657697,0.5084745762711864,20,E23,E23_p163_2,E23,GSM751793,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16646166325206238,0.47305389221556887,21,E24,E24_a,E24,GSM751800,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16646166325206238,0.47305389221556887,21,E24,E24_b,E24,GSM751801,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8789900549558556,0.47305389221556887,21,E24,E24_a,E24,GSM751804,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8789900549558556,0.47305389221556887,21,E24,E24_b,E24,GSM751805,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8789900549558556,0.47305389221556887,21,E24,E24_a,E24,GSM751806,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8789900549558556,0.47305389221556887,21,E24,E24_b,E24,GSM751807,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8789900549558556,0.47305389221556887,21,E24,E24_a,E24,GSM751808,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8789900549558556,0.47305389221556887,21,E24,E24_b,E24,GSM751809,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8789900549558556,0.47305389221556887,21,E24,E24_a,E24,GSM751811,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8789900549558556,0.47305389221556887,21,E24,E24_b,E24,GSM751812,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.10902220795968727,0.4827586206896552,22,E25,E25_sd0.45,E25,GSM751816,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.10902220795968727,0.4827586206896552,22,E25,E25_sd0.44,E25,GSM751817,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.10902220795968727,0.4827586206896552,22,E25,E25_sd0.42,E25,GSM751818,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.10902220795968727,0.4827586206896552,22,E25,E25_sd0.45,E25,GSM751819,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.10902220795968727,0.4827586206896552,22,E25,E25_sd0.44,E25,GSM751820,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.10902220795968727,0.4827586206896552,22,E25,E25_sd0.42,E25,GSM751821,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.9529068976890769,0.47368421052631576,23,E27,E27_sd4.33,E27,GSM751823,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.9529068976890769,0.47368421052631576,23,E27,E27_sd3.77,E27,GSM751824,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.9529068976890769,0.47368421052631576,23,E27,E27_sd4.17,E27,GSM751825,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.9529068976890769,0.47368421052631576,23,E27,E27_sd4.33,E27,GSM751826,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.9529068976890769,0.47368421052631576,23,E27,E27_sd3.77,E27,GSM751827,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.9529068976890769,0.47368421052631576,23,E27,E27_sd4.17,E27,GSM751828,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.9529068976890769,0.47368421052631576,23,E27,E27_sd4.33,E27,GSM751829,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.9529068976890769,0.47368421052631576,23,E27,E27_sd3.77,E27,GSM751830,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.9529068976890769,0.47368421052631576,23,E27,E27_sd4.17,E27,GSM751831,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.18183460131250886,0.5294117647058824,24,E30,E30_sd0.28,E30,GSM751838,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.18183460131250886,0.5294117647058824,24,E30,E30_sd0.21,E30,GSM751839,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.18183460131250886,0.5294117647058824,24,E30,E30_sd0.22,E30,GSM751840,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8789900549558556,0.47305389221556887,21,E24,E24_c,E24,GSM751841,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.18183460131250886,0.5294117647058824,24,E30,E30_sd0.28,E30,GSM751842,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.18183460131250886,0.5294117647058824,24,E30,E30_sd0.21,E30,GSM751843,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.18183460131250886,0.5294117647058824,24,E30,E30_sd0.22,E30,GSM751844,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8789900549558556,0.47305389221556887,21,E24,E24_c,E24,GSM751845,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.18183460131250886,0.5294117647058824,24,E30,E30_sd0.28,E30,GSM751846,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.18183460131250886,0.5294117647058824,24,E30,E30_sd0.21,E30,GSM751847,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8789900549558556,0.47305389221556887,21,E24,E24_c,E24,GSM751849,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.18183460131250886,0.5294117647058824,24,E30,E30_sd0.28,E30,GSM751850,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.18183460131250886,0.5294117647058824,24,E30,E30_sd0.22,E30,GSM751851,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8871355090639147,0.4827586206896552,25,E31,E31_p224_0,E31,GSM751855,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8871355090639147,0.4827586206896552,25,E31,E31_p224_1,E31,GSM751856,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8871355090639147,0.4827586206896552,25,E31,E31_p224_2,E31,GSM751857,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8871355090639147,0.4827586206896552,25,E31,E31_p224_0,E31,GSM751858,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8871355090639147,0.4827586206896552,25,E31,E31_p224_1,E31,GSM751859,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8871355090639147,0.4827586206896552,25,E31,E31_p224_2,E31,GSM751860,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.13698339128071144,0.4857142857142857,26,E33,E33_lump242,E33,GSM751873,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.13698339128071144,0.4857142857142857,26,E33,E33_lump242,E33,GSM751874,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.13698339128071144,0.4857142857142857,26,E33,E33_lump242,E33,GSM751875,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8925654721869213,0.4857142857142857,26,E33,E33_lump242,E33,GSM751877,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8925654721869213,0.4857142857142857,26,E33,E33_lump242,E33,GSM751878,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16486068854364586,0.48255813953488375,27,E34,E34_sd0.315,E34,GSM751880,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8856097618418464,0.48255813953488375,27,E34,E34_sd0.418,E34,GSM751886,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8856097618418464,0.48255813953488375,27,E34,E34_sd0.428,E34,GSM751887,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8856097618418464,0.48255813953488375,27,E34,E34_sd0.374,E34,GSM751888,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8856097618418464,0.48255813953488375,27,E34,E34_sd0.344,E34,GSM751889,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8856097618418464,0.48255813953488375,27,E34,E34_sd0.363,E34,GSM751890,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8856097618418464,0.48255813953488375,27,E34,E34_sd0.344,E34,GSM751892,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8856097618418464,0.48255813953488375,27,E34,E34_sd0.363,E34,GSM751893,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8839880073591505,0.47674418604651164,29,E36,E36_sd0.427,E36,GSM751903,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8839880073591505,0.47674418604651164,29,E36,E36_sd0.353,E36,GSM751904,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8839880073591505,0.47674418604651164,29,E36,E36_sd0.352,E36,GSM751905,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8839880073591505,0.47674418604651164,29,E36,E36_sd0.427,E36,GSM751906,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8839880073591505,0.47674418604651164,29,E36,E36_sd0.353,E36,GSM751907,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8839880073591505,0.47674418604651164,29,E36,E36_sd0.352,E36,GSM751908,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16848472607657744,0.5084745762711864,28,E35,E35_sd0.377,E35,GSM751909,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16848472607657744,0.5084745762711864,28,E35,E35_sd0.352,E35,GSM751910,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16848472607657744,0.5084745762711864,28,E35,E35_sd0.379,E35,GSM751911,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8839880073591505,0.47674418604651164,29,E36,E36_sd0.353,E36,GSM751916,Viable cell density,leave_one_experiment_out,temperature only,logit
+1.0,0.8839880073591505,0.47674418604651164,29,E36,E36_sd0.352,E36,GSM751917,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16848472607657697,0.5084745762711864,30,E37,E37_s290,E37,GSM751918,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16848472607657697,0.5084745762711864,30,E37,E37_s291,E37,GSM751919,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16848472607657647,0.5084745762711864,31,E39,E39_s293,E39,GSM751921,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16848472607657647,0.5084745762711864,31,E39,E39_s294,E39,GSM751922,Viable cell density,leave_one_experiment_out,temperature only,logit
+0.0,0.16848472607657647,0.5084745762711864,31,E39,E39_s295,E39,GSM751923,Viable cell density,leave_one_experiment_out,temperature only,logit
 1.0,0.5575878648313279,0.5174418604651163,3,L05,E01_sd0.383,E01,GSM751630,Viable cell density,leave_one_expression_cluster_out,raw,logit
 0.0,0.3731366683111846,0.5174418604651163,3,L05,E02_s3,E02,GSM751631,Viable cell density,leave_one_expression_cluster_out,raw,logit
 0.0,0.16436967825588356,0.5174418604651163,3,L05,E02_s4,E02,GSM751632,Viable cell density,leave_one_expression_cluster_out,raw,logit
@@ -13204,6 +14010,186 @@ y,pred,null,fold,group,culture,experiment,array,endpoint,holdout_scheme,encoder,
 0.0,0.3048655269053112,0.5172413793103449,5,L07,E39_s293,E39,GSM751921,Viable cell density,leave_one_expression_cluster_out,pathway,logit
 0.0,0.22782216186722132,0.5172413793103449,5,L07,E39_s294,E39,GSM751922,Viable cell density,leave_one_expression_cluster_out,pathway,logit
 0.0,0.22222114030609408,0.5172413793103449,5,L07,E39_s295,E39,GSM751923,Viable cell density,leave_one_expression_cluster_out,pathway,logit
+1.0,0.16673900005730932,0.5174418604651163,3,L05,E01_sd0.383,E01,GSM751630,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.16673900005730932,0.5174418604651163,3,L05,E02_s3,E02,GSM751631,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.16673900005730932,0.5174418604651163,3,L05,E02_s4,E02,GSM751632,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.16673900005730932,0.5174418604651163,3,L05,E02_s5,E02,GSM751633,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.16673900005730932,0.5174418604651163,3,L05,E02_s6,E02,GSM751634,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.11996257489975476,0.425531914893617,0,L01,E03_sd0.35,E03,GSM751635,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.11996257489975476,0.425531914893617,0,L01,E03_sd0.3,E03,GSM751636,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.11996257489975476,0.425531914893617,0,L01,E03_sd0.36,E03,GSM751637,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8496014289759336,0.425531914893617,0,L01,E03_sd0.35,E03,GSM751641,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8496014289759336,0.425531914893617,0,L01,E03_sd0.3,E03,GSM751642,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8496014289759336,0.425531914893617,0,L01,E03_sd0.36,E03,GSM751643,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.11996257489975476,0.425531914893617,0,L01,E04_sd0.4,E04,GSM751645,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.11996257489975476,0.425531914893617,0,L01,E04_sd0.37,E04,GSM751646,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8496014289759336,0.425531914893617,0,L01,E04_sd0.36,E04,GSM751647,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8496014289759336,0.425531914893617,0,L01,E04_sd0.4,E04,GSM751648,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8496014289759336,0.425531914893617,0,L01,E04_sd0.37,E04,GSM751649,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8496014289759336,0.425531914893617,0,L01,E04_sd0.36,E04,GSM751650,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8496014289759336,0.425531914893617,0,L01,E04_sd0.4,E04,GSM751651,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8496014289759336,0.425531914893617,0,L01,E04_sd0.37,E04,GSM751652,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.12505949003294975,0.47530864197530864,4,L06,E05_p25_0,E05,GSM751653,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.12505949003294975,0.47530864197530864,4,L06,E05_p25_1,E05,GSM751654,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.12505949003294975,0.47530864197530864,4,L06,E05_p25_2,E05,GSM751655,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.12505949003294975,0.47530864197530864,4,L06,E05_p25_3,E05,GSM751656,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.12505949003294975,0.47530864197530864,4,L06,E05_p25_1,E05,GSM751658,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.12505949003294975,0.47530864197530864,4,L06,E05_p25_2,E05,GSM751659,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.12505949003294975,0.47530864197530864,4,L06,E06_sd2.134,E06,GSM751661,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8833079477434601,0.47530864197530864,4,L06,E06_sd2.134,E06,GSM751662,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.12505949003294975,0.47530864197530864,4,L06,E06_sd1.84,E06,GSM751663,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8833079477434601,0.47530864197530864,4,L06,E06_sd2.134,E06,GSM751664,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8833079477434601,0.47530864197530864,4,L06,E06_sd2.134,E06,GSM751665,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8833079477434601,0.47530864197530864,4,L06,E06_sd1.84,E06,GSM751666,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.12505949003294975,0.47530864197530864,4,L06,E06_sd2.17,E06,GSM751667,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8833079477434601,0.47530864197530864,4,L06,E06_sd2.17,E06,GSM751668,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8833079477434601,0.47530864197530864,4,L06,E06_sd2.17,E06,GSM751670,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8833079477434601,0.47530864197530864,4,L06,E06_sd2.17,E06,GSM751671,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8833079477434601,0.47530864197530864,4,L06,E06_sd1.84,E06,GSM751672,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.12505949003294975,0.47530864197530864,4,L06,E07_s45,E07,GSM751673,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.18749821860454885,0.5493827160493827,1,L03,E08_p49_0,E08,GSM751677,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.18749821860454885,0.5493827160493827,1,L03,E08_p49_1,E08,GSM751678,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.18749821860454885,0.5493827160493827,1,L03,E08_p49_2,E08,GSM751679,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.18749821860454885,0.5493827160493827,1,L03,E08_p49_3,E08,GSM751680,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.18749821860454885,0.5493827160493827,1,L03,E08_p49_0,E08,GSM751681,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.18749821860454885,0.5493827160493827,1,L03,E08_p49_1,E08,GSM751682,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.18749821860454885,0.5493827160493827,1,L03,E08_p49_2,E08,GSM751683,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.18749821860454885,0.5493827160493827,1,L03,E08_p49_3,E08,GSM751684,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.1797987986989743,0.5263157894736842,8,L10,E09_s57,E09,GSM751685,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.1797987986989743,0.5263157894736842,8,L10,E09_s58,E09,GSM751686,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.1797987986989743,0.5263157894736842,8,L10,E09_s59,E09,GSM751687,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.1797987986989743,0.5263157894736842,8,L10,E10_s60,E10,GSM751688,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.1797987986989743,0.5263157894736842,8,L10,E10_s61,E10,GSM751689,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.1797987986989743,0.5263157894736842,8,L10,E10_s62,E10,GSM751690,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.1797987986989743,0.5263157894736842,8,L10,E10_s63,E10,GSM751691,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.1797987986989743,0.5263157894736842,8,L10,E11_sd0.34,E11,GSM751692,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.1797987986989743,0.5263157894736842,8,L10,E11_sd0.281,E11,GSM751693,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.1780470758611054,0.5454545454545454,12,L14,E12_a,E12,GSM751694,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.1780470758611054,0.5454545454545454,12,L14,E12_b,E12,GSM751695,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.1780470758611054,0.5454545454545454,12,L14,E12_d,E12,GSM751696,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.9969541492978441,0.5454545454545454,12,L14,E12_a,E12,GSM751697,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.9969541492978441,0.5454545454545454,12,L14,E12_b,E12,GSM751698,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.9969541492978441,0.5454545454545454,12,L14,E12_c,E12,GSM751699,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.9969541492978441,0.5454545454545454,12,L14,E12_d,E12,GSM751700,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.9969541492978441,0.5454545454545454,12,L14,E12_a,E12,GSM751701,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.9969541492978441,0.5454545454545454,12,L14,E12_b,E12,GSM751702,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.9969541492978441,0.5454545454545454,12,L14,E12_c,E12,GSM751703,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.9969541492978441,0.5454545454545454,12,L14,E12_d,E12,GSM751704,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.17395683367095083,0.5172413793103449,13,L15,E13_lump77,E13,GSM751708,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.17395683367095083,0.5172413793103449,13,L15,E13_lump77,E13,GSM751710,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.17395683367095083,0.5172413793103449,13,L15,E13_lump77,E13,GSM751711,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.17395683367095083,0.5172413793103449,13,L15,E13_p84_0,E13,GSM751712,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.17395683367095083,0.5172413793103449,13,L15,E13_p84_1,E13,GSM751713,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.17395683367095083,0.5172413793103449,13,L15,E13_p84_2,E13,GSM751714,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.17780943846060882,0.5232558139534884,9,L11,E14_p95_0,E14,GSM751723,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.17780943846060882,0.5232558139534884,9,L11,E14_p95_1,E14,GSM751724,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.17780943846060882,0.5232558139534884,9,L11,E14_p95_2,E14,GSM751725,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.17780943846060882,0.5232558139534884,9,L11,E14_p95_3,E14,GSM751726,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.17780943846060882,0.5232558139534884,9,L11,E14_p95_0,E14,GSM751727,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.17780943846060882,0.5232558139534884,9,L11,E15_sd0.222,E15,GSM751735,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.17780943846060882,0.5232558139534884,9,L11,E15_sd0.156,E15,GSM751736,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.17780943846060882,0.5232558139534884,9,L11,E15_sd0.252,E15,GSM751737,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8823480631546897,0.47368421052631576,11,L13,E16_p110_0,E16,GSM751741,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8823480631546897,0.47368421052631576,11,L13,E16_p110_1,E16,GSM751742,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8823480631546897,0.47368421052631576,11,L13,E16_p110_2,E16,GSM751743,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8823480631546897,0.47368421052631576,11,L13,E16_p110_0,E16,GSM751744,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8823480631546897,0.47368421052631576,11,L13,E16_p110_1,E16,GSM751745,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8823480631546897,0.47368421052631576,11,L13,E16_p110_2,E16,GSM751746,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8823480631546897,0.47368421052631576,11,L13,E17_p119_0,E17,GSM751750,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8823480631546897,0.47368421052631576,11,L13,E17_p119_2,E17,GSM751752,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8823480631546897,0.47368421052631576,11,L13,E17_p119_0,E17,GSM751753,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.17164760053776942,0.46540880503144655,2,L04,E18_a,E18,GSM751756,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.17164760053776942,0.46540880503144655,2,L04,E18_b,E18,GSM751757,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.17164760053776942,0.46540880503144655,2,L04,E18_c,E18,GSM751758,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.869642158907784,0.46540880503144655,2,L04,E18_a,E18,GSM751759,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.869642158907784,0.46540880503144655,2,L04,E18_b,E18,GSM751760,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.869642158907784,0.46540880503144655,2,L04,E18_a,E18,GSM751761,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.869642158907784,0.46540880503144655,2,L04,E18_b,E18,GSM751762,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.869642158907784,0.46540880503144655,2,L04,E18_c,E18,GSM751763,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.16673900005730932,0.5174418604651163,3,L05,E19_sd0.276,E19,GSM751764,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.16673900005730932,0.5174418604651163,3,L05,E19_sd0.261,E19,GSM751765,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.16673900005730932,0.5174418604651163,3,L05,E19_sd0.269,E19,GSM751766,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.1780470758611054,0.5454545454545454,12,L14,E21_sd0.2,E21,GSM751778,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.1780470758611054,0.5454545454545454,12,L14,E21_sd0.19,E21,GSM751779,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.1780470758611054,0.5454545454545454,12,L14,E21_sd0.18,E21,GSM751780,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.1780470758611054,0.5454545454545454,12,L14,E21_sd0.15,E21,GSM751781,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.17395683367095033,0.5172413793103449,5,L07,E37_s162,E37,GSM751790,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.16834485969217872,0.49122807017543857,6,L08,E23_p163_0,E23,GSM751791,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.16834485969217872,0.49122807017543857,6,L08,E23_p163_1,E23,GSM751792,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.16834485969217872,0.49122807017543857,6,L08,E23_p163_2,E23,GSM751793,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.17164760053776942,0.46540880503144655,2,L04,E24_a,E24,GSM751800,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.17164760053776942,0.46540880503144655,2,L04,E24_b,E24,GSM751801,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.869642158907784,0.46540880503144655,2,L04,E24_a,E24,GSM751804,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.869642158907784,0.46540880503144655,2,L04,E24_b,E24,GSM751805,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.869642158907784,0.46540880503144655,2,L04,E24_a,E24,GSM751806,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.869642158907784,0.46540880503144655,2,L04,E24_b,E24,GSM751807,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.869642158907784,0.46540880503144655,2,L04,E24_a,E24,GSM751808,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.869642158907784,0.46540880503144655,2,L04,E24_b,E24,GSM751809,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.869642158907784,0.46540880503144655,2,L04,E24_a,E24,GSM751811,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.869642158907784,0.46540880503144655,2,L04,E24_b,E24,GSM751812,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.11996257489975476,0.425531914893617,0,L01,E25_sd0.45,E25,GSM751816,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.11996257489975476,0.425531914893617,0,L01,E25_sd0.44,E25,GSM751817,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.11996257489975476,0.425531914893617,0,L01,E25_sd0.42,E25,GSM751818,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.11996257489975476,0.425531914893617,0,L01,E25_sd0.45,E25,GSM751819,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.11996257489975476,0.425531914893617,0,L01,E25_sd0.44,E25,GSM751820,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.11996257489975476,0.425531914893617,0,L01,E25_sd0.42,E25,GSM751821,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9529068976890769,0.47368421052631576,10,L12,E27_sd4.33,E27,GSM751823,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9529068976890769,0.47368421052631576,10,L12,E27_sd3.77,E27,GSM751824,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9529068976890769,0.47368421052631576,10,L12,E27_sd4.17,E27,GSM751825,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9529068976890769,0.47368421052631576,10,L12,E27_sd4.33,E27,GSM751826,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9529068976890769,0.47368421052631576,10,L12,E27_sd3.77,E27,GSM751827,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9529068976890769,0.47368421052631576,10,L12,E27_sd4.17,E27,GSM751828,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9529068976890769,0.47368421052631576,10,L12,E27_sd4.33,E27,GSM751829,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9529068976890769,0.47368421052631576,10,L12,E27_sd3.77,E27,GSM751830,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9529068976890769,0.47368421052631576,10,L12,E27_sd4.17,E27,GSM751831,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.18749821860454885,0.5493827160493827,1,L03,E30_sd0.28,E30,GSM751838,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.18749821860454885,0.5493827160493827,1,L03,E30_sd0.21,E30,GSM751839,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.18749821860454885,0.5493827160493827,1,L03,E30_sd0.22,E30,GSM751840,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.869642158907784,0.46540880503144655,2,L04,E24_c,E24,GSM751841,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.18749821860454885,0.5493827160493827,1,L03,E30_sd0.28,E30,GSM751842,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.18749821860454885,0.5493827160493827,1,L03,E30_sd0.21,E30,GSM751843,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.18749821860454885,0.5493827160493827,1,L03,E30_sd0.22,E30,GSM751844,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.869642158907784,0.46540880503144655,2,L04,E24_c,E24,GSM751845,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.18749821860454885,0.5493827160493827,1,L03,E30_sd0.28,E30,GSM751846,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.18749821860454885,0.5493827160493827,1,L03,E30_sd0.21,E30,GSM751847,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.869642158907784,0.46540880503144655,2,L04,E24_c,E24,GSM751849,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.18749821860454885,0.5493827160493827,1,L03,E30_sd0.28,E30,GSM751850,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.18749821860454885,0.5493827160493827,1,L03,E30_sd0.22,E30,GSM751851,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8872122524376161,0.49122807017543857,6,L08,E31_p224_0,E31,GSM751855,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8872122524376161,0.49122807017543857,6,L08,E31_p224_1,E31,GSM751856,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8872122524376161,0.49122807017543857,6,L08,E31_p224_2,E31,GSM751857,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8872122524376161,0.49122807017543857,6,L08,E31_p224_0,E31,GSM751858,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8872122524376161,0.49122807017543857,6,L08,E31_p224_1,E31,GSM751859,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8872122524376161,0.49122807017543857,6,L08,E31_p224_2,E31,GSM751860,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.13698339128071144,0.4857142857142857,7,L09,E33_lump242,E33,GSM751873,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.13698339128071144,0.4857142857142857,7,L09,E33_lump242,E33,GSM751874,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.13698339128071144,0.4857142857142857,7,L09,E33_lump242,E33,GSM751875,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8925654721869213,0.4857142857142857,7,L09,E33_lump242,E33,GSM751877,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8925654721869213,0.4857142857142857,7,L09,E33_lump242,E33,GSM751878,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.11996257489975476,0.425531914893617,0,L01,E34_sd0.315,E34,GSM751880,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8496014289759336,0.425531914893617,0,L01,E34_sd0.418,E34,GSM751886,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8496014289759336,0.425531914893617,0,L01,E34_sd0.428,E34,GSM751887,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8496014289759336,0.425531914893617,0,L01,E34_sd0.374,E34,GSM751888,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8496014289759336,0.425531914893617,0,L01,E34_sd0.344,E34,GSM751889,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8496014289759336,0.425531914893617,0,L01,E34_sd0.363,E34,GSM751890,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8496014289759336,0.425531914893617,0,L01,E34_sd0.344,E34,GSM751892,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8496014289759336,0.425531914893617,0,L01,E34_sd0.363,E34,GSM751893,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8496014289759336,0.425531914893617,0,L01,E36_sd0.427,E36,GSM751903,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8496014289759336,0.425531914893617,0,L01,E36_sd0.353,E36,GSM751904,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8496014289759336,0.425531914893617,0,L01,E36_sd0.352,E36,GSM751905,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8496014289759336,0.425531914893617,0,L01,E36_sd0.427,E36,GSM751906,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8496014289759336,0.425531914893617,0,L01,E36_sd0.353,E36,GSM751907,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8496014289759336,0.425531914893617,0,L01,E36_sd0.352,E36,GSM751908,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.11996257489975476,0.425531914893617,0,L01,E35_sd0.377,E35,GSM751909,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.11996257489975476,0.425531914893617,0,L01,E35_sd0.352,E35,GSM751910,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.11996257489975476,0.425531914893617,0,L01,E35_sd0.379,E35,GSM751911,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8496014289759336,0.425531914893617,0,L01,E36_sd0.353,E36,GSM751916,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8496014289759336,0.425531914893617,0,L01,E36_sd0.352,E36,GSM751917,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.17395683367095033,0.5172413793103449,5,L07,E37_s290,E37,GSM751918,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.17395683367095033,0.5172413793103449,5,L07,E37_s291,E37,GSM751919,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.17395683367095033,0.5172413793103449,5,L07,E39_s293,E39,GSM751921,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.17395683367095033,0.5172413793103449,5,L07,E39_s294,E39,GSM751922,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.17395683367095033,0.5172413793103449,5,L07,E39_s295,E39,GSM751923,Viable cell density,leave_one_expression_cluster_out,temperature only,logit
 1.0,0.19562608364648754,0.48936170212765956,3,E01_sd0.383,E01_sd0.383,E01,GSM751630,Viable cell density,culture_grouped_5fold,raw,logit
 0.0,0.04933732944676509,0.4863013698630137,1,E02_s3,E02_s3,E02,GSM751631,Viable cell density,culture_grouped_5fold,raw,logit
 0.0,0.0015984602151948328,0.4714285714285714,2,E02_s4,E02_s4,E02,GSM751632,Viable cell density,culture_grouped_5fold,raw,logit
@@ -15461,6 +16447,92 @@ y,pred,null,fold,group,culture,experiment,array,endpoint,holdout_scheme,encoder,
 0.0,0.003012386451036677,0.5,11,E35,E35_sd0.379,E35,GSM751914,q-lactate,leave_one_experiment_out,pathway,logit
 1.0,0.5406531169559395,0.5064935064935064,12,E36,E36_sd0.427,E36,GSM751915,q-lactate,leave_one_experiment_out,pathway,logit
 0.0,0.8207668061353531,0.5064935064935064,12,E36,E36_sd0.352,E36,GSM751917,q-lactate,leave_one_experiment_out,pathway,logit
+1.0,0.9950241343220517,0.5,0,E03,E03_sd0.35,E03,GSM751635,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9950241343220517,0.5,0,E03,E03_sd0.3,E03,GSM751636,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9950241343220517,0.5,0,E03,E03_sd0.36,E03,GSM751637,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.08776212635975617,0.5,0,E03,E03_sd0.35,E03,GSM751641,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.08776212635975617,0.5,0,E03,E03_sd0.3,E03,GSM751642,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.08776212635975617,0.5,0,E03,E03_sd0.36,E03,GSM751643,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9950241343220517,0.5,1,E04,E04_sd0.36,E04,GSM751644,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9950241343220517,0.5,1,E04,E04_sd0.4,E04,GSM751645,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9950241343220517,0.5,1,E04,E04_sd0.37,E04,GSM751646,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.08776212635975617,0.5,1,E04,E04_sd0.36,E04,GSM751650,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.08776212635975617,0.5,1,E04,E04_sd0.4,E04,GSM751651,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.08776212635975617,0.5,1,E04,E04_sd0.37,E04,GSM751652,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.09843857299845177,0.5443037974683544,2,E06,E06_sd2.134,E06,GSM751662,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.09843857299845177,0.5443037974683544,2,E06,E06_sd2.134,E06,GSM751664,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.09843857299845177,0.5443037974683544,2,E06,E06_sd2.134,E06,GSM751665,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.09843857299845177,0.5443037974683544,2,E06,E06_sd1.84,E06,GSM751666,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.09843857299845177,0.5443037974683544,2,E06,E06_sd2.17,E06,GSM751668,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.09843857299845177,0.5443037974683544,2,E06,E06_sd2.17,E06,GSM751670,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.09843857299845177,0.5443037974683544,2,E06,E06_sd2.17,E06,GSM751671,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9950220585270343,0.4880952380952381,3,E11,E11_sd0.34,E11,GSM751692,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9950220585270343,0.4880952380952381,3,E11,E11_sd0.281,E11,GSM751693,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9949081938237768,0.4819277108433735,4,E15,E15_sd0.222,E15,GSM751735,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9949081938237768,0.4819277108433735,4,E15,E15_sd0.156,E15,GSM751736,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9949081938237768,0.4819277108433735,4,E15,E15_sd0.252,E15,GSM751737,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9950241343220517,0.5,5,E23,E23_p163_0,E23,GSM751791,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9950241343220517,0.5,5,E23,E23_p163_1,E23,GSM751792,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9950241343220517,0.5,5,E23,E23_p163_2,E23,GSM751793,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.08776212635975617,0.5,5,E23,E23_p163_0,E23,GSM751794,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.08776212635975617,0.5,5,E23,E23_p163_1,E23,GSM751795,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.08776212635975617,0.5,5,E23,E23_p163_2,E23,GSM751796,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.013555739121695007,0.5512820512820513,6,E27,E27_sd4.33,E27,GSM751823,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.013555739121695007,0.5512820512820513,6,E27,E27_sd3.77,E27,GSM751824,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.013555739121695007,0.5512820512820513,6,E27,E27_sd4.17,E27,GSM751825,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.013555739121695007,0.5512820512820513,6,E27,E27_sd4.33,E27,GSM751826,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.013555739121695007,0.5512820512820513,6,E27,E27_sd3.77,E27,GSM751827,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.013555739121695007,0.5512820512820513,6,E27,E27_sd4.33,E27,GSM751829,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.013555739121695007,0.5512820512820513,6,E27,E27_sd3.77,E27,GSM751830,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.013555739121695007,0.5512820512820513,6,E27,E27_sd4.17,E27,GSM751831,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9941966466233635,0.44871794871794873,7,E30,E30_sd0.28,E30,GSM751838,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9941966466233635,0.44871794871794873,7,E30,E30_sd0.21,E30,GSM751839,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9941966466233635,0.44871794871794873,7,E30,E30_sd0.22,E30,GSM751840,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9941966466233635,0.44871794871794873,7,E30,E30_sd0.28,E30,GSM751842,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9941966466233635,0.44871794871794873,7,E30,E30_sd0.21,E30,GSM751843,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9941966466233635,0.44871794871794873,7,E30,E30_sd0.22,E30,GSM751844,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9941966466233635,0.44871794871794873,7,E30,E30_sd0.28,E30,GSM751846,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9941966466233635,0.44871794871794873,7,E30,E30_sd0.21,E30,GSM751847,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9950241343220517,0.5,8,E31,E31_p224_0,E31,GSM751852,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9950241343220517,0.5,8,E31,E31_p224_1,E31,GSM751853,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9950241343220517,0.5,8,E31,E31_p224_2,E31,GSM751854,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.08776212635975675,0.5,8,E31,E31_p224_0,E31,GSM751858,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.08776212635975675,0.5,8,E31,E31_p224_1,E31,GSM751859,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.08776212635975675,0.5,8,E31,E31_p224_2,E31,GSM751860,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9938716456331098,0.4691358024691358,9,E33,E33_lump242,E33,GSM751870,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9938716456331098,0.4691358024691358,9,E33,E33_lump242,E33,GSM751871,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9938716456331098,0.4691358024691358,9,E33,E33_lump242,E33,GSM751872,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.03316001651639958,0.4691358024691358,9,E33,E33_lump242,E33,GSM751877,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.03316001651639958,0.4691358024691358,9,E33,E33_lump242,E33,GSM751878,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9949135794271797,0.5138888888888888,10,E34,E34_sd0.315,E34,GSM751880,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9949135794271797,0.5138888888888888,10,E34,E34_sd0.344,E34,GSM751881,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9949135794271797,0.5138888888888888,10,E34,E34_sd0.363,E34,GSM751882,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9949135794271797,0.5138888888888888,10,E34,E34_sd0.331,E34,GSM751883,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9949135794271797,0.5138888888888888,10,E34,E34_sd0.428,E34,GSM751884,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9949135794271797,0.5138888888888888,10,E34,E34_sd0.374,E34,GSM751885,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.10119102161427325,0.5138888888888888,10,E34,E34_sd0.418,E34,GSM751886,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.10119102161427325,0.5138888888888888,10,E34,E34_sd0.428,E34,GSM751887,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.10119102161427325,0.5138888888888888,10,E34,E34_sd0.374,E34,GSM751888,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.10119102161427325,0.5138888888888888,10,E34,E34_sd0.344,E34,GSM751889,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.10119102161427325,0.5138888888888888,10,E34,E34_sd0.363,E34,GSM751890,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.10119102161427325,0.5138888888888888,10,E34,E34_sd0.315,E34,GSM751891,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.10119102161427325,0.5138888888888888,10,E34,E34_sd0.344,E34,GSM751892,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.10119102161427325,0.5138888888888888,10,E34,E34_sd0.363,E34,GSM751893,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.08776212635975675,0.5,11,E35,E35_sd0.352,E35,GSM751898,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.08776212635975675,0.5,11,E35,E35_sd0.379,E35,GSM751899,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9946259396403974,0.5064935064935064,12,E36,E36_sd0.427,E36,GSM751900,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9946259396403974,0.5064935064935064,12,E36,E36_sd0.353,E36,GSM751901,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9946259396403974,0.5064935064935064,12,E36,E36_sd0.352,E36,GSM751902,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.06625764190970664,0.5064935064935064,12,E36,E36_sd0.427,E36,GSM751903,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.06625764190970664,0.5064935064935064,12,E36,E36_sd0.352,E36,GSM751905,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.06625764190970664,0.5064935064935064,12,E36,E36_sd0.427,E36,GSM751906,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.06625764190970664,0.5064935064935064,12,E36,E36_sd0.353,E36,GSM751907,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9950241343220517,0.5,11,E35,E35_sd0.377,E35,GSM751909,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9950241343220517,0.5,11,E35,E35_sd0.352,E35,GSM751910,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.9950241343220517,0.5,11,E35,E35_sd0.379,E35,GSM751911,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.08776212635975675,0.5,11,E35,E35_sd0.379,E35,GSM751914,q-lactate,leave_one_experiment_out,temperature only,logit
+1.0,0.06625764190970664,0.5064935064935064,12,E36,E36_sd0.427,E36,GSM751915,q-lactate,leave_one_experiment_out,temperature only,logit
+0.0,0.06625764190970664,0.5064935064935064,12,E36,E36_sd0.352,E36,GSM751917,q-lactate,leave_one_experiment_out,temperature only,logit
 1.0,0.9558373770434709,0.5333333333333333,0,L01,E03_sd0.35,E03,GSM751635,q-lactate,leave_one_expression_cluster_out,raw,logit
 1.0,0.9867717100708631,0.5333333333333333,0,L01,E03_sd0.3,E03,GSM751636,q-lactate,leave_one_expression_cluster_out,raw,logit
 1.0,0.9662409787258011,0.5333333333333333,0,L01,E03_sd0.36,E03,GSM751637,q-lactate,leave_one_expression_cluster_out,raw,logit
@@ -15633,6 +16705,92 @@ y,pred,null,fold,group,culture,experiment,array,endpoint,holdout_scheme,encoder,
 0.0,0.14368602925872143,0.5333333333333333,0,L01,E35_sd0.379,E35,GSM751914,q-lactate,leave_one_expression_cluster_out,pathway,logit
 1.0,0.8181438474587979,0.5333333333333333,0,L01,E36_sd0.427,E36,GSM751915,q-lactate,leave_one_expression_cluster_out,pathway,logit
 0.0,0.9247604265902206,0.5333333333333333,0,L01,E36_sd0.352,E36,GSM751917,q-lactate,leave_one_expression_cluster_out,pathway,logit
+1.0,0.9935478053201325,0.5333333333333333,0,L01,E03_sd0.35,E03,GSM751635,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9935478053201325,0.5333333333333333,0,L01,E03_sd0.3,E03,GSM751636,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9935478053201325,0.5333333333333333,0,L01,E03_sd0.36,E03,GSM751637,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.12921259580174863,0.5333333333333333,0,L01,E03_sd0.35,E03,GSM751641,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.12921259580174863,0.5333333333333333,0,L01,E03_sd0.3,E03,GSM751642,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.12921259580174863,0.5333333333333333,0,L01,E03_sd0.36,E03,GSM751643,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9935478053201325,0.5333333333333333,0,L01,E04_sd0.36,E04,GSM751644,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9935478053201325,0.5333333333333333,0,L01,E04_sd0.4,E04,GSM751645,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9935478053201325,0.5333333333333333,0,L01,E04_sd0.37,E04,GSM751646,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.12921259580174863,0.5333333333333333,0,L01,E04_sd0.36,E04,GSM751650,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.12921259580174863,0.5333333333333333,0,L01,E04_sd0.4,E04,GSM751651,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.12921259580174863,0.5333333333333333,0,L01,E04_sd0.37,E04,GSM751652,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.09843857299845177,0.5443037974683544,2,L06,E06_sd2.134,E06,GSM751662,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.09843857299845177,0.5443037974683544,2,L06,E06_sd2.134,E06,GSM751664,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.09843857299845177,0.5443037974683544,2,L06,E06_sd2.134,E06,GSM751665,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.09843857299845177,0.5443037974683544,2,L06,E06_sd1.84,E06,GSM751666,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.09843857299845177,0.5443037974683544,2,L06,E06_sd2.17,E06,GSM751668,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.09843857299845177,0.5443037974683544,2,L06,E06_sd2.17,E06,GSM751670,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.09843857299845177,0.5443037974683544,2,L06,E06_sd2.17,E06,GSM751671,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9950220585270343,0.4880952380952381,5,L10,E11_sd0.34,E11,GSM751692,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9950220585270343,0.4880952380952381,5,L10,E11_sd0.281,E11,GSM751693,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9949081938237768,0.4819277108433735,6,L11,E15_sd0.222,E15,GSM751735,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9949081938237768,0.4819277108433735,6,L11,E15_sd0.156,E15,GSM751736,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9949081938237768,0.4819277108433735,6,L11,E15_sd0.252,E15,GSM751737,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9948007471916337,0.5,3,L08,E23_p163_0,E23,GSM751791,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9948007471916337,0.5,3,L08,E23_p163_1,E23,GSM751792,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9948007471916337,0.5,3,L08,E23_p163_2,E23,GSM751793,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.09530138713104647,0.5,3,L08,E23_p163_0,E23,GSM751794,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.09530138713104647,0.5,3,L08,E23_p163_1,E23,GSM751795,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.09530138713104647,0.5,3,L08,E23_p163_2,E23,GSM751796,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.013555739121695007,0.5512820512820513,7,L12,E27_sd4.33,E27,GSM751823,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.013555739121695007,0.5512820512820513,7,L12,E27_sd3.77,E27,GSM751824,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.013555739121695007,0.5512820512820513,7,L12,E27_sd4.17,E27,GSM751825,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.013555739121695007,0.5512820512820513,7,L12,E27_sd4.33,E27,GSM751826,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.013555739121695007,0.5512820512820513,7,L12,E27_sd3.77,E27,GSM751827,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.013555739121695007,0.5512820512820513,7,L12,E27_sd4.33,E27,GSM751829,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.013555739121695007,0.5512820512820513,7,L12,E27_sd3.77,E27,GSM751830,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.013555739121695007,0.5512820512820513,7,L12,E27_sd4.17,E27,GSM751831,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9941966466233635,0.44871794871794873,1,L03,E30_sd0.28,E30,GSM751838,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9941966466233635,0.44871794871794873,1,L03,E30_sd0.21,E30,GSM751839,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9941966466233635,0.44871794871794873,1,L03,E30_sd0.22,E30,GSM751840,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9941966466233635,0.44871794871794873,1,L03,E30_sd0.28,E30,GSM751842,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9941966466233635,0.44871794871794873,1,L03,E30_sd0.21,E30,GSM751843,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9941966466233635,0.44871794871794873,1,L03,E30_sd0.22,E30,GSM751844,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9941966466233635,0.44871794871794873,1,L03,E30_sd0.28,E30,GSM751846,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9941966466233635,0.44871794871794873,1,L03,E30_sd0.21,E30,GSM751847,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9948007471916337,0.5,3,L08,E31_p224_0,E31,GSM751852,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9948007471916337,0.5,3,L08,E31_p224_1,E31,GSM751853,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9948007471916337,0.5,3,L08,E31_p224_2,E31,GSM751854,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.09530138713104647,0.5,3,L08,E31_p224_0,E31,GSM751858,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.09530138713104647,0.5,3,L08,E31_p224_1,E31,GSM751859,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.09530138713104647,0.5,3,L08,E31_p224_2,E31,GSM751860,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9938716456331098,0.4691358024691358,4,L09,E33_lump242,E33,GSM751870,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9938716456331098,0.4691358024691358,4,L09,E33_lump242,E33,GSM751871,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9938716456331098,0.4691358024691358,4,L09,E33_lump242,E33,GSM751872,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.03316001651639958,0.4691358024691358,4,L09,E33_lump242,E33,GSM751877,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.03316001651639958,0.4691358024691358,4,L09,E33_lump242,E33,GSM751878,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9935478053201325,0.5333333333333333,0,L01,E34_sd0.315,E34,GSM751880,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9935478053201325,0.5333333333333333,0,L01,E34_sd0.344,E34,GSM751881,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9935478053201325,0.5333333333333333,0,L01,E34_sd0.363,E34,GSM751882,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9935478053201325,0.5333333333333333,0,L01,E34_sd0.331,E34,GSM751883,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9935478053201325,0.5333333333333333,0,L01,E34_sd0.428,E34,GSM751884,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9935478053201325,0.5333333333333333,0,L01,E34_sd0.374,E34,GSM751885,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.12921259580174863,0.5333333333333333,0,L01,E34_sd0.418,E34,GSM751886,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.12921259580174863,0.5333333333333333,0,L01,E34_sd0.428,E34,GSM751887,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.12921259580174863,0.5333333333333333,0,L01,E34_sd0.374,E34,GSM751888,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.12921259580174863,0.5333333333333333,0,L01,E34_sd0.344,E34,GSM751889,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.12921259580174863,0.5333333333333333,0,L01,E34_sd0.363,E34,GSM751890,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.12921259580174863,0.5333333333333333,0,L01,E34_sd0.315,E34,GSM751891,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.12921259580174863,0.5333333333333333,0,L01,E34_sd0.344,E34,GSM751892,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.12921259580174863,0.5333333333333333,0,L01,E34_sd0.363,E34,GSM751893,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.12921259580174863,0.5333333333333333,0,L01,E35_sd0.352,E35,GSM751898,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.12921259580174863,0.5333333333333333,0,L01,E35_sd0.379,E35,GSM751899,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9935478053201325,0.5333333333333333,0,L01,E36_sd0.427,E36,GSM751900,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9935478053201325,0.5333333333333333,0,L01,E36_sd0.353,E36,GSM751901,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9935478053201325,0.5333333333333333,0,L01,E36_sd0.352,E36,GSM751902,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.12921259580174863,0.5333333333333333,0,L01,E36_sd0.427,E36,GSM751903,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.12921259580174863,0.5333333333333333,0,L01,E36_sd0.352,E36,GSM751905,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.12921259580174863,0.5333333333333333,0,L01,E36_sd0.427,E36,GSM751906,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.12921259580174863,0.5333333333333333,0,L01,E36_sd0.353,E36,GSM751907,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9935478053201325,0.5333333333333333,0,L01,E35_sd0.377,E35,GSM751909,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9935478053201325,0.5333333333333333,0,L01,E35_sd0.352,E35,GSM751910,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9935478053201325,0.5333333333333333,0,L01,E35_sd0.379,E35,GSM751911,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.12921259580174863,0.5333333333333333,0,L01,E35_sd0.379,E35,GSM751914,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.12921259580174863,0.5333333333333333,0,L01,E36_sd0.427,E36,GSM751915,q-lactate,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.12921259580174863,0.5333333333333333,0,L01,E36_sd0.352,E36,GSM751917,q-lactate,leave_one_expression_cluster_out,temperature only,logit
 1.0,0.8337076494608928,0.484375,1,E03_sd0.35,E03_sd0.35,E03,GSM751635,q-lactate,culture_grouped_5fold,raw,logit
 1.0,0.8859984718534969,0.5285714285714286,2,E03_sd0.3,E03_sd0.3,E03,GSM751636,q-lactate,culture_grouped_5fold,raw,logit
 1.0,0.8439599165467927,0.484375,1,E03_sd0.36,E03_sd0.36,E03,GSM751637,q-lactate,culture_grouped_5fold,raw,logit
@@ -18056,6 +19214,102 @@ y,pred,null,fold,group,culture,experiment,array,endpoint,holdout_scheme,encoder,
 1.0,0.10017462036015143,0.4827586206896552,14,E35,E35_sd0.377,E35,GSM751912,q-ammonium,leave_one_experiment_out,pathway,logit
 1.0,0.11433738578712166,0.4827586206896552,14,E35,E35_sd0.352,E35,GSM751913,q-ammonium,leave_one_experiment_out,pathway,logit
 1.0,0.07868459577135863,0.4827586206896552,14,E35,E35_sd0.379,E35,GSM751914,q-ammonium,leave_one_experiment_out,pathway,logit
+0.0,0.9565436556854283,0.5106382978723404,0,E01,E01_sd0.323,E01,GSM751629,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.9565436556854283,0.5106382978723404,0,E01,E01_sd0.383,E01,GSM751630,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.9065518913137983,0.4945054945054945,1,E03,E03_sd0.35,E03,GSM751635,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.9065518913137983,0.4945054945054945,1,E03,E03_sd0.3,E03,GSM751636,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.9065518913137983,0.4945054945054945,1,E03,E03_sd0.36,E03,GSM751637,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.1834540136784708,0.4945054945054945,1,E03,E03_sd0.35,E03,GSM751641,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.1834540136784708,0.4945054945054945,1,E03,E03_sd0.3,E03,GSM751642,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.906755494999488,0.5,2,E04,E04_sd0.36,E04,GSM751644,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.906755494999488,0.5,2,E04,E04_sd0.4,E04,GSM751645,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.906755494999488,0.5,2,E04,E04_sd0.37,E04,GSM751646,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.1871117914962632,0.5,2,E04,E04_sd0.36,E04,GSM751650,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.1871117914962632,0.5,2,E04,E04_sd0.4,E04,GSM751651,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.1871117914962632,0.5,2,E04,E04_sd0.37,E04,GSM751652,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.2039970773246223,0.5340909090909091,3,E06,E06_sd2.134,E06,GSM751662,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.2039970773246223,0.5340909090909091,3,E06,E06_sd2.134,E06,GSM751664,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.2039970773246223,0.5340909090909091,3,E06,E06_sd2.134,E06,GSM751665,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.2039970773246223,0.5340909090909091,3,E06,E06_sd1.84,E06,GSM751666,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.9115698484813349,0.5340909090909091,3,E06,E06_sd2.17,E06,GSM751667,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.2039970773246223,0.5340909090909091,3,E06,E06_sd2.17,E06,GSM751668,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.2039970773246223,0.5340909090909091,3,E06,E06_sd2.17,E06,GSM751670,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.2039970773246223,0.5340909090909091,3,E06,E06_sd1.84,E06,GSM751672,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.9087074444293213,0.48936170212765956,4,E11,E11_sd0.34,E11,GSM751692,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.9087074444293213,0.48936170212765956,4,E11,E11_sd0.281,E11,GSM751693,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.18738310199326524,0.5161290322580645,5,E16,E16_p110_0,E16,GSM751741,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.18738310199326524,0.5161290322580645,5,E16,E16_p110_1,E16,GSM751742,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.18738310199326524,0.5161290322580645,5,E16,E16_p110_2,E16,GSM751743,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.1996545881568806,0.5333333333333333,6,E17,E17_p119_0,E17,GSM751750,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.1996545881568806,0.5333333333333333,6,E17,E17_p119_1,E17,GSM751751,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.1996545881568806,0.5333333333333333,6,E17,E17_p119_2,E17,GSM751752,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.1996545881568806,0.5333333333333333,6,E17,E17_p119_0,E17,GSM751753,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.1996545881568806,0.5333333333333333,6,E17,E17_p119_1,E17,GSM751754,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.1996545881568806,0.5333333333333333,6,E17,E17_p119_2,E17,GSM751755,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.9055785820781533,0.4725274725274725,7,E23,E23_p163_0,E23,GSM751791,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.9055785820781533,0.4725274725274725,7,E23,E23_p163_1,E23,GSM751792,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.9055785820781533,0.4725274725274725,7,E23,E23_p163_2,E23,GSM751793,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.14297978265922573,0.4725274725274725,7,E23,E23_p163_0,E23,GSM751794,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.14297978265922573,0.4725274725274725,7,E23,E23_p163_1,E23,GSM751795,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.04984607636039604,0.5054945054945055,8,E27,E27_sd4.33,E27,GSM751823,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.04984607636039604,0.5054945054945055,8,E27,E27_sd4.17,E27,GSM751825,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.04984607636039604,0.5054945054945055,8,E27,E27_sd4.33,E27,GSM751826,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.04984607636039604,0.5054945054945055,8,E27,E27_sd4.17,E27,GSM751828,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.04984607636039604,0.5054945054945055,8,E27,E27_sd3.77,E27,GSM751830,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.9141759845095956,0.4470588235294118,9,E30,E30_sd0.28,E30,GSM751838,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.9141759845095956,0.4470588235294118,9,E30,E30_sd0.21,E30,GSM751839,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.9141759845095956,0.4470588235294118,9,E30,E30_sd0.22,E30,GSM751840,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.9141759845095956,0.4470588235294118,9,E30,E30_sd0.28,E30,GSM751842,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.9141759845095956,0.4470588235294118,9,E30,E30_sd0.21,E30,GSM751843,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.9141759845095956,0.4470588235294118,9,E30,E30_sd0.22,E30,GSM751844,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.9141759845095956,0.4470588235294118,9,E30,E30_sd0.28,E30,GSM751846,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.9141759845095956,0.4470588235294118,9,E30,E30_sd0.21,E30,GSM751847,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.9141759845095956,0.4470588235294118,9,E30,E30_sd0.22,E30,GSM751848,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.9141759845095956,0.4470588235294118,9,E30,E30_sd0.28,E30,GSM751850,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.9141759845095956,0.4470588235294118,9,E30,E30_sd0.22,E30,GSM751851,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.9070954501117834,0.5172413793103449,10,E31,E31_p224_0,E31,GSM751852,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.9070954501117834,0.5172413793103449,10,E31,E31_p224_1,E31,GSM751853,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.9070954501117834,0.5172413793103449,10,E31,E31_p224_2,E31,GSM751854,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.19934710058499253,0.5172413793103449,10,E31,E31_p224_0,E31,GSM751855,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.19934710058499253,0.5172413793103449,10,E31,E31_p224_1,E31,GSM751856,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.19934710058499253,0.5172413793103449,10,E31,E31_p224_2,E31,GSM751857,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.19934710058499253,0.5172413793103449,10,E31,E31_p224_0,E31,GSM751858,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.19934710058499253,0.5172413793103449,10,E31,E31_p224_1,E31,GSM751859,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.19934710058499253,0.5172413793103449,10,E31,E31_p224_2,E31,GSM751860,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.06102878310868914,0.49473684210526314,11,E32,E32_sd0.311,E32,GSM751861,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.9064594120489453,0.4838709677419355,12,E33,E33_lump242,E33,GSM751870,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.9064594120489453,0.4838709677419355,12,E33,E33_lump242,E33,GSM751871,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.9064594120489453,0.4838709677419355,12,E33,E33_lump242,E33,GSM751872,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.899688227548298,0.5,13,E34,E34_sd0.315,E34,GSM751880,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.899688227548298,0.5,13,E34,E34_sd0.344,E34,GSM751881,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.899688227548298,0.5,13,E34,E34_sd0.363,E34,GSM751882,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.899688227548298,0.5,13,E34,E34_sd0.331,E34,GSM751883,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.899688227548298,0.5,13,E34,E34_sd0.428,E34,GSM751884,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.899688227548298,0.5,13,E34,E34_sd0.374,E34,GSM751885,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.19900884775452704,0.5,13,E34,E34_sd0.418,E34,GSM751886,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.19900884775452704,0.5,13,E34,E34_sd0.428,E34,GSM751887,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.19900884775452704,0.5,13,E34,E34_sd0.363,E34,GSM751890,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.19900884775452704,0.5,13,E34,E34_sd0.315,E34,GSM751891,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.19900884775452704,0.5,13,E34,E34_sd0.344,E34,GSM751892,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.19900884775452704,0.5,13,E34,E34_sd0.363,E34,GSM751893,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.13352010954373947,0.4827586206896552,14,E35,E35_sd0.377,E35,GSM751894,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.13352010954373947,0.4827586206896552,14,E35,E35_sd0.352,E35,GSM751895,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.13352010954373947,0.4827586206896552,14,E35,E35_sd0.379,E35,GSM751896,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.9070954501117834,0.5172413793103449,15,E36,E36_sd0.427,E36,GSM751900,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.9070954501117834,0.5172413793103449,15,E36,E36_sd0.353,E36,GSM751901,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.9070954501117834,0.5172413793103449,15,E36,E36_sd0.352,E36,GSM751902,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.19934710058499253,0.5172413793103449,15,E36,E36_sd0.427,E36,GSM751903,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.19934710058499253,0.5172413793103449,15,E36,E36_sd0.353,E36,GSM751904,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.19934710058499253,0.5172413793103449,15,E36,E36_sd0.352,E36,GSM751905,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.19934710058499253,0.5172413793103449,15,E36,E36_sd0.427,E36,GSM751906,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.19934710058499253,0.5172413793103449,15,E36,E36_sd0.353,E36,GSM751907,q-ammonium,leave_one_experiment_out,temperature only,logit
+0.0,0.19934710058499253,0.5172413793103449,15,E36,E36_sd0.352,E36,GSM751908,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.905335384503028,0.4827586206896552,14,E35,E35_sd0.377,E35,GSM751909,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.905335384503028,0.4827586206896552,14,E35,E35_sd0.352,E35,GSM751910,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.905335384503028,0.4827586206896552,14,E35,E35_sd0.379,E35,GSM751911,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.13352010954373947,0.4827586206896552,14,E35,E35_sd0.377,E35,GSM751912,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.13352010954373947,0.4827586206896552,14,E35,E35_sd0.352,E35,GSM751913,q-ammonium,leave_one_experiment_out,temperature only,logit
+1.0,0.13352010954373947,0.4827586206896552,14,E35,E35_sd0.379,E35,GSM751914,q-ammonium,leave_one_experiment_out,temperature only,logit
 0.0,0.9677605006894686,0.5106382978723404,2,L05,E01_sd0.323,E01,GSM751629,q-ammonium,leave_one_expression_cluster_out,raw,logit
 0.0,0.9719686049926856,0.5106382978723404,2,L05,E01_sd0.383,E01,GSM751630,q-ammonium,leave_one_expression_cluster_out,raw,logit
 1.0,0.9471078349767597,0.4909090909090909,0,L01,E03_sd0.35,E03,GSM751635,q-ammonium,leave_one_expression_cluster_out,raw,logit
@@ -18248,6 +19502,102 @@ y,pred,null,fold,group,culture,experiment,array,endpoint,holdout_scheme,encoder,
 1.0,0.6325389284018661,0.4909090909090909,0,L01,E35_sd0.377,E35,GSM751912,q-ammonium,leave_one_expression_cluster_out,pathway,logit
 1.0,0.7528637569338197,0.4909090909090909,0,L01,E35_sd0.352,E35,GSM751913,q-ammonium,leave_one_expression_cluster_out,pathway,logit
 1.0,0.4914975889746784,0.4909090909090909,0,L01,E35_sd0.379,E35,GSM751914,q-ammonium,leave_one_expression_cluster_out,pathway,logit
+0.0,0.9565436556854283,0.5106382978723404,2,L05,E01_sd0.323,E01,GSM751629,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.9565436556854283,0.5106382978723404,2,L05,E01_sd0.383,E01,GSM751630,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8530981162358905,0.4909090909090909,0,L01,E03_sd0.35,E03,GSM751635,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8530981162358905,0.4909090909090909,0,L01,E03_sd0.3,E03,GSM751636,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8530981162358905,0.4909090909090909,0,L01,E03_sd0.36,E03,GSM751637,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2091394496466115,0.4909090909090909,0,L01,E03_sd0.35,E03,GSM751641,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2091394496466115,0.4909090909090909,0,L01,E03_sd0.3,E03,GSM751642,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8530981162358905,0.4909090909090909,0,L01,E04_sd0.36,E04,GSM751644,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8530981162358905,0.4909090909090909,0,L01,E04_sd0.4,E04,GSM751645,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8530981162358905,0.4909090909090909,0,L01,E04_sd0.37,E04,GSM751646,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2091394496466115,0.4909090909090909,0,L01,E04_sd0.36,E04,GSM751650,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2091394496466115,0.4909090909090909,0,L01,E04_sd0.4,E04,GSM751651,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2091394496466115,0.4909090909090909,0,L01,E04_sd0.37,E04,GSM751652,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2039970773246223,0.5340909090909091,3,L06,E06_sd2.134,E06,GSM751662,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2039970773246223,0.5340909090909091,3,L06,E06_sd2.134,E06,GSM751664,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2039970773246223,0.5340909090909091,3,L06,E06_sd2.134,E06,GSM751665,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2039970773246223,0.5340909090909091,3,L06,E06_sd1.84,E06,GSM751666,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9115698484813349,0.5340909090909091,3,L06,E06_sd2.17,E06,GSM751667,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2039970773246223,0.5340909090909091,3,L06,E06_sd2.17,E06,GSM751668,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2039970773246223,0.5340909090909091,3,L06,E06_sd2.17,E06,GSM751670,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2039970773246223,0.5340909090909091,3,L06,E06_sd1.84,E06,GSM751672,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9087074444293213,0.48936170212765956,6,L10,E11_sd0.34,E11,GSM751692,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9087074444293213,0.48936170212765956,6,L10,E11_sd0.281,E11,GSM751693,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2135988400127017,0.5517241379310345,8,L13,E16_p110_0,E16,GSM751741,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2135988400127017,0.5517241379310345,8,L13,E16_p110_1,E16,GSM751742,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2135988400127017,0.5517241379310345,8,L13,E16_p110_2,E16,GSM751743,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2135988400127017,0.5517241379310345,8,L13,E17_p119_0,E17,GSM751750,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2135988400127017,0.5517241379310345,8,L13,E17_p119_1,E17,GSM751751,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2135988400127017,0.5517241379310345,8,L13,E17_p119_2,E17,GSM751752,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2135988400127017,0.5517241379310345,8,L13,E17_p119_0,E17,GSM751753,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2135988400127017,0.5517241379310345,8,L13,E17_p119_1,E17,GSM751754,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2135988400127017,0.5517241379310345,8,L13,E17_p119_2,E17,GSM751755,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8985933790564707,0.4878048780487805,4,L08,E23_p163_0,E23,GSM751791,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8985933790564707,0.4878048780487805,4,L08,E23_p163_1,E23,GSM751792,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8985933790564707,0.4878048780487805,4,L08,E23_p163_2,E23,GSM751793,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.16244654754093305,0.4878048780487805,4,L08,E23_p163_0,E23,GSM751794,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.16244654754093305,0.4878048780487805,4,L08,E23_p163_1,E23,GSM751795,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.03693376326567203,0.5,7,L12,E27_sd4.33,E27,GSM751823,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.03693376326567203,0.5,7,L12,E27_sd4.17,E27,GSM751825,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.03693376326567203,0.5,7,L12,E27_sd4.33,E27,GSM751826,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.03693376326567203,0.5,7,L12,E27_sd4.17,E27,GSM751828,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.03693376326567203,0.5,7,L12,E27_sd3.77,E27,GSM751830,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9141759845095956,0.4470588235294118,1,L03,E30_sd0.28,E30,GSM751838,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9141759845095956,0.4470588235294118,1,L03,E30_sd0.21,E30,GSM751839,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9141759845095956,0.4470588235294118,1,L03,E30_sd0.22,E30,GSM751840,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9141759845095956,0.4470588235294118,1,L03,E30_sd0.28,E30,GSM751842,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9141759845095956,0.4470588235294118,1,L03,E30_sd0.21,E30,GSM751843,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9141759845095956,0.4470588235294118,1,L03,E30_sd0.22,E30,GSM751844,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9141759845095956,0.4470588235294118,1,L03,E30_sd0.28,E30,GSM751846,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9141759845095956,0.4470588235294118,1,L03,E30_sd0.21,E30,GSM751847,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9141759845095956,0.4470588235294118,1,L03,E30_sd0.22,E30,GSM751848,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9141759845095956,0.4470588235294118,1,L03,E30_sd0.28,E30,GSM751850,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.9141759845095956,0.4470588235294118,1,L03,E30_sd0.22,E30,GSM751851,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8985933790564707,0.4878048780487805,4,L08,E31_p224_0,E31,GSM751852,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8985933790564707,0.4878048780487805,4,L08,E31_p224_1,E31,GSM751853,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8985933790564707,0.4878048780487805,4,L08,E31_p224_2,E31,GSM751854,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.16244654754093305,0.4878048780487805,4,L08,E31_p224_0,E31,GSM751855,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.16244654754093305,0.4878048780487805,4,L08,E31_p224_1,E31,GSM751856,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.16244654754093305,0.4878048780487805,4,L08,E31_p224_2,E31,GSM751857,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.16244654754093305,0.4878048780487805,4,L08,E31_p224_0,E31,GSM751858,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.16244654754093305,0.4878048780487805,4,L08,E31_p224_1,E31,GSM751859,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.16244654754093305,0.4878048780487805,4,L08,E31_p224_2,E31,GSM751860,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.03693376326567203,0.5,7,L12,E32_sd0.311,E32,GSM751861,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9064594120489453,0.4838709677419355,5,L09,E33_lump242,E33,GSM751870,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9064594120489453,0.4838709677419355,5,L09,E33_lump242,E33,GSM751871,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.9064594120489453,0.4838709677419355,5,L09,E33_lump242,E33,GSM751872,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8530981162358905,0.4909090909090909,0,L01,E34_sd0.315,E34,GSM751880,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8530981162358905,0.4909090909090909,0,L01,E34_sd0.344,E34,GSM751881,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8530981162358905,0.4909090909090909,0,L01,E34_sd0.363,E34,GSM751882,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8530981162358905,0.4909090909090909,0,L01,E34_sd0.331,E34,GSM751883,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8530981162358905,0.4909090909090909,0,L01,E34_sd0.428,E34,GSM751884,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8530981162358905,0.4909090909090909,0,L01,E34_sd0.374,E34,GSM751885,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2091394496466115,0.4909090909090909,0,L01,E34_sd0.418,E34,GSM751886,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2091394496466115,0.4909090909090909,0,L01,E34_sd0.428,E34,GSM751887,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2091394496466115,0.4909090909090909,0,L01,E34_sd0.363,E34,GSM751890,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2091394496466115,0.4909090909090909,0,L01,E34_sd0.315,E34,GSM751891,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2091394496466115,0.4909090909090909,0,L01,E34_sd0.344,E34,GSM751892,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2091394496466115,0.4909090909090909,0,L01,E34_sd0.363,E34,GSM751893,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2091394496466115,0.4909090909090909,0,L01,E35_sd0.377,E35,GSM751894,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2091394496466115,0.4909090909090909,0,L01,E35_sd0.352,E35,GSM751895,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2091394496466115,0.4909090909090909,0,L01,E35_sd0.379,E35,GSM751896,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8530981162358905,0.4909090909090909,0,L01,E36_sd0.427,E36,GSM751900,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8530981162358905,0.4909090909090909,0,L01,E36_sd0.353,E36,GSM751901,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8530981162358905,0.4909090909090909,0,L01,E36_sd0.352,E36,GSM751902,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2091394496466115,0.4909090909090909,0,L01,E36_sd0.427,E36,GSM751903,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2091394496466115,0.4909090909090909,0,L01,E36_sd0.353,E36,GSM751904,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2091394496466115,0.4909090909090909,0,L01,E36_sd0.352,E36,GSM751905,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2091394496466115,0.4909090909090909,0,L01,E36_sd0.427,E36,GSM751906,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2091394496466115,0.4909090909090909,0,L01,E36_sd0.353,E36,GSM751907,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+0.0,0.2091394496466115,0.4909090909090909,0,L01,E36_sd0.352,E36,GSM751908,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8530981162358905,0.4909090909090909,0,L01,E35_sd0.377,E35,GSM751909,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8530981162358905,0.4909090909090909,0,L01,E35_sd0.352,E35,GSM751910,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.8530981162358905,0.4909090909090909,0,L01,E35_sd0.379,E35,GSM751911,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.2091394496466115,0.4909090909090909,0,L01,E35_sd0.377,E35,GSM751912,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.2091394496466115,0.4909090909090909,0,L01,E35_sd0.352,E35,GSM751913,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
+1.0,0.2091394496466115,0.4909090909090909,0,L01,E35_sd0.379,E35,GSM751914,q-ammonium,leave_one_expression_cluster_out,temperature only,logit
 0.0,0.2096710659656669,0.5194805194805194,2,E01_sd0.323,E01_sd0.323,E01,GSM751629,q-ammonium,culture_grouped_5fold,raw,logit
 0.0,0.6293828829501914,0.5,1,E01_sd0.383,E01_sd0.383,E01,GSM751630,q-ammonium,culture_grouped_5fold,raw,logit
 1.0,0.9219685616321704,0.4520547945205479,4,E03_sd0.35,E03_sd0.35,E03,GSM751635,q-ammonium,culture_grouped_5fold,raw,logit

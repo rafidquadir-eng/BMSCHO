@@ -130,18 +130,23 @@ temperature and nothing else, under the same split.
 | q-lactate | 127 / 14 | 0.97 (0.90–1.00) | 0.94 (0.85–1.00) | 0.62 (0.46–0.76) | 0.61 |
 | q-ammonium | 143 / 16 | 0.93 (0.85–1.00) | 0.95 (0.87–1.00) | 0.42 (0.15–0.57) | 0.35 |
 
-TEMP_AUC_SENTENCE
+Culture temperature alone, same high-vs-low task with experiments held out: viability AUC 0.44
+(0.25–0.69), growth rate 0.90 (0.76–1.00), viable cell density 0.75 (0.55–0.93), q-lactate 0.94
+(0.86–1.00), q-ammonium 0.80 (0.66–0.92).
 
 Culture-grouped numbers, for contrast only: viability R² 0.77, density 0.77, against 0.09 and 0.08
 with experiments held out. The leak found in phase 1 is larger for these endpoints than it was for Qp.
 
 **Reading.**
 
-- **Viability** can be separated into high and low from expression on unseen experiments, and the
-  culture temperature alone cannot do it. A number cannot be predicted: R² is 0.09.
+- **Viability** can be separated into high and low from expression on unseen experiments (0.84),
+  and the culture temperature alone cannot do it (0.44). A number cannot be predicted: R² is 0.09.
 - **Growth rate and q-lactate** are predicted well, but temperature alone gets most of the way
   (R² 0.62 and 0.61). Expression adds a little for growth rate and nothing for q-lactate.
-- **Viable cell density** behaves like viability: some high-vs-low separation, no regression skill.
+- **Viable cell density** shows some high-vs-low separation (0.82) but temperature alone gets 0.75,
+  and there is no regression skill.
+- **q-ammonium** is the one other endpoint where expression clearly adds to temperature for the
+  high-vs-low task (0.93 vs 0.80).
 - For high-vs-low AUC the pathway encoder is at or below raw genes on every endpoint (for example
   viability 0.79 vs 0.84). For regression the two are within each other's intervals
   (`results/metrics_endpoints.csv`).
@@ -198,7 +203,7 @@ glycan profiles and omics on the same clones at a usable n. The box is "requires
 
 | Claim | Evidence | What this does NOT show |
 |---|---|---|
-| High vs low viability can be told from expression in an unseen experiment. | Transcriptomics; leave-one-experiment-out AUC 0.84 (0.70–0.94), 28 experiments; families held out 0.77 (0.60–0.90). | That viability can be predicted as a number (R² 0.09). That it works on a new cell line. Experiment blocks for some of these arrays rest on my reading of the deposit order. |
+| High vs low viability can be told from expression in an unseen experiment. | Transcriptomics; leave-one-experiment-out AUC 0.84 (0.70–0.94), 27 experiments; families held out 0.77 (0.60–0.90); temperature alone 0.44. | That viability can be predicted as a number (R² 0.09). That it works on a new cell line. Experiment blocks for some of these arrays rest on my reading of the deposit order. |
 | Growth rate and q-lactate are predictable from expression. | Leave-one-experiment-out R² 0.76 and 0.62. | That expression is needed: culture temperature alone gives R² 0.62 and 0.61. |
 | The Δ construct recovers the TCA cycle from BMS's published metabolomics. | Rank 6 of 53, p = 0.020, pre-registered; rank 1 by the authors' own statistic. | Recovery of both published pathways (the other ranks 15; joint p = 0.061). Independence: the input is the authors' own summary statistics and I knew their conclusion. Any prediction on BMS data. |
 | Cross-library qP prediction on the BMS data was not possible. | Data availability "Not applicable"; no per-clone table in the supplement. | That it would fail or succeed. It is untested. |
